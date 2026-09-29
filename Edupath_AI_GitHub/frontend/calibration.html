@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#c1beff","on-error":"#ffffff","surface-container-highest":"#dae2fd","surface-bright":"#faf8ff","primary-container":"#4338ca","inverse-surface":"#283044","secondary-fixed":"#89f5e7","surface":"#faf8ff","tertiary-container":"#005878","surface-container-high":"#e2e7ff","on-primary-fixed-variant":"#372abf","on-secondary":"#ffffff","surface-dim":"#d2d9f4","surface-container-lowest":"#ffffff","on-surface":"#131b2e","secondary-container":"#86f2e4","error-container":"#ffdad6","primary":"#2a14b4","on-error-container":"#93000a","on-primary-fixed":"#100069","on-secondary-fixed-variant":"#005049","on-surface-variant":"#464554","inverse-on-surface":"#eef0ff","primary-fixed-dim":"#c3c0ff","surface-container":"#eaedff","on-primary":"#ffffff","secondary":"#006a61","inverse-primary":"#c3c0ff","tertiary-fixed":"#c4e7ff","background":"#faf8ff","secondary-fixed-dim":"#6bd8cb","surface-container-low":"#f2f3ff","on-tertiary-fixed":"#001e2c","surface-variant":"#dae2fd","surface-tint":"#5148d7","on-background":"#131b2e","error":"#ba1a1a","tertiary-fixed-dim":"#7bd0ff","primary-fixed":"#e3dfff","outline":"#777586","on-secondary-container":"#006f66","on-tertiary-container":"#77cfff","on-secondary-fixed":"#00201d","tertiary":"#003f58","on-tertiary-fixed-variant":"#004c69","outline-variant":"#c7c4d7","on-tertiary":"#ffffff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","space-xs":"0.25rem",gutter:"1.5rem",margin:"2rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-sm":"1rem","space-xl":"2.5rem","margin-tablet":"1.5rem","margin-mobile":"1rem"},fontFamily:{"display-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-sm":["Plus Jakarta Sans"],"display-sm-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"metric-display":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Inter"],"title-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},fontSize:{"display-lg-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"title-lg":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"display-sm":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"display-sm-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.015em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"metric-display":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"title-md":["16px",{lineHeight:"24px",fontWeight:"600"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.015em",fontWeight:"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="student-profile" href="#"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-[0_2px_8px_rgba(67,56,202,0.25)]"><span class="material-symbols-outlined text-[20px]">auto_awesome</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">Edupath<span class="text-primary-container ml-0.5">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Decision Co-Pilot</span></div></a><nav class="hidden xl:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary rounded-lg shadow-sm font-label-md"><a aria-current="page" class="px-3 py-2 transition-all bg-primary-container text-on-primary rounded-lg shadow-sm font-label-md" data-path="student-profile" href="#">Student Profile</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="institutions.html">Institutions</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="scholarships-and-loans" href="#">Scholarships &amp; Loans</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="simulator.html">What-If Simulator</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="decision-matrix.html">Decision Matrix</a><a class="px-3 py-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" href="business-pathways.html">Entrepreneurship</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center bg-surface-container-lowest rounded-lg px-3 py-2 shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] focus-within:ring-2 focus-within:ring-primary-container transition-all w-52 lg:w-64"><span class="material-symbols-outlined text-[18px] text-on-surface-variant mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search pathways, careers..." type="text"/></div><a class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_14px_0_rgba(67,56,202,0.35)] hover:bg-primary-container hover:text-on-primary transition-all" href="simulator.html"><span class="material-symbols-outlined text-[16px]">bolt</span><span>Start AI Assessment</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Toast Banner Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="saveToast">
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-md rounded-2xl shadow-2xl border-l-4 border-secondary max-w-md pointer-events-auto border border-outline-variant/30">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold" id="toastTitle">Profile successfully saved &amp; calibrated!</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="toastMessage">Ready for pathway recommendation engines. Live models and institutional odds have been updated.</span>
+</div>
+<button aria-label="Close notification" class="text-on-surface-variant hover:text-on-surface p-1 ml-auto" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Breadcrumb & Intro Header -->
+<section class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-lg pb-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">EduPath AI Engine</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-wide">Step 1: Student Foundation Profile</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-3 py-1 rounded-full border border-outline-variant/30">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Intake Core v2.4 Active • Zero Bias Mode</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg md:font-display-sm md:text-display-sm text-on-surface font-black tracking-tight mb-space-xs">
+          Build Your Student Decision Profile
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Input your empirical academic metrics, cognitive aptitudes, financial constraints, and high-impact trajectory goals. EduPath AI uses this benchmark foundation to compute institution odds and multi-attribute ROI forecasts.
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto bg-surface-container-low p-2 rounded-2xl border border-outline-variant/30">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-primary font-label-md text-label-md transition-all shadow-sm" id="loadPresetBtn" onclick="loadSamplePreset()" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>Load Preset: Priya S. (STEM/AI)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-all" onclick="resetFormState()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<!-- Progress Meter Strip -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm border border-outline-variant/30 mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Foundation Completeness</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold" id="completenessBadge">85% Complete • High Precision</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="completenessCount">All critical fields active</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container via-primary to-secondary h-2.5 rounded-full transition-all duration-500" id="completenessBar" style="width: 85%"></div>
+</div>
+</div>
+</section>
+<!-- Main Grid Layout (7:5 desktop split) -->
+<main class="max-w-7xl mx-auto w-full px-margin-mobile md:px-margin-tablet lg:px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Forms & Modules (lg:col-span-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<form class="flex flex-col gap-space-lg" id="profileForm" novalidate="" onsubmit="handleFormSubmit(event)">
+<!-- Section 1: Academic Benchmark -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 transition-all" id="academicSection">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-2xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">1. Academic Details &amp; Credentials</h2>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-full border border-secondary/20">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified Standard
+</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Current Qualification -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="currentQual">
+<span>Current Qualification / Class</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="currentQual" onchange="syncSummary(); validateField('currentQual')">
+<option value="High School 12th">High School (12th Standard / Senior High)</option>
+<option value="Undergraduate (Year 1-2)">Undergraduate (Lower Division / Year 1-2)</option>
+<option selected="" value="Undergraduate (Final Year)">Undergraduate (Final Year / Senior)</option>
+<option value="Master's / Postgraduate">Master's / Postgraduate Degree</option>
+<option value="Doctoral / PhD Candidate">Doctoral / PhD Candidate</option>
+<option value="Working Professional">Working Professional / Accelerated Reskill</option>
+</select>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Defines baseline curriculum transfer rules and admission cohort.</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="currentQualError"><span class="material-symbols-outlined text-[14px]">error</span> This field is required.</span>
+</div>
+<!-- Stream / Branch -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="streamBranch">
+<span>Stream / Discipline Branch</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="streamBranch" oninput="syncSummary(); validateField('streamBranch')" placeholder="e.g. Computer Science, Mechanical, Biology, Commerce" type="text" value="Computer Science &amp; Data Intelligence"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Matches field taxonomy (e.g. CS, Mechanical, Biology, Commerce).</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="streamBranchError"><span class="material-symbols-outlined text-[14px]">error</span> This field is required.</span>
+</div>
+<!-- Marks / CGPA with numeric validation -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="cgpaInput">
+<span>Academic Marks / CGPA</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="cgpaPercentile">Normalized: Top 5%</span>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg pl-3 pr-9 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="cgpaInput" onblur="validateField('cgpaInput')" oninput="syncSummary(); validateField('cgpaInput')" placeholder="e.g. 3.88, 8.9, 92%" type="text" value="3.88"/>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute right-2.5 top-3" id="cgpaStatusIcon">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Accepts 4.0 scale, 10.0 scale, or 0-100% marks format.</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="cgpaInputError"><span class="material-symbols-outlined text-[14px]">error</span> Please enter a valid CGPA or percentage between 0 and 100 or 0 and 4.0.</span>
+</div>
+<!-- Standardized Test Scores -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="testScores">Entrance Exam Scores (GRE, SAT, GATE, IELTS, etc.)</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="testScores" oninput="syncSummary()" placeholder="e.g. GRE 324 (Q168), SAT 1480, IELTS 8.0, GATE 720" type="text" value="GRE: 324 (Q168), IELTS: 8.0, SAT: 1480"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Include all standardized metrics for algorithmic admission evaluation.</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Cognitive Focus & Domain Affinity -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 transition-all">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-2xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">2. Domain Aptitude &amp; Skill Vectors</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Curriculum Synergy</span>
+</div>
+<!-- Preferred Study Domain Radio Tiles -->
+<div class="mb-space-md">
+<label class="font-label-md text-label-md text-on-surface block mb-2">Preferred Study Domain</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="domainSelector">
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-primary bg-primary-container text-on-primary transition-all shadow-sm domain-card">
+<input checked="" class="sr-only" name="domain" onchange="updateDomainSelection(this, 'AI &amp; Data Systems')" type="radio" value="AI &amp; Data Systems"/>
+<span class="material-symbols-outlined text-[18px]">memory</span>
+<span class="font-label-md text-label-md">AI &amp; Data Systems</span>
+</label>
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all domain-card">
+<input class="sr-only" name="domain" onchange="updateDomainSelection(this, 'Biomedical Tech')" type="radio" value="Biomedical Tech"/>
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span class="font-label-md text-label-md">Biomedical Tech</span>
+</label>
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all domain-card">
+<input class="sr-only" name="domain" onchange="updateDomainSelection(this, 'FinTech &amp; Quant')" type="radio" value="FinTech &amp; Quant"/>
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span class="font-label-md text-label-md">FinTech &amp; Quant</span>
+</label>
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all domain-card">
+<input class="sr-only" name="domain" onchange="updateDomainSelection(this, 'Venture Tech')" type="radio" value="Venture Tech"/>
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span class="font-label-md text-label-md">Venture Tech</span>
+</label>
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all domain-card">
+<input class="sr-only" name="domain" onchange="updateDomainSelection(this, 'Applied Robotics')" type="radio" value="Applied Robotics"/>
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+<span class="font-label-md text-label-md">Applied Robotics</span>
+</label>
+<label class="cursor-pointer relative flex items-center gap-2 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-all domain-card">
+<input class="sr-only" name="domain" onchange="updateDomainSelection(this, 'Cognitive Systems')" type="radio" value="Cognitive Systems"/>
+<span class="material-symbols-outlined text-[18px]">cognition</span>
+<span class="font-label-md text-label-md">Cognitive Systems</span>
+</label>
+</div>
+</div>
+<!-- Multi-Select Interest Tags -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md text-on-surface">Clickable Skill &amp; Area of Interest Tags</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="tagCountLabel">5 selected</span>
+</div>
+<div class="flex flex-wrap gap-2" id="skillTagsContainer">
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all border border-primary/20" onclick="toggleTag(this)" type="button">✓ Machine Learning Architecture</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all border border-primary/20" onclick="toggleTag(this)" type="button">✓ Neural Computing</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface transition-all border border-outline-variant/30" onclick="toggleTag(this)" type="button">+ Algorithmic Trading</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all border border-primary/20" onclick="toggleTag(this)" type="button">✓ Distributed Systems</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface transition-all border border-outline-variant/30" onclick="toggleTag(this)" type="button">+ Computational Genomics</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all border border-primary/20" onclick="toggleTag(this)" type="button">✓ Reinforcement Learning</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface transition-all border border-outline-variant/30" onclick="toggleTag(this)" type="button">+ Autonomous Hardware</button>
+<button class="tag-chip px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary transition-all border border-primary/20" onclick="toggleTag(this)" type="button">✓ Natural Language Processing</button>
+</div>
+</div>
+<!-- Subject & Technical Mastery Input -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="favoriteSubjects">Favorite Subjects &amp; Strengths</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="favoriteSubjects" oninput="syncSummary()" type="text" value="Multivariable Calculus, Linear Algebra, Operating Systems"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Core subjects you excel in.</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="toolsProficiency">Core Stack &amp; Tools</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="toolsProficiency" oninput="syncSummary()" type="text" value="PyTorch, C++, CUDA, Python, Docker"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Programming languages, tools, frameworks.</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Financial Framework & Debt Threshold -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 transition-all">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-2xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">3. Financial Parameters &amp; Aid Blueprint</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Solvency Guard On</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-md">
+<!-- Annual Target Budget -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="annualBudget">
+<span>Annual Education Budget Range</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="annualBudget" onchange="syncSummary(); validateField('annualBudget')">
+<option value="under15k">&lt; $15,000 / year (Strict High-Aid)</option>
+<option selected="" value="15-25k">$15,000 - $25,000 / year (Target Sweet Spot)</option>
+<option value="25-45k">$25,000 - $45,000 / year (Moderate Support)</option>
+<option value="45k-plus">$45,000+ / year (Full Tier-1 Global Private)</option>
+</select>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Includes anticipated tuition, housing, and living stipend.</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="annualBudgetError"><span class="material-symbols-outlined text-[14px]">error</span> Please select a valid budget amount.</span>
+</div>
+<!-- Family Liquid Support -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="familyContribution">
+<span>Direct Family Contribution / Self Capital</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="familyContribution" oninput="syncSummary(); validateField('familyContribution')" placeholder="e.g. $18,000 / year" type="text" value="$18,000 / year"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate annual liquid capital without commercial student debt.</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="familyContributionError"><span class="material-symbols-outlined text-[14px]">error</span> Please enter a valid contribution amount.</span>
+</div>
+</div>
+<!-- Scholarship Aid Need Tier -->
+<div class="mb-space-md">
+<label class="font-label-md text-label-md text-on-surface block mb-2">Institutional Aid &amp; Fellowship Dependency</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<label class="flex items-center gap-3 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all aid-card">
+<input class="accent-primary w-4 h-4" name="aidNeed" onchange="syncAidTier(this)" type="radio" value="High Need (&gt;60%)"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">High Need (&gt;60% Tuition Covered)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Requires research assistantship or full fellowship</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl border border-primary bg-primary-container text-on-primary cursor-pointer transition-all aid-card">
+<input checked="" class="accent-white w-4 h-4" name="aidNeed" onchange="syncAidTier(this)" type="radio" value="Moderate Need (30-60%)"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Moderate Need (30% - 60% Subsidized)</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Targeting departmental merit awards</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all aid-card">
+<input class="accent-primary w-4 h-4" name="aidNeed" onchange="syncAidTier(this)" type="radio" value="Merit-Only (&lt;30%)"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Merit-Only / Low Need (&lt;30%)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Able to absorb standard in-state or EU public rates</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all aid-card">
+<input class="accent-primary w-4 h-4" name="aidNeed" onchange="syncAidTier(this)" type="radio" value="Fully Self-Funded"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fully Self-Funded</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">No aid requirements, focus purely on prestige &amp; speed</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Loan Requirement Toggle & Details -->
+<div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/30 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">account_balance</span>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Education Loan Requirement</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enable loan simulations to factor interest amortizations</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="loanToggle" onchange="toggleLoanFields(this.checked)" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 border-t border-outline-variant/20" id="loanInputsContainer">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="loanTarget">Anticipated Loan Quantum</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-3 py-2 border border-outline-variant/40 focus:ring-2 focus:ring-primary-container focus:outline-none" id="loanTarget" oninput="syncSummary()" placeholder="e.g. $20,000" type="text" value="$20,000"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="debtTolerance">Post-Graduation Debt Ceiling</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg px-3 py-2 border border-outline-variant/40 focus:ring-2 focus:ring-primary-container focus:outline-none" id="debtTolerance" onchange="syncSummary()">
+<option value="zero">Zero Debt Target (Must be debt-free upon graduation)</option>
+<option selected="" value="low">Cautious Cap: Up to $20,000 total repayable debt</option>
+<option value="moderate">Moderate Cap: Up to $45,000 (If starting salary &gt; $110k)</option>
+<option value="high">Aggressive ROI Tolerance (Open to higher leverage)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Geographic & Mobility Preferences -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 transition-all" id="geoSection">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-2xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">4. Preferred Study Country &amp; Location Horizons</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Visa &amp; Work Rights</span>
+</div>
+<!-- Country Selection Chips (Multi-select) -->
+<div class="mb-space-md">
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+<span>Preferred Study Country (Multi-Select)</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="countryCountLabel">3 selected</span>
+</div>
+<div class="flex flex-wrap gap-2" id="countryButtonsContainer">
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary flex items-center gap-1.5 shadow-sm transition-all border border-primary/20" data-country="USA" onclick="toggleCountry(this)" type="button">
+<span>🇺🇸 United States</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">check</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary flex items-center gap-1.5 shadow-sm transition-all border border-primary/20" data-country="Canada" onclick="toggleCountry(this)" type="button">
+<span>🇨🇦 Canada</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">check</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary flex items-center gap-1.5 shadow-sm transition-all border border-primary/20" data-country="Germany" onclick="toggleCountry(this)" type="button">
+<span>🇩🇪 Germany</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">check</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-1.5 transition-all border border-outline-variant/30" data-country="UK" onclick="toggleCountry(this)" type="button">
+<span>🇬🇧 United Kingdom</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">add</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-1.5 transition-all border border-outline-variant/30" data-country="Singapore" onclick="toggleCountry(this)" type="button">
+<span>🇸🇬 Singapore</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">add</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-1.5 transition-all border border-outline-variant/30" data-country="Australia" onclick="toggleCountry(this)" type="button">
+<span>🇦🇺 Australia</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">add</span>
+</button>
+<button class="country-chip px-3.5 py-1.5 rounded-xl font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-1.5 transition-all border border-outline-variant/30" data-country="Netherlands" onclick="toggleCountry(this)" type="button">
+<span>🇳🇱 Netherlands</span>
+<span class="material-symbols-outlined text-[16px] chip-icon">add</span>
+</button>
+</div>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-1.5" id="countryError"><span class="material-symbols-outlined text-[14px]">error</span> Please select your preferred study country.</span>
+</div>
+<!-- Study Location Preference Radio (Local / National / International) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Study Location Preference Scope</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<label class="p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col gap-1 cursor-pointer transition-all location-radio-card">
+<input class="sr-only" name="locationScope" onchange="syncLocationScope(this)" type="radio" value="Local / In-State"/>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">home_pin</span>
+<span class="font-label-md text-label-md">Local / In-State</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Commutable distance, minimal relocation costs</span>
+</label>
+<label class="p-3 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col gap-1 cursor-pointer transition-all location-radio-card">
+<input class="sr-only" name="locationScope" onchange="syncLocationScope(this)" type="radio" value="National Hubs"/>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">flag</span>
+<span class="font-label-md text-label-md">National Premier</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Top-tier national labs, IITs, BITS, or equivalent</span>
+</label>
+<label class="p-3 rounded-xl border border-primary bg-primary-container text-on-primary flex flex-col gap-1 cursor-pointer transition-all location-radio-card">
+<input checked="" class="sr-only" name="locationScope" onchange="syncLocationScope(this)" type="radio" value="International Global"/>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">flight_takeoff</span>
+<span class="font-label-md text-label-md">International Global</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container">Optimum lab access &amp; post-study work authorization</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Section 5: Trajectory Ambitions & Career Milestones -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm border border-outline-variant/30 transition-all" id="careerSection">
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-2xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+</div>
+<h2 class="font-title-lg text-title-lg text-on-surface">5. Career Ambitions &amp; Trajectory Goals</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">High-Impact Track</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Target Career Title (Required) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="targetCareer">
+<span>Target Career Role</span>
+<span class="text-error font-bold" title="Required">*</span>
+</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="targetCareer" oninput="syncSummary(); validateField('targetCareer')" placeholder="e.g. Applied AI Research Scientist, Product Lead, Quant Analyst" type="text" value="Applied AI Research Scientist &amp; Foundation Model Architect"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Matches market liquidity indices across Stanford, CMU, and frontier orgs.</span>
+<span class="hidden font-body-sm text-body-sm text-error items-center gap-1 mt-0.5" id="targetCareerError"><span class="material-symbols-outlined text-[14px]">error</span> This field is required.</span>
+</div>
+<!-- Short-Term Vector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="shortTermGoal">Short-Term Goal (1 - 3 Years)</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="shortTermGoal" oninput="syncSummary()" rows="2">Secure admission into a Top-15 AI graduate program with a funded graduate research assistantship; publish one workshop paper in NeurIPS or ICML.</textarea>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate milestones to trigger institutional match filters.</span>
+</div>
+<!-- Long-Term Vector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="longTermGoal">Long-Term Vision (5 - 10 Years)</label>
+<textarea class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg px-3 py-2.5 border border-outline-variant/40 focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="longTermGoal" oninput="syncSummary()" rows="2">Spearhead an applied clinical AI startup or lead machine intelligence labs focusing on automated multimodal diagnostic agents.</textarea>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vision driving the 10-year ROI and lifetime earnings forecast.</span>
+</div>
+</div>
+</div>
+<!-- Master Action Hub -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm border border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">lock</span>
+<span>Encrypted local session • FERPA &amp; GDPR certified</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all flex items-center justify-center gap-1.5 border border-outline-variant/30" onclick="resetFormState()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset / Clear Form</span>
+</button>
+<button class="hidden px-4 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-all items-center justify-center gap-1.5 border border-primary/30" id="unlockEditBtn" onclick="enableEditing()" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Profile</span>
+</button>
+<button class="flex-1 sm:flex-none px-6 py-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" id="saveProfileBtn" type="submit">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Save Profile</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+<!-- RIGHT COLUMN: Sticky Live Summary & AI Match Profile (lg:col-span-5) -->
+<aside class="lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-space-md">
+<!-- Live Snapshot Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md border-t-4 border-primary border-x border-b border-outline-variant/30">
+<!-- Identity Header -->
+<div class="flex items-start justify-between gap-space-sm pb-space-md mb-space-md bg-surface-container-low -mx-space-lg -mt-space-lg p-space-md rounded-t-xl border-b border-outline-variant/20">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-12 h-12 rounded-xl bg-primary-container flex items-center justify-center text-on-primary font-title-lg text-title-lg shadow-sm font-bold">
+                  PS
+                </div>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-secondary-container border-2 border-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Priya Sharma</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Algorithmic Verified Profile">verified</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>ID: #EDU-89214</span>
+<span>•</span>
+<span class="text-secondary font-semibold" id="sessionStatus">Active Session</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all" onclick="enableEditing()" title="Edit Profile">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+<span>Edit Profile</span>
+</button>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold" id="profileStatusBadge">
+                Saved &amp; Verified
+              </span>
+</div>
+</div>
+<!-- AI Readiness Radial Metric -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between gap-space-md mb-space-md border border-outline-variant/20">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">AI Match Readiness</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-display-sm text-display-sm text-primary font-black" id="readinessScore">94<span class="text-title-lg font-normal">%</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">High Predictability</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Profile strength exceeds 92% of STEM cohorts.</span>
+</div>
+<!-- Mini Inline SVG Gauge Chart -->
+<div class="relative w-16 h-16 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<circle class="stroke-surface-container-highest" cx="18" cy="18" fill="none" r="15" stroke-width="3"></circle>
+<circle class="stroke-primary transition-all duration-700" cx="18" cy="18" fill="none" id="readinessGaugeCircle" r="15" stroke-dasharray="94 100" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<span class="absolute material-symbols-outlined text-[20px] text-primary">auto_awesome</span>
+</div>
+</div>
+<!-- Synchronized Live Profile Snapshot Sections -->
+<div class="space-y-space-md" id="summarySectionsContainer">
+<!-- Snapshot Segment 1: Academic Profile -->
+<div class="flex flex-col gap-1.5 pb-space-sm bg-surface-container-low p-space-sm rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">school</span> Academic Profile
+                </span>
+<span class="text-secondary font-semibold" id="cardAcademicBadge">Tier-1 Qualified</span>
+</div>
+<div class="text-body-sm text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-outline">badge</span>
+<span id="cardQualification">Undergraduate (Final Year)</span> • <span class="text-primary font-semibold" id="cardStream">Computer Science</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-1">
+<div class="bg-surface-container-lowest p-2 rounded-lg border border-outline-variant/20">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">CGPA / %</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="cardCgpa">3.88</span>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg border border-outline-variant/20 col-span-2">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Entrance Exam Index</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate block" id="cardExamScores">GRE: 324 (Q168), IELTS: 8.0</span>
+</div>
+</div>
+</div>
+<!-- Snapshot Segment 2: Interests & Skills -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span> Interests &amp; Domain
+                </span>
+<span class="font-label-sm text-label-sm text-primary font-semibold" id="cardDomain">AI &amp; Data Systems</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-1" id="cardSkillsTags">
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded-full text-label-sm text-label-sm text-on-surface border border-outline-variant/20">ML Architecture</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded-full text-label-sm text-label-sm text-on-surface border border-outline-variant/20">Neural Computing</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded-full text-label-sm text-label-sm text-on-surface border border-outline-variant/20">Distributed Systems</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded-full text-label-sm text-label-sm text-on-surface border border-outline-variant/20">Reinforcement Learning</span>
+</div>
+</div>
+<!-- Snapshot Segment 3: Budget & Aid Blueprint -->
+<div class="flex flex-col gap-1 pb-space-sm bg-surface-container-low p-space-sm rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">payments</span> Budget &amp; Aid Blueprint
+                </span>
+<span class="text-secondary font-semibold" id="cardAidTier">Moderate (30-60%)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface mt-1">
+<span class="text-on-surface-variant">Annual Budget Range:</span>
+<span class="font-label-md text-label-md font-bold" id="cardBudget">$15k - $25k / yr</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface">
+<span class="text-on-surface-variant">Family Contribution:</span>
+<span class="font-label-md text-label-md text-on-surface" id="cardContribution">$18,000 / year</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-on-surface">
+<span class="text-on-surface-variant">Loan / Debt Cap:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface" id="cardLoanDebt">Cap: ≤ $20,000</span>
+</div>
+</div>
+<!-- Snapshot Segment 4: Preferred Country & Mobility -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">public</span> Preferred Country &amp; Scope
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="cardScope">International Global</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap" id="cardCountryList">
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded text-body-sm text-on-surface font-medium border border-outline-variant/20">🇺🇸 United States</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded text-body-sm text-on-surface font-medium border border-outline-variant/20">🇨🇦 Canada</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded text-body-sm text-on-surface font-medium border border-outline-variant/20">🇩🇪 Germany</span>
+</div>
+</div>
+<!-- Snapshot Segment 5: Career Goals -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-xl border border-outline-variant/30">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">track_changes</span> Career Trajectory
+                </span>
+<span class="text-primary font-semibold">High ROI Target</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface font-bold mt-0.5" id="cardTargetCareer">
+                Applied AI Research Scientist &amp; Foundation Model Architect
+              </p>
+<div class="bg-surface-container-lowest p-2 rounded-lg text-body-sm text-on-surface-variant mt-0.5 border border-outline-variant/20">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block mb-0.5">1-3 Yr Objective:</span>
+<span class="line-clamp-2" id="cardShortGoal">Secure admission into a Top-15 AI graduate program with a funded graduate research assistantship.</span>
+</div>
+</div>
+</div>
+<!-- Bottom Routing CTAs inside summary -->
+<div class="mt-space-lg flex flex-col gap-space-xs">
+<a class="w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md text-center shadow-sm flex items-center justify-center gap-1.5 transition-all" data-path="pathways-hub" href="#">
+<span>Proceed to Pathways Hub</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="w-full py-2 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center transition-all flex items-center justify-center gap-1.5" href="simulator.html">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Test What-If Variables</span>
+</a>
+</div>
+</div>
+<!-- Ambient AI Guidance Pill Card -->
+<div class="bg-surface-container-high rounded-2xl p-space-md flex items-start gap-space-sm border border-outline-variant/20">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">EduPath AI Strategic Insight</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="aiInsightSnippet">
+              With a high CGPA and calibrated standardized profile, pairing German public tuition models alongside 3 US research fellowships minimizes student loan reliance while optimizing faculty research access.
+            </p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+<script>
+  let isEditing = true;
+  let selectedCountries = ["United States", "Canada", "Germany"];
+  let selectedDomain = "AI & Data Systems";
+  let locationScope = "International Global";
+
+  function toggleTag(button) {
+    if (!isEditing) return;
+    const isSelected = button.classList.contains('bg-primary-container');
+    if (isSelected) {
+      button.classList.remove('bg-primary-container', 'text-on-primary');
+      button.classList.add('bg-surface-container', 'text-on-surface');
+      button.textContent = button.textContent.replace('✓', '+');
+    } else {
+      button.classList.remove('bg-surface-container', 'text-on-surface');
+      button.classList.add('bg-primary-container', 'text-on-primary');
+      button.textContent = button.textContent.replace('+', '✓');
+    }
+    updateTagCount();
+    syncSummary();
+  }
+
+  function updateTagCount() {
+    const selected = document.querySelectorAll('#skillTagsContainer button.bg-primary-container');
+    const label = document.getElementById('tagCountLabel');
+    if (label) label.textContent = `${selected.length} selected`;
+  }
+
+  function toggleCountry(btn) {
+    if (!isEditing) return;
+    const countryName = btn.querySelector('span:first-child').textContent.trim();
+    const icon = btn.querySelector('.chip-icon');
+    const isSelected = btn.classList.contains('bg-primary-container');
+    
+    if (isSelected) {
+      // Don't allow 0 countries if validation demands at least one
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface');
+      if (icon) icon.textContent = 'add';
+      selectedCountries = selectedCountries.filter(c => !countryName.includes(c));
+    } else {
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      btn.classList.add('bg-primary-container', 'text-on-primary');
+      if (icon) icon.textContent = 'check';
+      selectedCountries.push(countryName);
+    }
+    
+    const countLabel = document.getElementById('countryCountLabel');
+    if (countLabel) countLabel.textContent = `${selectedCountries.length} selected`;
+    
+    validateField('country');
+    syncSummary();
+  }
+
+  function updateDomainSelection(radio, domainName) {
+    selectedDomain = domainName;
+    document.querySelectorAll('.domain-card').forEach(card => {
+      card.classList.remove('bg-primary-container', 'text-on-primary', 'border-primary');
+      card.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    const parent = radio.closest('label');
+    if (parent) {
+      parent.classList.remove('bg-surface-container-low', 'text-on-surface');
+      parent.classList.add('bg-primary-container', 'text-on-primary', 'border-primary');
+    }
+    syncSummary();
+  }
+
+  function syncAidTier(radio) {
+    document.querySelectorAll('.aid-card').forEach(card => {
+      card.classList.remove('bg-primary-container', 'text-on-primary', 'border-primary');
+      card.classList.add('bg-surface-container-low', 'text-on-surface');
+      const sub = card.querySelector('.font-body-sm');
+      if (sub) {
+        sub.classList.remove('text-on-primary-container');
+        sub.classList.add('text-on-surface-variant');
+      }
+    });
+    const parent = radio.closest('label');
+    if (parent) {
+      parent.classList.remove('bg-surface-container-low', 'text-on-surface');
+      parent.classList.add('bg-primary-container', 'text-on-primary', 'border-primary');
+      const sub = parent.querySelector('.font-body-sm');
+      if (sub) {
+        sub.classList.remove('text-on-surface-variant');
+        sub.classList.add('text-on-primary-container');
+      }
+    }
+    syncSummary();
+  }
+
+  function syncLocationScope(radio) {
+    locationScope = radio.value;
+    document.querySelectorAll('.location-radio-card').forEach(card => {
+      card.classList.remove('bg-primary-container', 'text-on-primary', 'border-primary');
+      card.classList.add('bg-surface-container-low', 'text-on-surface');
+      const sub = card.querySelector('.font-body-sm');
+      if (sub) {
+        sub.classList.remove('text-on-primary-container');
+        sub.classList.add('text-on-surface-variant');
+      }
+    });
+    const parent = radio.closest('label');
+    if (parent) {
+      parent.classList.remove('bg-surface-container-low', 'text-on-surface');
+      parent.classList.add('bg-primary-container', 'text-on-primary', 'border-primary');
+      const sub = parent.querySelector('.font-body-sm');
+      if (sub) {
+        sub.classList.remove('text-on-surface-variant');
+        sub.classList.add('text-on-primary-container');
+      }
+    }
+    syncSummary();
+  }
+
+  function toggleLoanFields(isChecked) {
+    const container = document.getElementById('loanInputsContainer');
+    if (container) {
+      if (isChecked) {
+        container.classList.remove('opacity-40', 'pointer-events-none');
+      } else {
+        container.classList.add('opacity-40', 'pointer-events-none');
+      }
+    }
+    syncSummary();
+  }
+
+  function validateField(fieldName) {
+    let isValid = true;
+    if (fieldName === 'streamBranch') {
+      const el = document.getElementById('streamBranch');
+      const err = document.getElementById('streamBranchError');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('hidden');
+        err.classList.add('flex');
+        isValid = false;
+      } else {
+        el.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('flex');
+        err.classList.add('hidden');
+      }
+    }
+
+    if (fieldName === 'cgpaInput') {
+      const el = document.getElementById('cgpaInput');
+      const err = document.getElementById('cgpaInputError');
+      const icon = document.getElementById('cgpaStatusIcon');
+      const val = el.value.trim();
+      // Match float or percentage
+      const numMatch = val.match(/([0-9]+(?:\.[0-9]+)?)/);
+      let validScore = false;
+      if (numMatch) {
+        const parsed = parseFloat(numMatch[1]);
+        if ((parsed >= 0 && parsed <= 10.0) || (parsed >= 0 && parsed <= 100)) {
+          validScore = true;
+        }
+      }
+      if (!val || !validScore) {
+        el.classList.add('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('hidden');
+        err.classList.add('flex');
+        if (icon) {
+          icon.textContent = 'error';
+          icon.classList.remove('text-secondary');
+          icon.classList.add('text-error');
+        }
+        isValid = false;
+      } else {
+        el.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('flex');
+        err.classList.add('hidden');
+        if (icon) {
+          icon.textContent = 'check';
+          icon.classList.remove('text-error');
+          icon.classList.add('text-secondary');
+        }
+      }
+    }
+
+    if (fieldName === 'targetCareer') {
+      const el = document.getElementById('targetCareer');
+      const err = document.getElementById('targetCareerError');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('hidden');
+        err.classList.add('flex');
+        isValid = false;
+      } else {
+        el.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('flex');
+        err.classList.add('hidden');
+      }
+    }
+
+    if (fieldName === 'familyContribution') {
+      const el = document.getElementById('familyContribution');
+      const err = document.getElementById('familyContributionError');
+      if (!el.value.trim()) {
+        el.classList.add('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('hidden');
+        err.classList.add('flex');
+        isValid = false;
+      } else {
+        el.classList.remove('border-red-500', 'ring-2', 'ring-red-200');
+        err.classList.remove('flex');
+        err.classList.add('hidden');
+      }
+    }
+
+    if (fieldName === 'country') {
+      const err = document.getElementById('countryError');
+      if (selectedCountries.length === 0) {
+        err.classList.remove('hidden');
+        err.classList.add('flex');
+        isValid = false;
+      } else {
+        err.classList.remove('flex');
+        err.classList.add('hidden');
+      }
+    }
+
+    return isValid;
+  }
+
+  function validateAll() {
+    const v1 = validateField('streamBranch');
+    const v2 = validateField('cgpaInput');
+    const v3 = validateField('targetCareer');
+    const v4 = validateField('familyContribution');
+    const v5 = validateField('country');
+    return v1 && v2 && v3 && v4 && v5;
+  }
+
+  function syncSummary() {
+    // Qualification & Stream
+    const qual = document.getElementById('currentQual')?.value || '';
+    const stream = document.getElementById('streamBranch')?.value || '';
+    const cardQual = document.getElementById('cardQualification');
+    const cardStream = document.getElementById('cardStream');
+    if (cardQual) cardQual.textContent = qual.split('(')[0].trim() || qual;
+    if (cardStream) cardStream.textContent = stream ? stream.substring(0, 26) : 'Not specified';
+
+    // CGPA
+    const cgpaVal = document.getElementById('cgpaInput')?.value || '';
+    const cardCgpa = document.getElementById('cardCgpa');
+    if (cardCgpa) cardCgpa.textContent = cgpaVal || '--';
+
+    // Exam Scores
+    const examsVal = document.getElementById('testScores')?.value || '';
+    const cardExamScores = document.getElementById('cardExamScores');
+    if (cardExamScores) cardExamScores.textContent = examsVal || 'None entered';
+
+    // Domain & Tags
+    const cardDomain = document.getElementById('cardDomain');
+    if (cardDomain) cardDomain.textContent = selectedDomain;
+
+    const activeTags = Array.from(document.querySelectorAll('#skillTagsContainer button.bg-primary-container'))
+      .map(b => b.textContent.replace('✓', '').trim());
+    const cardSkillsTags = document.getElementById('cardSkillsTags');
+    if (cardSkillsTags) {
+      if (activeTags.length === 0) {
+        cardSkillsTags.innerHTML = '<span class="text-body-sm text-on-surface-variant">No skills tagged</span>';
+      } else {
+        cardSkillsTags.innerHTML = activeTags.slice(0, 4).map(t => 
+          `<span class="bg-surface-container-lowest px-2 py-0.5 rounded-full text-label-sm text-label-sm text-on-surface border border-outline-variant/20">${t}</span>`
+        ).join('');
+      }
+    }
+
+    // Budget & Aid
+    const budgetSelect = document.getElementById('annualBudget');
+    const budgetText = budgetSelect ? budgetSelect.options[budgetSelect.selectedIndex].text : '';
+    const cardBudget = document.getElementById('cardBudget');
+    if (cardBudget) {
+      if (budgetText.includes('$15,000 - $25,000')) cardBudget.textContent = '$15k - $25k / yr';
+      else if (budgetText.includes('< $15,000')) cardBudget.textContent = '< $15k / yr';
+      else if (budgetText.includes('$25,000 - $45,000')) cardBudget.textContent = '$25k - $45k / yr';
+      else cardBudget.textContent = '$45k+ / yr';
+    }
+
+    const contribVal = document.getElementById('familyContribution')?.value || '';
+    const cardContribution = document.getElementById('cardContribution');
+    if (cardContribution) cardContribution.textContent = contribVal || 'Not entered';
+
+    const aidRadio = document.querySelector('input[name="aidNeed"]:checked');
+    const cardAidTier = document.getElementById('cardAidTier');
+    if (cardAidTier && aidRadio) cardAidTier.textContent = aidRadio.value;
+
+    const loanToggle = document.getElementById('loanToggle');
+    const loanTarget = document.getElementById('loanTarget')?.value || '$0';
+    const cardLoanDebt = document.getElementById('cardLoanDebt');
+    if (cardLoanDebt) {
+      if (loanToggle && loanToggle.checked) {
+        cardLoanDebt.textContent = `Req: ${loanTarget}`;
+      } else {
+        cardLoanDebt.textContent = 'Debt-Free Plan';
+      }
+    }
+
+    // Country List & Scope
+    const cardCountryList = document.getElementById('cardCountryList');
+    if (cardCountryList) {
+      if (selectedCountries.length === 0) {
+        cardCountryList.innerHTML = '<span class="text-body-sm text-error">None selected</span>';
+      } else {
+        cardCountryList.innerHTML = selectedCountries.slice(0, 4).map(c => 
+          `<span class="bg-surface-container-lowest px-2 py-0.5 rounded text-body-sm text-on-surface font-medium border border-outline-variant/20">${c}</span>`
+        ).join('');
+      }
+    }
+    const cardScope = document.getElementById('cardScope');
+    if (cardScope) cardScope.textContent = locationScope;
+
+    // Career Goal
+    const careerVal = document.getElementById('targetCareer')?.value || '';
+    const cardTargetCareer = document.getElementById('cardTargetCareer');
+    if (cardTargetCareer) cardTargetCareer.textContent = careerVal || 'Target role unassigned';
+
+    const shortGoalVal = document.getElementById('shortTermGoal')?.value || '';
+    const cardShortGoal = document.getElementById('cardShortGoal');
+    if (cardShortGoal) cardShortGoal.textContent = shortGoalVal ? shortGoalVal.substring(0, 110) + '...' : 'Define short term goal';
+  }
+
+  function handleFormSubmit(event) {
+    if (event) event.preventDefault();
+    if (!validateAll()) {
+      showToast("Validation Error", "Please resolve highlighted fields before saving your profile.", true);
+      return;
+    }
+
+    // Lock edit state visually
+    isEditing = false;
+    document.getElementById('profileStatusBadge').textContent = "Saved & Verified";
+    document.getElementById('profileStatusBadge').className = "px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold";
+    
+    const unlockBtn = document.getElementById('unlockEditBtn');
+    if (unlockBtn) unlockBtn.classList.remove('hidden');
+    if (unlockBtn) unlockBtn.classList.add('flex');
+
+    showToast("Profile successfully saved & calibrated!", "Ready for pathway recommendation engines. Live models have been updated.", false);
+  }
+
+  function enableEditing() {
+    isEditing = true;
+    document.getElementById('profileStatusBadge').textContent = "Draft / Editing";
+    document.getElementById('profileStatusBadge').className = "px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold";
+    
+    // Focus first section
+    document.getElementById('streamBranch').focus();
+    showToast("Edit Mode Enabled", "You can now update your credentials, financial limits, and target horizons.", false);
+  }
+
+  function showToast(title, message, isError) {
+    const toast = document.getElementById('saveToast');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMsg = document.getElementById('toastMessage');
+    
+    if (toastTitle) toastTitle.textContent = title;
+    if (toastMsg) toastMsg.textContent = message;
+
+    if (toast) {
+      if (isError) {
+        toast.firstElementChild.classList.remove('border-secondary');
+        toast.firstElementChild.classList.add('border-error');
+      } else {
+        toast.firstElementChild.classList.remove('border-error');
+        toast.firstElementChild.classList.add('border-secondary');
+      }
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        dismissToast();
+      }, 4000);
+    }
+  }
+
+  function dismissToast() {
+    const toast = document.getElementById('saveToast');
+    if (toast) {
+      toast.classList.add('translate-y-32', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+  }
+
+  function loadSamplePreset() {
+    enableEditing();
+    document.getElementById('currentQual').value = "Undergraduate (Final Year)";
+    document.getElementById('streamBranch').value = "Computer Science & Machine Intelligence";
+    document.getElementById('cgpaInput').value = "3.94";
+    document.getElementById('testScores').value = "SAT: 1510, GRE: 331 (Q170), IELTS: 8.5";
+    document.getElementById('favoriteSubjects').value = "Deep Learning Systems, Probabilistic AI, Compiler Design";
+    document.getElementById('toolsProficiency').value = "PyTorch, Triton, Rust, JAX, Distributed Ray";
+    document.getElementById('annualBudget').value = "15-25k";
+    document.getElementById('familyContribution').value = "$24,000 / year";
+    document.getElementById('targetCareer').value = "Principal AI Research Scientist & Foundation Model Architect";
+    document.getElementById('shortTermGoal').value = "Secure admission into Stanford or CMU with full fellowship aid and publish 1 NeurIPS paper.";
+    document.getElementById('longTermGoal').value = "Spearhead a generative diagnostics startup or direct a premier AI research lab.";
+
+    selectedCountries = ["United States", "Canada", "Germany"];
+    document.querySelectorAll('.country-chip').forEach(chip => {
+      const text = chip.textContent;
+      const icon = chip.querySelector('.chip-icon');
+      if (text.includes("United States") || text.includes("Canada") || text.includes("Germany")) {
+        chip.classList.remove('bg-surface-container', 'text-on-surface');
+        chip.classList.add('bg-primary-container', 'text-on-primary');
+        if (icon) icon.textContent = 'check';
+      } else {
+        chip.classList.remove('bg-primary-container', 'text-on-primary');
+        chip.classList.add('bg-surface-container', 'text-on-surface');
+        if (icon) icon.textContent = 'add';
+      }
+    });
+
+    validateField('cgpaInput');
+    validateField('streamBranch');
+    validateField('targetCareer');
+    validateField('familyContribution');
+    syncSummary();
+    handleFormSubmit();
+  }
+
+  function resetFormState() {
+    enableEditing();
+    document.getElementById('profileForm').reset();
+    selectedCountries = [];
+    document.querySelectorAll('.country-chip').forEach(chip => {
+      chip.classList.remove('bg-primary-container', 'text-on-primary');
+      chip.classList.add('bg-surface-container', 'text-on-surface');
+      const icon = chip.querySelector('.chip-icon');
+      if (icon) icon.textContent = 'add';
+    });
+    const countLabel = document.getElementById('countryCountLabel');
+    if (countLabel) countLabel.textContent = '0 selected';
+
+    document.querySelectorAll('#skillTagsContainer button').forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface');
+      btn.textContent = btn.textContent.replace('✓', '+');
+    });
+    updateTagCount();
+
+    document.getElementById('profileStatusBadge').textContent = "Draft / In Progress";
+    document.getElementById('profileStatusBadge').className = "px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold";
+    
+    syncSummary();
+    showToast("Form Reset", "All fields have been cleared to draft state.", false);
+  }
+
+  // Initialize live sync
+  document.addEventListener('DOMContentLoaded', () => {
+    updateTagCount();
+    syncSummary();
+  });
+</script></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_6px_rgba(15,23,42,0.03)] mt-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[16px]">auto_awesome</span></div><span class="font-title-md text-title-md text-on-surface tracking-tight">Edupath<span class="text-primary-container">AI</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant pr-space-md">Calibrated AI-powered decision support for higher education, career ROI projection, and debt forecasting.</p><div class="flex items-center gap-2 mt-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Systems Operational • AI v4.2 Active</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Platform Engines</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="simulator.html">What-If Simulation Engine</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="decision-matrix.html">Multi-Attribute Decision Matrix</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="scholarships-and-loans" href="#">Loan ROI Calculator</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="pathways-hub" href="#">Curriculum Viability Maps</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Resources</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="institutions.html">Institutional Registry</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="business-pathways.html">Student Ventures &amp; IP</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="student-profile" href="#">Academic Portfolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Financial Aid Benchmarks</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md text-on-surface uppercase tracking-wider mb-1">Institutional Compliance</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">FERPA &amp; Privacy Policies</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Algorithmic Transparency</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Guidance Service</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#">Security Whitepaper</a></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 EduPath AI Systems Inc. All predictive guidance reserved.</p><div class="flex items-center gap-space-md"><span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="material-symbols-outlined text-[14px]">verified_user</span> FERPA Compliant</span><span class="font-label-sm text-label-sm text-on-surface-variant">•</span><span class="font-label-sm text-label-sm text-on-surface-variant">Zero Bias Certified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>

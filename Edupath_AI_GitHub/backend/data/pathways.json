@@ -1,0 +1,230 @@
+[
+  {
+    "id": "pathway-1",
+    "title": "AI & Data Science B.S.",
+    "category": "STEM / Computer Science",
+    "stream": "cs",
+    "matchScore": 96,
+    "durationYears": 4,
+    "estCostPerYear": "$18,500",
+    "tuitionDebtRisk": "Very Low",
+    "roi10Yr": "$380,000+",
+    "avgStartingSalary": "$98,500",
+    "topColleges": ["Stanford University", "MIT", "Carnegie Mellon", "UC Berkeley"],
+    "description": "High-demand undergraduate degree focusing on machine learning, deep learning, statistical modelling, and big data engineering.",
+    "careerRoles": ["AI Engineer", "Data Scientist", "ML Ops Specialist", "Quantitative Analyst"],
+    "contingencyFallback": "Computational Bio B.Sc.",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Foundation (Years 1-2)",
+        "details": "Calculus, Linear Algebra, Python Data Structures, Object-Oriented Programming, Discrete Math.",
+        "milestone": "Build 3 open-source Python Machine Learning projects & solve 150+ LeetCode problems."
+      },
+      {
+        "phase": "Phase 2: Specialization & Internships (Year 3)",
+        "details": "Neural Networks, Deep Learning (PyTorch), Cloud Data Engineering (AWS/GCP), Applied NLP.",
+        "milestone": "Secure Summer AI Research Internship at top tech lab or Fortune 500 tech firm."
+      },
+      {
+        "phase": "Phase 3: Advanced Industry Capstone (Year 4)",
+        "details": "Large Language Models, Distributed MLOps, Computer Vision, Ethics in AI & Capstone Thesis.",
+        "milestone": "Deploy production-grade LLM application; present capstone to corporate sponsors."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $95k - $125k | Senior ML Lead at 5-Yr: $180k+ | 10-Yr Net ROI: $380,000+.",
+        "milestone": "Target Roles: ML Engineer, Data Scientist, AI Product Manager, Quant Researcher."
+      }
+    ]
+  },
+  {
+    "id": "pathway-2",
+    "title": "Computational Biology B.Sc.",
+    "category": "STEM / Biotechnology",
+    "stream": "biotech",
+    "matchScore": 88,
+    "durationYears": 4,
+    "estCostPerYear": "$16,200",
+    "tuitionDebtRisk": "Low",
+    "roi10Yr": "$320,000+",
+    "avgStartingSalary": "$84,000",
+    "topColleges": ["Johns Hopkins", "Harvard University", "Cambridge University", "ETH Zurich"],
+    "description": "Interdisciplinary field combining computer algorithms with genomics, bioinformatics, and healthcare innovation.",
+    "careerRoles": ["Bioinformatics Analyst", "Genomics Data Scientist", "Biotech Researcher"],
+    "contingencyFallback": "Biomedical Informatics B.S.",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Bio-Computing Fundamentals (Years 1-2)",
+        "details": "Cellular Biology, Organic Chemistry, Python for Biologists, Genomics Fundamentals, Statistics.",
+        "milestone": "Complete BioPython sequence alignment labs & wet lab safety certification."
+      },
+      {
+        "phase": "Phase 2: Genomic Data & Analytics (Year 3)",
+        "details": "Next-Gen Sequencing (NGS) analysis, Structural Bioinformatics, R Data Visualization, Proteomics.",
+        "milestone": "Summer Research Fellowship at Pharma R&D or Genomics Institute."
+      },
+      {
+        "phase": "Phase 3: Translational Medicine Capstone (Year 4)",
+        "details": "AI Drug Discovery models, Molecular Dynamics Simulation, Clinical Data Standards.",
+        "milestone": "Publish undergraduate research abstract; complete pharma industry co-op."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $80k - $98k | Principal Bioinformatician at 5-Yr: $150k+ | 10-Yr ROI: $320,000+.",
+        "milestone": "Target Roles: Bioinformatics Scientist, Computational Geneticist, Biotech Product Specialist."
+      }
+    ]
+  },
+  {
+    "id": "pathway-3",
+    "title": "FinTech & Financial Engineering M.S.",
+    "category": "Commerce / Finance & IT",
+    "stream": "commerce",
+    "matchScore": 91,
+    "durationYears": 2,
+    "estCostPerYear": "$22,000",
+    "tuitionDebtRisk": "Moderate",
+    "roi10Yr": "$410,000+",
+    "avgStartingSalary": "$115,000",
+    "topColleges": ["Columbia University", "NYU Stern", "LSE London", "NUS Singapore"],
+    "description": "Advanced degree blending quantitative finance, algorithmic trading, blockchain architecture, and risk modeling.",
+    "careerRoles": ["Quant Trader", "FinTech Product Lead", "Financial Engineer"],
+    "contingencyFallback": "Financial Analytics Post-Grad",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Financial Mathematics & Systems (Year 1, Term 1-2)",
+        "details": "Stochastic Calculus, Derivatives Pricing, C++/Python Quant Libraries, Risk Analytics.",
+        "milestone": "Build automated algorithmic back-testing trading strategy on historical market data."
+      },
+      {
+        "phase": "Phase 2: Quantitative Trading & Blockchain (Year 1 Summer)",
+        "details": "High-Frequency Trading Architecture, Decentralized Finance (DeFi) Protocols, Credit Risk ML.",
+        "milestone": "Quant Analyst Internship at Investment Bank or Crypto Market Maker."
+      },
+      {
+        "phase": "Phase 3: Portfolio Optimization Capstone (Year 2)",
+        "details": "Systemic Risk Modeling, Portfolio Optimization under Volatility, Regulatory Tech (RegTech).",
+        "milestone": "Defend quantitative trading thesis; participate in Bloomberg Trading Competition."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $110k - $140k | Quant Portfolio Manager at 5-Yr: $230k+ | 10-Yr ROI: $410,000+.",
+        "milestone": "Target Roles: Quantitative Strategist, FinTech Risk Lead, High-Frequency Trader."
+      }
+    ]
+  },
+  {
+    "id": "pathway-4",
+    "title": "Renewable Energy Engineering B.E.",
+    "category": "STEM / CleanTech",
+    "stream": "stem",
+    "matchScore": 85,
+    "durationYears": 4,
+    "estCostPerYear": "$14,000",
+    "tuitionDebtRisk": "Very Low",
+    "roi10Yr": "$290,000+",
+    "avgStartingSalary": "$78,000",
+    "topColleges": ["TU Delft", "UNSW Sydney", "UC Berkeley", "Aalto University"],
+    "description": "Focused on solar, wind, smart grid systems, energy storage, and sustainable technology development.",
+    "careerRoles": ["CleanTech Engineer", "Grid Integration Architect", "Sustainability Consultant"],
+    "contingencyFallback": "Electrical Engineering B.E.",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Engineering Physics & Systems (Years 1-2)",
+        "details": "Thermodynamics, Circuit Theory, CAD Modeling, Fluid Mechanics, Materials Science.",
+        "milestone": "Complete MATLAB/Simulink energy grid modeling modules & CAD design project."
+      },
+      {
+        "phase": "Phase 2: Solar, Wind & Battery Tech (Year 3)",
+        "details": "Photovoltaic Cell Design, Wind Turbine Aerodynamics, Li-ion Battery Chemistry, Smart Grids.",
+        "milestone": "Summer CleanTech Engineering Internship at utility company or solar startup."
+      },
+      {
+        "phase": "Phase 3: Sustainable Infrastructure Capstone (Year 4)",
+        "details": "Microgrid Controller Optimization, Carbon Lifecycle Analysis, Energy Policy & Markets.",
+        "milestone": "Build functional solar-battery microgrid prototype for senior design expo."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $75k - $90k | Senior Renewable Project Lead at 5-Yr: $140k+ | 10-Yr ROI: $290,000+.",
+        "milestone": "Target Roles: CleanTech Project Engineer, Smart Grid Architect, Energy Storage Specialist."
+      }
+    ]
+  },
+  {
+    "id": "pathway-5",
+    "title": "Human-Centered UX & Cognitive Systems B.A.",
+    "category": "Humanities / Design & Tech",
+    "stream": "humanities",
+    "matchScore": 89,
+    "durationYears": 4,
+    "estCostPerYear": "$15,500",
+    "tuitionDebtRisk": "Low",
+    "roi10Yr": "$310,000+",
+    "avgStartingSalary": "$82,000",
+    "topColleges": ["Carnegie Mellon", "University of Washington", "Design Academy Eindhoven", "Georgia Tech"],
+    "description": "Blends cognitive psychology, user interface research, interaction design, and human-computer interaction (HCI).",
+    "careerRoles": ["UX Researcher", "Product Designer", "Accessibility Specialist", "Interaction Architect"],
+    "contingencyFallback": "Digital Media & Communication B.A.",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Psychology & Design Fundamentals (Years 1-2)",
+        "details": "Cognitive Psychology, Perception & Attention, Visual Design Principles, HTML/CSS/JS Basics.",
+        "milestone": "Create comprehensive Figma design system and complete 3 usability audit case studies."
+      },
+      {
+        "phase": "Phase 2: Quantitative User Research (Year 3)",
+        "details": "Usability Testing, Eye-Tracking Analytics, Design Sprints, AI-Assisted Prototyping.",
+        "milestone": "Product Design Internship at top SaaS startup or UX consultancy."
+      },
+      {
+        "phase": "Phase 3: Accessibility & Spatial Computing Capstone (Year 4)",
+        "details": "AR/VR Spatial UI Design, WCAG 2.2 Accessibility Standards, Multi-modal Interfaces.",
+        "milestone": "Launch interactive portfolio website showcasing 4 end-to-end design case studies."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $78k - $95k | Lead Product Designer at 5-Yr: $155k+ | 10-Yr ROI: $310,000+.",
+        "milestone": "Target Roles: UX Researcher, Senior Product Designer, Design Systems Architect."
+      }
+    ]
+  },
+  {
+    "id": "pathway-6",
+    "title": "Robotics & Autonomous Systems M.S.",
+    "category": "STEM / Mechatronics",
+    "stream": "stem",
+    "matchScore": 94,
+    "durationYears": 2,
+    "estCostPerYear": "$20,500",
+    "tuitionDebtRisk": "Low",
+    "roi10Yr": "$390,000+",
+    "avgStartingSalary": "$108,000",
+    "topColleges": ["Carnegie Mellon", "MIT", "ETH Zurich", "University of Tokyo"],
+    "description": "Specialized degree in autonomous navigation, ROS2 (Robot Operating System), computer vision, and robotic control theory.",
+    "careerRoles": ["Robotics Software Engineer", "Autonomous Vehicle Scientist", "Control Systems Lead"],
+    "contingencyFallback": "Mechatronics Engineering B.E.",
+    "roadmap": [
+      {
+        "phase": "Phase 1: Kinematics & Embedded Control (Year 1, Term 1-2)",
+        "details": "Rigid Body Dynamics, Sensor Fusion (LiDAR/IMU), C++ ROS2 Node Development, Kalman Filtering.",
+        "milestone": "Program autonomous mobile robot (AMR) to navigate unknown maze using SLAM algorithms."
+      },
+      {
+        "phase": "Phase 2: Autonomous Navigation Internship (Year 1 Summer)",
+        "details": "Path Planning (A*, RRT*), Deep Reinforcement Learning for Manipulation, Computer Vision.",
+        "milestone": "Robotics Engineering Internship at Autonomous Vehicle or Warehouse Automation Firm."
+      },
+      {
+        "phase": "Phase 3: Hardware-in-the-Loop Capstone (Year 2)",
+        "details": "Real-time Operating Systems (RTOS), Drone Swarm Control, Safety-Critical Systems.",
+        "milestone": "Deploy autonomous quadcopter obstacle avoidance system; present at IEEE Robotics conference."
+      },
+      {
+        "phase": "Phase 4: Career & Salary Trajectory",
+        "details": "Entry Salary: $105k - $125k | Senior Robotics Lead at 5-Yr: $190k+ | 10-Yr ROI: $390,000+.",
+        "milestone": "Target Roles: Robotics Engineer, Autonomous Systems Architect, Perception Specialist."
+      }
+    ]
+  }
+]

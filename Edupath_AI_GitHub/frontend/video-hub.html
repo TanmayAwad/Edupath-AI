@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006a61", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#004c69", "surface": "#faf8ff", "tertiary-container": "#005878", "primary-fixed": "#e3dfff", "outline-variant": "#c7c4d7", "surface-variant": "#dae2fd", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#001e2c", "secondary-container": "#86f2e4", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "tertiary": "#003f58", "tertiary-fixed": "#c4e7ff", "surface-container-lowest": "#ffffff", "primary": "#2a14b4", "on-error-container": "#93000a", "on-background": "#131b2e", "background": "#faf8ff", "secondary-fixed-dim": "#6bd8cb", "on-secondary": "#ffffff", "primary-container": "#4338ca", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "outline": "#777586", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#100069", "surface-container": "#eaedff", "surface-tint": "#5148d7", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464554", "inverse-on-surface": "#eef0ff", "on-primary-container": "#c1beff", "error-container": "#ffdad6", "on-error": "#ffffff", "on-surface": "#131b2e", "on-tertiary-container": "#77cfff", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#372abf", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin-tablet": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-sm": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "metric-display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "title-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-sm-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-sm-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-sm": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } }</script><title>EduPath AI — Student Education & Career Decision Platform</title></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="EduPath AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><a class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight" href="index.html">EduPath AI</a><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>Decision Co-Pilot</span></div><nav class="hidden 2xl:flex items-center gap-1 overflow-x-auto py-1 px-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="student-profile" href="#">Student Profile</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="institutions.html">Institutions</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="simulator.html">What-If Simulator</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="decision-matrix.html">Decision Matrix</a><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" data-path="video-hub" href="#">Video Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="business-pathways.html">Entrepreneurship</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden lg:block w-52 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search pathways, careers, colleges..." type="text"/></div><button class="px-3.5 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.25)] flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="">Start AI Assessment</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Student Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-secondary leading-none">Calibrated</span><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate #812</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-surface-container-low py-12 md:py-16">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-gradient-to-br from-primary-fixed-dim/40 to-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 bottom-0 w-80 h-80 rounded-full bg-gradient-to-tr from-tertiary-fixed/30 to-surface-variant/50 blur-2xl pointer-events-none"></div>
+<div class="relative max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-primary mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">videocam</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Cognitive Masterclass Library</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">420+ Verified Sessions</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+            Student Career &amp; Education <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Video Intelligence Hub</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3 max-w-2xl">
+            Direct masterclasses, unvarnished compensation breakdowns, and peer roadmap reviews recorded by frontier scientists, international admissions deans, and venture builders.
+          </p>
+</div>
+<div class="w-full lg:w-96 flex flex-col gap-2 shrink-0">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-3 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md shadow-sm focus:outline-none focus:bg-surface-bright transition-all" id="videoSearchInput" placeholder="Search career, discipline, expert, or university..." type="text"/>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm px-1">
+<span>Trending: Robotics, Oxford MPhil, Quant Hedge Funds</span>
+<span class="text-primary font-semibold cursor-pointer hover:underline">Clear</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="categoryNav">
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5 active" data-category="all">
+<span class="material-symbols-outlined text-[16px]">apps</span>
+          All Videos
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="careers">
+<span class="material-symbols-outlined text-[16px]">work</span>
+          Career Introductions
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="experts">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+          Industry Expert Insights
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="admissions">
+<span class="material-symbols-outlined text-[16px]">school</span>
+          Admissions &amp; Visa Masterclasses
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="journeys">
+<span class="material-symbols-outlined text-[16px]">routine</span>
+          Real Career Journeys &amp; Day-in-the-Life
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="pivots">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+          Failure Recovery &amp; Strategic Pivots
+        </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high shadow-sm whitespace-nowrap transition-all flex items-center gap-1.5" data-category="founders">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+          Founder &amp; Startup Stories
+        </button>
+</div>
+</div>
+</div>
+<section class="max-w-[1600px] w-full mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-8 md:py-12">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold bg-primary text-on-primary">SPOTLIGHT MASTERCLASS</span>
+<span class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span> Live Interactive Transcript Active
+        </span>
+</div>
+<div class="hidden sm:flex items-center gap-3">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Bookmark Video">
+<span class="material-symbols-outlined text-[20px]">bookmark_add</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Share Resource">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<div class="lg:col-span-8 flex flex-col bg-inverse-surface rounded-2xl overflow-hidden shadow-xl text-inverse-on-surface">
+<div class="relative w-full aspect-video bg-black flex items-center justify-center group overflow-hidden">
+<img class="w-full h-full object-cover opacity-85 group-hover:opacity-95 group-hover:scale-105 transition-all duration-700" data-alt="Cinematic still of an AI research laboratory masterclass session with Dr Elena Rostova standing in front of mathematical neural network architecture graphs on luminous glass boards, deep indigo studio rim lighting, 8k resolution, photorealistic cinematic quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuYydXryGHjeVrJmZdT5d7IKJd4R0yw5s7Ts5VLONSIS0sW9o0Zn8MYEKkc7hVJvRKTlxhiWCvPBHBPwQo1sRaD0vnSJw-TdA-jYFr2873RrZf-HaAAwdf0-1cgSyDm9WMN78ypJS9V85Lpsi_NgJMyYUS3Ponce8WUhIZHJinIS59zTI74YhaDTROmRJ4Pei0yOWRtsVQ612zSP37rGjX4ieiv6gHIQiBDOzEErXPnfd9qAaz3j9fLw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-transparent to-black/30"></div>
+<div class="absolute top-4 left-4 flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-primary/90 text-on-primary backdrop-blur-md">DeepMind x Stanford</span>
+<span class="px-2.5 py-1 rounded-md font-label-sm text-label-sm bg-black/60 text-surface-bright backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">hd</span> 4K UHD
+            </span>
+</div>
+<div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-md text-surface-bright font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">visibility</span>
+<span>34,812 views</span>
+</div>
+<button class="relative z-10 w-20 h-20 rounded-full bg-primary-container/90 hover:bg-primary text-on-primary flex items-center justify-center shadow-2xl transition-all transform hover:scale-110" id="mainPlayBtn">
+<span class="material-symbols-outlined text-[42px] ml-1">play_arrow</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-inverse-surface to-transparent flex flex-col gap-2">
+<div class="w-full bg-white/20 h-1.5 rounded-full overflow-hidden cursor-pointer relative" id="videoProgressBar">
+<div class="bg-primary h-full w-[46%] rounded-full relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full shadow-md"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-surface-dim">
+<div class="flex items-center gap-4">
+<span class="font-mono text-white">08:42 / 18:45</span>
+<span class="hidden md:inline text-secondary-fixed-dim font-medium">Chapter 3: Funding &amp; Fellowships</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">closed_caption</span></button>
+<button class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">speed</span> 1.25x</button>
+<button class="hover:text-white transition-colors"><span class="material-symbols-outlined text-[18px]">fullscreen</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6 md:p-8 flex flex-col gap-6 bg-inverse-surface">
+<div>
+<div class="flex flex-wrap items-center gap-3 mb-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-fixed font-semibold">
+                Predictive AI Research Track
+              </span>
+<span class="font-label-sm text-label-sm text-outline-variant">Published Oct 2024</span>
+<span class="font-label-sm text-label-sm text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">98.4% Relevance to Candidate #812</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">
+              Navigating AI Research vs Enterprise Engineering: Realities from DeepMind &amp; Stanford Alumni
+            </h2>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-white/5 backdrop-blur-md">
+<div class="flex items-center gap-3.5">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover ring-2 ring-primary" data-alt="Professional studio portrait headshot of Dr Elena Rostova, female computer science professor and AI research lead in modern high-tech research studio, bright teal rim lighting, crisp professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXVdTGGofLWZVY0wNaBq0B3sN5Zbs7pj_fA6PkYXEfsjPp-xc7KoDJZVcZiz6Z9sYxG2OoondrRA4R8BVke_EgL7guG4WgsgSh8XtskSQLe4S9WQ0qp6I6w-O8oAxzngU24_ioXF1-yLKlPrEwlbtdGBO18Ryw4744xqrHqIIykzZaQfuvc4ljMmvXZJIPSUEIamQFQ1Q7iR6a_xg79UaOelU8KwzJGiqi4uS-Kh7-BnxGzU6Bvz714w"/>
+<span class="material-symbols-outlined absolute -bottom-1 -right-1 text-secondary text-[16px] bg-white rounded-full" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-bold text-white">Dr. Elena Rostova</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary/40 text-primary-fixed">Verified Scientist</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline-variant">Principal Research Scientist, Frontier LLMs • Stanford Ph.D. Alum</span>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-white font-label-md text-label-md flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+                Follow Expert
+              </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+                Ask Question
+              </button>
+</div>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg uppercase tracking-wider text-secondary-fixed mb-3 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">timelapse</span>
+              Curated Video Timestamp Bookmarks
+            </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="timestampGrid">
+<button class="timestamp-btn flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-primary/20 text-left transition-all" data-seek="0">
+<div class="flex items-center gap-3">
+<span class="font-mono text-secondary-fixed-dim font-bold text-sm">0:00</span>
+<span class="font-body-sm text-body-sm text-white">Intro &amp; State of Industry AI</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">play_circle</span>
+</button>
+<button class="timestamp-btn flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-primary/20 text-left transition-all" data-seek="195">
+<div class="flex items-center gap-3">
+<span class="font-mono text-secondary-fixed-dim font-bold text-sm">3:15</span>
+<span class="font-body-sm text-body-sm text-white">Graduate School vs Direct Industry</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">play_circle</span>
+</button>
+<button class="timestamp-btn flex items-center justify-between p-3 rounded-xl bg-primary/30 text-left transition-all" data-seek="520">
+<div class="flex items-center gap-3">
+<span class="font-mono text-secondary-fixed font-bold text-sm">8:40</span>
+<span class="font-body-sm text-body-sm text-white font-medium">Funding, Grants &amp; Fellowships</span>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+<button class="timestamp-btn flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-primary/20 text-left transition-all" data-seek="850">
+<div class="flex items-center gap-3">
+<span class="font-mono text-secondary-fixed-dim font-bold text-sm">14:10</span>
+<span class="font-body-sm text-body-sm text-white">Breaking into Tier-1 Applied Labs</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-5">
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+              AI Cognitive Synthesis
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Refreshed 2m ago</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Key Decision Takeaways</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Extracted via Edupath Co-Pilot engine for candidates evaluating Computer Science Ph.D. vs High-Frequency Applied AI tracks.
+          </p>
+<div class="flex flex-col gap-3.5">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">The Ph.D. Premium Myth</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Top tier foundational research labs demand Ph.D. publications, but standard AI enterprise engineers earn parity comp 3 years sooner without lost opportunity cost.
+                </p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">trending_up</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Fellowship Strategy ROI</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  NSF GRFP and Stanford SGF recipients avoid TA teaching loads, doubling first-author papers and cutting graduation time to 4.2 years.
+                </p>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-primary shrink-0 mt-0.5">lightbulb</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Open Source as Currency</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Two demonstrable, clean CUDA optimizations or model quantization tools on GitHub outperform an extra GPA decimal point during industrial screener interviews.
+                </p>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-secondary-container/40 flex items-center justify-between mt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-secondary-container font-bold uppercase tracking-wider">Salary Differential Index</span>
+<span class="font-title-lg text-title-lg font-extrabold text-secondary">+$68,000 /yr at Year 5</span>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-lowest font-label-sm text-label-sm font-semibold text-secondary shadow-sm hover:bg-surface-bright transition-colors" href="#">
+              Simulate ROI
+            </a>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Interactive Pathway Quiz</h3>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary/10 text-secondary">3 Questions</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Test your alignment with Dr. Rostova's recommended engineering roadmap.
+          </p>
+<div class="flex flex-col gap-2.5">
+<label class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-3 transition-colors">
+<input checked="" class="text-primary focus:ring-primary w-4 h-4" name="quiz_choice" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">I prefer training foundational architectures from scratch</span>
+</label>
+<label class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-center gap-3 transition-colors">
+<input class="text-primary focus:ring-primary w-4 h-4" name="quiz_choice" type="radio"/>
+<span class="font-body-sm text-body-sm text-on-surface">I want to deploy low-latency pipelines for millions of users</span>
+</label>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors text-center shadow-sm">
+            Save Response to Profile #812
+          </button>
+</div>
+</div>
+</div>
+</section>
+<section class="w-full bg-surface-container-low py-12 md:py-16">
+<div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">video_library</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Curated Video Library</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">
+            Explore Masterclasses &amp; Reality Deep-Dives
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Vetted for academic rigor, transparent compensation reporting, and actionable step-by-step guidance.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Sort:</span>
+<select class="px-3 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Most Recommended for You</option>
+<option>Highest Salary ROI Impact</option>
+<option>Most Recent Additions</option>
+<option>Top Rated by Students</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern humanoid robotics engineering laboratory showing high-speed robotic limbs and graduate student programming autonomous control software, subtle cool blue and white illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFpJFT5iPILlhAoNGiFF2be784iqFxMBuXavYiyGEa_75BoB1zCafl7jakl-reSuJqRCQ0ibPek_I4Y9rFtnBNCEulQJAfGTPPaYHXPKT5ObWzzbtfPV_4DCC_COBTuStJz1gD4yk-_-Wb9HlBFTtjzrZlCC4eO_v2W_qXB6vMpAqNTaPtNmPf1sEk_9WlEKSXmG_SL6wZdS29Q6oqeQaGFxU5scbj475I-TrVCG61U2_WBIcXIQTWpg"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">14:20</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-secondary text-on-secondary">Robotics Track</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 19.4k</span>
+<span>•</span>
+<span>4.9 ★ Rating</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Robotics Engineering in 2025: From ROS 2 to Boston Dynamics &amp; Figure AI
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                What mechanical vs software competencies actual hiring managers screen for during technical portfolio reviews.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Headshot of Marcus Vance robotics lead, male engineer in crisp polo with engineering workshop in blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTuUE4AWpqO9kHQlcjISURVKdf6hX5uLTiLQVmBk4TUo-iZE7abV8rjZHrFGVYD8Izg12F4HnT_V36xl67c7v4N2l1bCe4m-QLtlxLzW3uuS61B_0YMgdWMEShr2ACzfzYsXBcdRTMbTqea7BuprYH9qPIcn31URuRpEZd-H7XCabzQ8epiiditj42gzqZM9ra9kngz-uGB9M2WBEGD4OwYRX5zAqcAANBgBFqWn2M3BfeRjHuE9LBhg"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Marcus Vance, M.Eng (CMU)</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Median $164k Baseline</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Historic European university campus at Technical University of Munich TUM showing majestic stone arches and modern engineering student glass pavilion, bright sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8BmP5uTzfy35Zw6ynlMKvPAp0eQtPrlMY2xei1yqrNpJukuDdydQSo8ulftak-9YX74trcxADXIsNOrmt9hMb1wSgbl_8xQ-XXBrk13j0CHj_a3KtBrSB9UMfjCZpRwBY8WRxIpgKCTHereoY8YgYk2YibXfW6jMt3fvBGfJUzlCTXnm2XJfeec08kM5nEj8C5lNHQ717AOqWK-_0A5SrrblKFNHJPN_-qjYOLb1Bwq18_pJivO27Lw"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">22:15</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-primary text-on-primary">Tuition-Free Europe</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 42.1k</span>
+<span>•</span>
+<span>Zero Debt Case</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Master's Degrees in Germany &amp; Scandinavia: Admissions, DAAD Stipends &amp; Blue Cards
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Complete walkthrough for English-taught master's degrees without €60k US tuition debt.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Julian Becker, German academic advisor with friendly expression against Munich university library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDosNpPslWU15Jb8wl9G0ywFA-KfE1X5WENuQgDaZXVfJbd5yFqiqRbFh0v0yWgfhZpiK2QsprvHO_BAf8-XBcQlVnsYsdLZ_lNzJUc6HCe-Xlblj80MlQPR6CZrVLsVLZWYmgV8wlVCL-yZ2CCZ83egA5kM2aLYhEXwgu7NIjKUkY7UrxgzI9TN8SKzZ-shvuujsP_Y0jqsgqqqC8K-G13x-AhY28DDaXqAhO3uMXN2OZW1ownl5fZ7w"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Julian Becker, DAAD Fellow</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Save $92k vs US Out-of-State</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High frequency quantitative trading algorithmic terminal monitors displaying stochastic calculus charts and order book depth in contemporary Manhattan office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUop2C9B9eBAFgGixfzn8PXG5w_jsFUNihQRD0_XLUymEDyU7-g8fez50T7PhIQfrV2oeSbay0M9dMg3_qnzGEW-MusJT6lCup6jledbgO-gsbSQUw_zr4OWQw24nOZCzNNJ69aCI_F9dZGznP3AgV27xjiolnvg88wbVkT1SpoquMMcaVHaKBV4AmziV0KcUob_o1ViRmP-kJn4xKMEEkeiCYSi-UPd5vCxxgLyDP52tSOmdaUeiZBQ"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">09:40</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-tertiary-container text-on-tertiary">FinTech Quant</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 61.8k</span>
+<span>•</span>
+<span>High Intensity</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Breaking Into Citadel &amp; Jane Street: Math Olympiads, Probability Puzzles &amp; C++
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Uncompromising breakdown of quantitative researcher interviews and mental stamina demands.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Kevin Chen, quant trader in sharp navy blazer with slight smile against glass high-rise window overlooking New York skyline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtGayUExN8D8XTSt0Tc9Zt3-vds9LdAGV8wUui93hC1EuQqZNrAZVV7PasLxHUq1AVaN4k5YGAoogPC8JnpnrVMGFuA5deugjZos3GE9MCC3bhewLK781E409KJTfkUaom7FKwF_5Uy26doS2TONPGeXQojbqa3Lf0CNWV3sKdl5d4EypfOig-ctH3Kl0K-MRWbAfmMFZtFIio6AskOxw-E8kIUGUo0cOkRnELtXATuKgwu4sesr_akQ"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Kevin Chen, ex-Jane Street</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Starting $350k+ TC</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Medical student reviewing 3D holographic neural imaging scan in modern clinical surgical simulator room, cool daylight balanced lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeg5G4sz68X5Ad9K0_b26GzSGgVLFPqrZD7RF6ItiyyZ8K0NkJPniR59dRgaCEoDFMl3aeBwphqDq8c_kcCpBsWCstp4YXgSVCw9vYIo8mdayKqtNx3adZLlBczN7c9rsWD1vnn5mcLryXA8h39GQ96bY6rmgpwZApzg5zd_Bb_-fFec2t3Z3P8DLQswMc-hEv-e5e1Sb6BAocpaC6yzqminCZlTwFBzzAK4sCR0kOOhj--Wq5nR7Img"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">17:50</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed">MedTech &amp; Clinical</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 12.3k</span>
+<span>•</span>
+<span>MD / Ph.D. Track</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                The Physician-Scientist Path: MSTP Funding, 8-Year Sacrifice vs Impact
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Is free med school tuition worth the extended residency grind? Realities of dual-degree medicine.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Dr Priya Patel, physician scientist in white lab coat with stethoscope over neck in modern hospital research facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdika3hNDEEF_uvZWo6JZHXY4VzEsNZIuv5gDDjCZwKefPlUwco8waEgYjioXTPNXtc3CaWDgCNG9ERkZ37THWyrpRcenkvX56mWP9p7aeA6MtcDhM529BzacPgBVsxzea-QmmKoO29NqFwePRD5VXa-MCu0dAo9gz6qA6Yub1F-rsGtcUVcimJkd0hNzC-SuT1_WBU6ACKm8AOJsxaolG4MMouGh1FTCoNwveaCAiAfJ5_7VsBI8SXg"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Dr. Priya Patel, Johns Hopkins</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Full Tuition Remission</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Clean tech renewable energy engineer examining solar farm battery storage arrays with wind turbines on green rolling hills under clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKrsCjsEatd6phMjvZvxzncHQ2jpUTEtjZj7kCsXF-xO_6Y0aL78dasuqkpDXSWDb-N3W3EHPr1GFKrWc4VdU8O1ArB5UMg4x0TDha_61kToywYyKY7R2vmR2khjfEY3X0XTXkJ1TktYdRHq6NYrkXYTy80N2prSbmk6SqdhA6asHFtTl3tGQFn-L0--w--ndLYLvWLG4KdDXfsqlmyCxC1vkCdJYddST-LBtbzGBNrsVsHBHmtJIHXQ"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">11:15</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-secondary text-on-secondary">Climate Systems</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 15.2k</span>
+<span>•</span>
+<span>DOE Grants</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Grid Decarbonization &amp; Nuclear Fusion: Emerging High-Growth Engineering
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Where climate venture capital is actively funding graduate fellowships and founding teams.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Sarah Lindqvist, climate tech director smiling wearing safety helmet and high-vis vest in outdoor solar facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeZ7eH6vglrs-rzRByI06P7dMobC5sPA5ogadVHIL_AtXZxW33gNffYDyGvTIT4FDhiuBN25jca5I0eAvhgHESQIXJ8UAiVa6N95nwVTC3gn8K9Ty9nxte9-erlMKvMadolBhlcDk0jQDPGZtCO4gzkS0jVCH0v1Hjk5aCE75lNh8_4kVHcwpaitlGzVZIpqIB-XUJ6gbVS3zg7uSc0D843FGldmU_JP0sjXmKSKKW7O5Q04j_RQXUFg"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Sarah Lindqvist, MIT Energy</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">+19% Sector Hiring</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Young founders collaborating in startup incubator workspace with sticky notes, laptop displays, and whiteboard MVP wireframes, warm ambient studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNE-w9JK94iFH2Z3lpQsHwanN-0YqD0Q6mfdMz0NmZGHJxelAvCBcKXW_O4gXAAIbm4OLXBcxUKQa3owxdBu3H2qsWQL_XRX57Be_sEZmisACTbM034BKnW0J2ok7qEpeEgmj8R5BLWTSD2NzBcEaWkwyZzsAoktGM5BJpxO89QeZF_Y0mrefD6xwtMn-EL8sBKfgwudhADu9EBnYATCB4REVQGlEiSJVKH-V2znlkMtyKvwwOsNub3Q"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">26:05</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-primary-container text-on-primary">Founder Stories</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 58.7k</span>
+<span>•</span>
+<span>YC S23 Case</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Dropping Out vs Graduating: What Raising $3M in Seed Capital Taught Me
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Honest accounting of legal runway, equity dilution, founder mental fatigue, and institutional safety nets.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Tariq Al-Mansoor, youthful founder in black t-shirt speaking casually in loft style office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UAjiV8pxttNXZwAW15uoSMG5CiH_K0SyPPxcL50dVcWuyQ5kfXg6Epy4burw_-C89Febxd6gCBfLmWBitqAheazt8F-fWSoM_0JB15MhFQ37VCqdNR9tBuXJRnU4B6ajkD-OToMGxQX8-WxMDuprgWcBKzUYYWgjBemkHsm7szWXqOEJ-5cNyGiXkgn7opfY7qUefjdDbhZ3jgU1ra2uu1Qz0jmtp_9EtyAAFHMe_XchHCBW3SOXYw"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Tariq Al-Mansoor, YC W22</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Cap Table Anatomy</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Computer programmer working in dark room with code review diffs on glowing ultra-wide monitor, showing failure logs and bug fix refactors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC82EX4s8kGn9bts1CFRqnpNwj3EWu-8-j7luzlbWLCPNal0VCypcvq8-euakvT3aAErs9M-i2ktZVogjkNQu06bODXKM24_4QvTtUeYaGAY48O9TDYPxHpwTTw_by0_iQZPL1WR5hS5izH7VWxPgXcmjiaC1JXZP2TZSh2q6ptDD5W_PWP3XNgae6wpC_Cc9XuLUijL3cLN_sB2uYaV769MOGOoPh9M9TL4XKYxHRdY_aoEBBEtqb_dQ"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">13:40</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-error text-on-error">Failure Recovery</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 29.8k</span>
+<span>•</span>
+<span>Post-Mortem</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Getting Rejected from 14 Ph.D. Programs: How I Rebuilt My Research Portfolio
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                A tactical teardown of cold emailing PIs, pre-print submissions, and turning rejection into Oxford admit.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Chloe Dupont, Oxford postdoctoral researcher with glasses smiling gently in front of Radcliffe Camera library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKq2VaBJjiYxre__9x5KU5vl9baYTXzQe7NzZ4lnvyJEY0PxuiUjne_K1mjmyUFDl4xHp9uP_HHvTYtr67XGMOHHdGn17iNqIOTzc0qphSsstTo7xgG-O-IG1UacKqD5pkKafUI64qgyL7uO5XyBBEdfTwrwOQMJde6696YPDbFtxGmm1IebmpzXG4r1fZEttR0pdD1AC2CIdGOHHT-Folbf9w85Ih08UAnty_LRZMLxswHYCnF_Ca7A"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Chloe Dupont, Oxford Postdoc</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Application Audit Sheet</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="video-card flex flex-col bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+<div class="relative w-full aspect-video bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Architectural studio interior with modern physical scale models of sustainable mass-timber towers and 3D modeling screens in daylight studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuYHLhHKef7LrXb5JazloDgyDMo4Eh4y4PWbFMRtmt5JRQQgNar7eziD7VIU73hrsEbADWOa9-vksBYPFAZYDELqtx2trDVmQKit-6DOionAbnUoZ5IqZAfluqqo8LCSNafDPK1_vK7AuF05VkHcCefXXHyd_FbkLiP2hldzl_qgyaOOu28L23xYAWbeOfRHAtNSq3PZ81pcCQuM0LKO_pYOhJfFMR7TGoiMUUi01V4vYgG19TBx-v6g"/>
+<span class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md font-mono text-xs font-semibold bg-black/80 text-white backdrop-blur-sm">19:10</span>
+<span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded-md font-label-sm text-label-sm font-bold bg-tertiary text-on-tertiary">Design &amp; Spatial AI</span>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="w-12 h-12 rounded-full bg-white text-primary flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px] ml-0.5">play_arrow</span>
+</span>
+</div>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 18.1k</span>
+<span>•</span>
+<span>Portfolio Deep-Dive</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold text-on-surface line-clamp-2 group-hover:text-primary transition-colors">
+                Computational Architecture &amp; Spatial Computing: Beyond Traditional Practice
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Merging Grasshopper, Unreal Engine 5, and parametric workflows to secure senior design technologist roles.
+              </p>
+</div>
+<div>
+<div class="flex items-center gap-2.5 mb-3">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of Mateo Silva, design technologist in minimalist black studio with architectural blueprints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiq0BeYR9Nt81GFiHV6F81DPGkIYGjG5gZsTSgtQcSuTesOvhxt_kPos81gYAaizvgRiTRaLN_-RaeAyaL-D6U2ZzKdVodGHOTz5XCR64eUEPkPnh02VfpWltl7uvKeEyK2uScZFFfBdVfiDxy1r4HJpCxICJqnEn7cjKCUfjqeEdapl1O5ulsnhdcu_igPF8Cfz3MERmfcSBosFOkXU6Ty9b-iujCuNlrp4dI0HzvIlrNBAusS3cVGQ"/>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Mateo Silva, Foster+Partners</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">High Demand Niche</span>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1 hover:underline">
+                  Watch Now <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="px-6 py-3 rounded-xl bg-surface-container-highest hover:bg-surface-container font-label-md text-label-md text-primary font-semibold flex items-center gap-2 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+          Load 24 More Verified Masterclasses
+        </button>
+</div>
+</div>
+</section>
+<section class="max-w-[1600px] w-full mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-12 md:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Peer Verification &amp; Collective Wisdom</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface mt-1">Student Q&amp;A &amp; Co-Pilot Annotations</h2>
+</div>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant font-semibold">
+            184 Community Notes
+          </span>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<img alt="Your Profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/>
+<input class="flex-1 bg-surface-container-lowest px-4 py-2.5 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Ask Dr. Rostova or tag a video timestamp (e.g., @08:40)..." type="text"/>
+<button class="px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">send</span>
+              Post
+            </button>
+</div>
+<div class="flex items-center gap-4 text-outline font-label-sm text-label-sm pl-12">
+<span>Markdown supported</span>
+<span>•</span>
+<span class="text-secondary font-medium">Auto-summarized by Edupath Co-Pilot</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Student avatar portrait of Maya Patel, smiling Indian female graduate student in library setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1Re-hgev9sILXTD5xjnKAWnUhtPVmTK0NPRNjTDneNxy6PoCdcn86URxdbKvWOY7hex4rBnRwbkdvCTOgsCXgtGQf8UtWeOoyv78SePhzEYcgQt6Mfslt-LlQ9RDAu6oQW3XDv6kO7mI2TP3k4J7EXHVkNLH8WU3mKj-vOlLaMQefYaACIKv84dF-MAVHuu74MupODxUhjNbzfknCAm5aXhhgjEFXGObai3EMvP2DdIvRLYlv2kphrA"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-md font-semibold text-on-surface">Maya Patel</span>
+<span class="px-2 py-0.2 rounded text-[10px] font-bold bg-secondary/10 text-secondary">Verified Admit (Carnegie Mellon '26)</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Timestamp bookmark on 08:40 • 4 hours ago</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<button class="p-1 hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span> 42
+                </button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-12">
+              For anyone applying to the NSF GRFP fellowship referenced at 08:40: the "Broader Impacts" essay is weighed identically to Intellectual Merit! Do not make the mistake of leaving your community outreach section until the last week. Dr. Rostova’s framework about tying your lab code directly to public school STEM workshops was the single reason my proposal was funded.
+            </p>
+<div class="pl-12 flex items-center gap-4 font-label-sm text-label-sm text-secondary font-semibold">
+<button class="hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">reply</span> Reply (3)
+              </button>
+<button class="hover:underline flex items-center gap-1 text-outline">
+<span class="material-symbols-outlined text-[14px]">share</span> Share Note
+              </button>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-sm">
+                  AR
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-md font-semibold text-on-surface">Alexandre Rousseau</span>
+<span class="px-2 py-0.2 rounded text-[10px] font-bold bg-surface-container text-outline">Candidate #409</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Timestamp bookmark on 03:15 • Yesterday</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<button class="p-1 hover:text-primary transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span> 19
+                </button>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-12">
+              Is there any documented penalty when taking 2 years as a Machine Learning Engineer in production before applying to Stanford/DeepMind doctoral tracks? Dr. Rostova noted at 03:15 that practical systems knowledge is valued, but does it degrade the freshness of theoretical math letters of recommendation?
+            </p>
+<div class="ml-12 p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Dr. Elena Rostova (Speaker)
+                </span>
+<span class="text-outline text-xs">Pinned Response</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                "Not if you publish during those 2 years or contribute substantially to open research papers. A strong letter from an industry lab research director carries equal or greater weight than an emeritus professor who hasn't worked with modern distributed GPU clusters."
+              </p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-6">
+<div class="p-6 rounded-2xl bg-surface-container shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+<span>Accredited Masterclass Cohort</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Earn Co-Pilot Verification Badge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Watch 4 foundational AI masterclasses, complete three scenario checklists, and unlock instant priority scheduling with institutional advisors.
+          </p>
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Your Progress</span>
+<span class="text-primary font-bold">2 of 4 Completed (50%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/2 rounded-full"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="line-through text-outline">Modern ROS 2 &amp; Robotics Deep-Dive</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span class="line-through text-outline">DeepMind &amp; Stanford Research Pathways</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-outline text-[16px]">radio_button_unchecked</span>
+<span>European Zero-Debt Degree Blueprints</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-outline text-[16px]">radio_button_unchecked</span>
+<span>High Frequency Quant Math Primer</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm text-center">
+            Continue Masterclass Track
+          </button>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Upcoming Live Student AMAs</h3>
+<div class="flex flex-col gap-3">
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-secondary">Tomorrow, 5:00 PM EST</span>
+<span class="font-title-sm text-title-md font-semibold text-on-surface">Ivy League Transfer Admissions Dean</span>
+<span class="font-body-sm text-body-sm text-outline">Live Q&amp;A on essay reframing</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-bright transition-colors shrink-0">
+                RSVP
+              </button>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-secondary">Thursday, 2:00 PM EST</span>
+<span class="font-title-sm text-title-md font-semibold text-on-surface">H1-B &amp; O-1 Visa Attorney Masterclass</span>
+<span class="font-body-sm text-body-sm text-outline">Stem OPT rules &amp; founder visas</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-bright transition-colors shrink-0">
+                RSVP
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Category Navigation Filter Switching
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      filterTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          filterTabs.forEach(t => {
+            t.classList.remove('bg-primary', 'text-on-primary');
+            t.classList.add('bg-surface-container', 'text-on-surface-variant');
+          });
+          tab.classList.remove('bg-surface-container', 'text-on-surface-variant');
+          tab.classList.add('bg-primary', 'text-on-primary');
+        });
+      });
+
+      // Video Search Input Micro-Filter
+      const searchInput = document.getElementById('videoSearchInput');
+      const videoCards = document.querySelectorAll('.video-card');
+      if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+          const val = e.target.value.toLowerCase().trim();
+          videoCards.forEach(card => {
+            const cardText = card.innerText.toLowerCase();
+            if (!val || cardText.includes(val)) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+
+      // Timestamp Seeking simulation
+      const timestampBtns = document.querySelectorAll('.timestamp-btn');
+      const progressBar = document.getElementById('videoProgressBar');
+      timestampBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          timestampBtns.forEach(b => {
+            b.classList.remove('bg-primary/30');
+            b.classList.add('bg-white/5');
+            const icon = b.querySelector('.material-symbols-outlined');
+            if (icon) {
+              icon.innerText = 'play_circle';
+              icon.style.fontVariationSettings = "'FILL' 0";
+            }
+          });
+          btn.classList.remove('bg-white/5');
+          btn.classList.add('bg-primary/30');
+          const activeIcon = btn.querySelector('.material-symbols-outlined');
+          if (activeIcon) {
+            activeIcon.innerText = 'volume_up';
+            activeIcon.style.fontVariationSettings = "'FILL' 1";
+          }
+          
+          const seekSeconds = parseInt(btn.getAttribute('data-seek') || '0', 10);
+          const totalSeconds = 1125; // 18:45
+          const percent = Math.min(100, Math.max(0, (seekSeconds / totalSeconds) * 100));
+          if (progressBar) {
+            const innerBar = progressBar.firstElementChild;
+            if (innerBar) {
+              innerBar.style.width = percent + '%';
+            }
+          }
+        });
+      });
+
+      // Cinema Play Button feedback
+      const mainPlayBtn = document.getElementById('mainPlayBtn');
+      if (mainPlayBtn) {
+        mainPlayBtn.addEventListener('click', () => {
+          const icon = mainPlayBtn.querySelector('.material-symbols-outlined');
+          if (icon.innerText === 'play_arrow') {
+            icon.innerText = 'pause';
+          } else {
+            icon.innerText = 'play_arrow';
+          }
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="EduPath AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><span class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight">EduPath AI</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-clarity FinTech intelligence and predictive cognitive roadmapping empowering students to maximize degree ROI, optimize institutional debt, and forecast lifetime career trajectories.</p><div class="flex flex-wrap items-center gap-2 mt-space-xs"><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">Accredited Decision Models</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">FERPA Compliant</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold">Zero Bias Certified</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Platform Engines</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pathways-hub" href="#">Pathways Hub</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="institutions.html">Institution Comparison</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="simulator.html">What-If Simulator</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="decision-matrix.html">Decision Matrix</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="business-pathways.html">Entrepreneurship Pathways</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Resources</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="video-hub" href="#">Video Hub &amp; Masterclasses</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sources" href="#">Federal &amp; IPEDS Data</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="salary-benchmarks" href="#">BLS Salary Benchmarks</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="methodology" href="#">Decision Methodology</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Institutional Compliance</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">FERPA &amp; Privacy Policy</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bias-transparency" href="#">Zero Bias Transparency</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admin-login" href="#">Institution Admin Portal</a></li></ul></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-body-sm text-body-sm">© 2025 EduPath AI Inc. Cognitive Decision Support Engine. FERPA Compliant &amp; Zero Bias Certified.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">ISO/IEC 27001 Certified</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">SOC-2 Type II Verified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>

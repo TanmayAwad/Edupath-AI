@@ -1,0 +1,58 @@
+[
+  {
+    "id": "inst-1",
+    "name": "Stanford University",
+    "location": "Stanford, CA, USA",
+    "region": "us",
+    "worldRank": 3,
+    "annualTuition": "$24,500",
+    "acceptanceRate": "3.9%",
+    "employmentRate": "97%",
+    "topPrograms": ["Computer Science", "Artificial Intelligence", "Management"],
+    "housingEst": "$12,000",
+    "scholarshipAvailability": "High (Need-Based & Merit)",
+    "visaOption": "3-Year OPT Available"
+  },
+  {
+    "id": "inst-2",
+    "name": "ETH Zurich",
+    "location": "Zurich, Switzerland",
+    "region": "uk",
+    "worldRank": 7,
+    "annualTuition": "$1,800",
+    "acceptanceRate": "27%",
+    "employmentRate": "95%",
+    "topPrograms": ["Robotics", "Data Science", "Civil Engineering"],
+    "housingEst": "$14,000",
+    "scholarshipAvailability": "Excellence Scholarships Available",
+    "visaOption": "18-Month Job Search Visa"
+  },
+  {
+    "id": "inst-3",
+    "name": "National University of Singapore (NUS)",
+    "location": "Singapore",
+    "region": "asia",
+    "worldRank": 8,
+    "annualTuition": "$15,200",
+    "acceptanceRate": "14%",
+    "employmentRate": "96%",
+    "topPrograms": ["Business Analytics", "Computer Engineering", "FinTech"],
+    "housingEst": "$8,500",
+    "scholarshipAvailability": "Tuition Grant Available",
+    "visaOption": "3-Year Bond Work Visa"
+  },
+  {
+    "id": "inst-4",
+    "name": "University of Oxford",
+    "location": "Oxford, UK",
+    "region": "uk",
+    "worldRank": 1,
+    "annualTuition": "$28,000",
+    "acceptanceRate": "17.5%",
+    "employmentRate": "98%",
+    "topPrograms": ["Mathematical Sciences", "Medicine", "PPE"],
+    "housingEst": "$11,000",
+    "scholarshipAvailability": "Clarendon & Rhodes Scholarships",
+    "visaOption": "2-Year Graduate Visa Route"
+  }
+]

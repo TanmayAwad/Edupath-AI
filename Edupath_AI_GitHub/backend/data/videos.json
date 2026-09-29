@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vid-1",
+    "title": "Understanding Tuition Debt Risk & 10-Year Net ROI Models",
+    "category": "Decision Strategy",
+    "duration": "8 min",
+    "views": "14.2K",
+    "thumbnail": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
+    "description": "Learn how the EduPath decision matrix calculates risk-adjusted compounding returns on your college investment."
+  },
+  {
+    "id": "vid-2",
+    "title": "Mastering the What-If Stress Simulator: Budget & GPA Shifts",
+    "category": "Interactive Walkthrough",
+    "duration": "11 min",
+    "views": "28.9K",
+    "thumbnail": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80",
+    "description": "Step-by-step masterclass on stress-testing career pathways against macroeconomic downturns and visa changes."
+  },
+  {
+    "id": "vid-3",
+    "title": "Navigating International Student Visas & Post-Grad STEM OPT",
+    "category": "Immigration & Policy",
+    "duration": "14 min",
+    "views": "39.5K",
+    "thumbnail": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+    "description": "Clear explanation of post-study work authorization, OPT extensions, and European job seeker visa frameworks."
+  },
+  {
+    "id": "vid-4",
+    "title": "How to Win 100% Full-Tuition Merit Scholarships in 2026",
+    "category": "Funding & Loans",
+    "duration": "16 min",
+    "views": "52.1K",
+    "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80",
+    "description": "Insider tips from scholarship committees on building a winning portfolio and essay calibration."
+  }
+]

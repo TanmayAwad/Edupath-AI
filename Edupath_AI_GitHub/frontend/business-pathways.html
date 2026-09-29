@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006a61", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#004c69", "surface": "#faf8ff", "tertiary-container": "#005878", "primary-fixed": "#e3dfff", "outline-variant": "#c7c4d7", "surface-variant": "#dae2fd", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#001e2c", "secondary-container": "#86f2e4", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "tertiary": "#003f58", "tertiary-fixed": "#c4e7ff", "surface-container-lowest": "#ffffff", "primary": "#2a14b4", "on-error-container": "#93000a", "on-background": "#131b2e", "background": "#faf8ff", "secondary-fixed-dim": "#6bd8cb", "on-secondary": "#ffffff", "primary-container": "#4338ca", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "outline": "#777586", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#100069", "surface-container": "#eaedff", "surface-tint": "#5148d7", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464554", "inverse-on-surface": "#eef0ff", "on-primary-container": "#c1beff", "error-container": "#ffdad6", "on-error": "#ffffff", "on-surface": "#131b2e", "on-tertiary-container": "#77cfff", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#372abf", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin-tablet": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-sm": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "metric-display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "title-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-sm-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-sm-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-sm": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } }</script><title>EduPath AI — Student Education & Career Decision Platform</title></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="EduPath AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><a class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight" href="index.html">EduPath AI</a><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>Decision Co-Pilot</span></div><nav class="hidden 2xl:flex items-center gap-1 overflow-x-auto py-1 px-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="student-profile" href="#">Student Profile</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="institutions.html">Institutions</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="simulator.html">What-If Simulator</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="decision-matrix.html">Decision Matrix</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="video-hub" href="#">Video Hub</a><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" href="business-pathways.html">Entrepreneurship</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden lg:block w-52 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search pathways, careers, colleges..." type="text"/></div><button class="px-3.5 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.25)] flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="">Start AI Assessment</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Student Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-secondary leading-none">Calibrated</span><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate #812</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow & Dynamic Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low py-space-xl">
+<div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-primary-fixed blur-3xl opacity-60 pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-secondary-fixed blur-3xl opacity-50 pointer-events-none"></div>
+<div class="relative max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-bold tracking-wider uppercase">Venture Architecture Engine</span>
+<span class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              2,840+ Active Collegiate Spin-offs
+            </span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-on-surface tracking-tight">Business &amp; Entrepreneurship Pathways Directory</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Bridge fundamental academic disciplines into defensible, high-growth ventures. Model technical spin-offs, micro-enterprises, non-dilutive campus grants, and commercialization trajectories.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-5 py-3 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md flex items-center gap-2" id="triggerIdeaScorecard">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Simulate Feasibility Index</span>
+</button>
+<a class="px-5 py-3 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all shadow-sm flex items-center gap-2" href="#accelerators-section">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+<span>Campus Grants</span>
+</a>
+</div>
+</div>
+<!-- 5-Stage Interconnected Venture Roadmap -->
+<div class="mt-space-sm bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-space-sm">
+<div>
+<span class="font-title-md text-title-md text-on-surface">5-Phase Commercialization Lifecycle</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Empirically validated trajectory for technical &amp; collegiate founders.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-primary font-semibold">Average Velocity: 14–22 Months</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- Phase 1 -->
+<div class="group relative flex flex-col p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">PHASE 01</span>
+<span class="material-symbols-outlined text-primary text-[20px]">school</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mb-1">Academic Mastery</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deep disciplinary grounding, laboratory research, literature synthesis, and thesis domain mapping.</p>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_circle_right</span> Lab &amp; Curricular Output
+            </div>
+</div>
+<!-- Phase 2 -->
+<div class="group relative flex flex-col p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">PHASE 02</span>
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mb-1">High-Demand Skills</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Applied full-stack prototyping, legal compliance basics, IP protection, and prompt engineering.</p>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_circle_right</span> Functional Prototyping
+            </div>
+</div>
+<!-- Phase 3 -->
+<div class="group relative flex flex-col p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">PHASE 03</span>
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mb-1">Market Validation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Customer discovery interviews (100+ cohorts), willingness-to-pay testing, and competitive matrixing.</p>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_circle_right</span> LOIs &amp; Pilot Signups
+            </div>
+</div>
+<!-- Phase 4 -->
+<div class="group relative flex flex-col p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">PHASE 04</span>
+<span class="material-symbols-outlined text-primary text-[20px]">rocket_launch</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mb-1">MVP Deployment</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Controlled beta cohort rollout, product telemetry tracking, rapid feature iteration, and telemetry audits.</p>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_circle_right</span> Active User Retention
+            </div>
+</div>
+<!-- Phase 5 -->
+<div class="group relative flex flex-col p-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">PHASE 05</span>
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mb-1">Scaled Capitalization</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Non-dilutive university grants (SBIR/STTR), campus syndicate checks, and Series Seed syndication.</p>
+<div class="mt-3 pt-2 flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_circle_right</span> Sustainable ARR / Spin-off
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter & Sector Navigation Hub -->
+<section class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-lg">
+<div class="flex flex-col gap-space-md">
+<!-- Search Bar & Quick Filters -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm">
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-3 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="directorySearchInput" placeholder="Search venture models, lab types, capital requirements, or degree linkages..." type="text"/>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Filter Intensity:</span>
+<button class="sector-filter-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold transition-all" data-filter="all">All Sectors</button>
+<button class="sector-filter-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="capital-low">Low Capital</button>
+<button class="sector-filter-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="lab-intensive">Lab Intensive</button>
+<button class="sector-filter-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="grant-eligible">High Grant Velocity</button>
+</div>
+</div>
+<!-- Sector Selection Horizontal Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="all">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+          All Sectors (7)
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="tech-ai">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+          Technology &amp; AI
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="health-bio">
+<span class="material-symbols-outlined text-[16px]">biotech</span>
+          HealthTech &amp; Bio
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="cleantech">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+          CleanTech &amp; Energy
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="fintech">
+<span class="material-symbols-outlined text-[16px]">query_stats</span>
+          FinTech
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="edtech">
+<span class="material-symbols-outlined text-[16px]">workspaces</span>
+          EdTech &amp; Future of Work
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="agritech">
+<span class="material-symbols-outlined text-[16px]">potted_plant</span>
+          AgriTech
+        </button>
+<button class="tab-chip px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-on-surface hover:bg-surface-container whitespace-nowrap shadow-sm transition-all flex items-center gap-1.5" data-category="digital-media">
+<span class="material-symbols-outlined text-[16px]">video_settings</span>
+          Creative &amp; Digital Media
+        </button>
+</div>
+</div>
+</section>
+<!-- Comprehensive Sector Cards Grid -->
+<section class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-sm mb-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="sectorsGrid">
+<!-- Card 1: AI & Data Automation -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="low" data-grant="true" data-sector="tech-ai">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">Technology &amp; AI</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">tune</span> Low-Medium CapEx
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">AI &amp; Data Automation</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: CS, Math, Cognitive Science</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Specialized foundation model fine-tuning, deterministic workflow engines, and regulated industry agentic frameworks with swift software iteration cycles.</p>
+<!-- Ideas Block -->
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Autonomous Clinical Medical Scribe:</strong> HIPAA-isolated speech-to-EHR synthesizer.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>Compliance LLM Copilot:</strong> Continuous parsing for SEC/FINRA financial filings.</span>
+</div>
+</div>
+<!-- Technical Requirements & Moat -->
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Required Stack</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">PyTorch, LangChain, vLLM, Vector DBs</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Incubator Synergy</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Compute Grants ($100k Cloud)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">12-Mo Survival Rate: <strong>68%</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Sustainable Energy & CleanTech -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="high" data-grant="true" data-sector="cleantech">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">CleanTech &amp; Energy</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[14px]">account_balance_wallet</span> High CapEx / Grant Heavy
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">energy_savings_leaf</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">CleanTech &amp; Grid Scale</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: ChemE, Electrical Eng, Material Sci</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Decarbonization pipelines, battery component recycling logistics, and localized decentralized power routing enabled by institutional research.</p>
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Cathode Battery Recycling Fleet:</strong> Closed-loop hydrometallurgical recovery.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>Campus Micro-Grid Arbitrage:</strong> Algorithmic peak shaving &amp; thermal storage.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Grant Viability</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">DOE ARPA-E &amp; NSF SBIR</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Regulatory Moat</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">FERC &amp; EPA Clearances</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Median Non-Dilutive: <strong>$650,000</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3: FinTech & Algorithmic Trading -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="medium" data-grant="false" data-sector="fintech">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">FinTech</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield</span> High Regulatory Moat
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">candlestick_chart</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">FinTech &amp; Algo Trading</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: Finance, Applied Math, Statistics</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Modern banking infrastructure, non-traditional credit scoring pipelines, and synthetic assets liquidity protocols backed by quantitative rigor.</p>
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Micro-Lending Underwriting API:</strong> Cash-flow predictive scoring for gen-Z.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>FX Corridor Remittance Engine:</strong> Sub-second stablecoin bridge settlement.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Compliance Layer</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">BSA / FinCEN / SOC-2 Type II</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Capital Intensity</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Moderate ($50k-$200k)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Seed Multiple: <strong>8.4x ARR</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 4: BioTech & Longevity Therapeutics -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="lab-intensive" data-grant="true" data-sector="health-bio">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">HealthTech &amp; Bio</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">biotech</span> Lab Heavy / Spin-off
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">genetics</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">BioTech &amp; Therapeutics</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: Molecular Bio, Biochemistry, Pre-Med</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Novel peptide synthesis, cellular longevity markers, and computational drug discovery originating directly from faculty and graduate laboratories.</p>
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Synthetic Epigenetic Clock Kit:</strong> Consumer methylation saliva test.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>In-Silico Target Screener:</strong> High-throughput dock simulation suite.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Institutional Path</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Tech Transfer Office (TTO)</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Lab Tier</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">BSL-2+ Wet Lab Required</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Median Patent Grant: <strong>$1.2M</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 5: Skilled Services & Micro-Enterprises -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="low" data-grant="false" data-sector="edtech">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">EdTech &amp; Future of Work</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Zero-Capital Launch
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Skilled B2B Micro-SaaS</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: Operations, Business Admin, Design</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Day-1 cash flow positive consulting, workflow automation agencies, and bespoke micro-tools for mid-market service operations with rapid break-even.</p>
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Local SMB Invoice Concierge:</strong> WhatsApp/Stripe bookkeeping automation.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>B2B Onboarding Loom-to-Wiki:</strong> Micro-knowledge base generator.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Break-Even Horizon</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">&lt; 45 Days</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Venture Debt Need</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">$0 (Bootstrappable)</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Bootstrapping Success: <strong>81%</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 6: AgriTech & Climate Resiliency -->
+<article class="sector-card flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-all" data-capital="medium" data-grant="true" data-sector="agritech">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-bold">AgriTech</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">
+<span class="material-symbols-outlined text-[14px]">eco</span> USDA Grant Synergies
+            </span>
+</div>
+<div class="flex items-center gap-3 mt-1">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[28px]">agriculture</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">AgriTech &amp; Precision Bio</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Links: Agronomy, Robotics, Environmental Sci</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Drone imagery for nitrogen monitoring, sensor-guided soil biome remediation, and decentralized grain quality grading for agricultural co-ops.</p>
+<div class="bg-surface-container-low rounded-lg p-3 flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">lightbulb</span> High-Conviction Venture Blueprints:
+            </span>
+<div class="flex flex-col gap-1">
+<span class="font-body-sm text-body-sm text-on-surface">1. <strong>Spectral Soil Microbiome Probe:</strong> Handheld NPK field analyzer.</span>
+<span class="font-body-sm text-body-sm text-on-surface">2. <strong>Crop Drone Multispectral Mesh:</strong> Automated weed spot-herbicide rig.</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Grant Pathway</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">USDA SBIR Phase I &amp; II</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Field Testing</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Land-Grant Extension Stations</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Market CAGR: <strong>14.2%</strong></span>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md bg-surface-container hover:bg-primary hover:text-on-primary text-primary transition-all flex items-center gap-1">
+<span>Explore Blueprint</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive AI Venture Feasibility Scorecard Widget -->
+<section class="w-full bg-surface-container-low py-space-xl" id="scorecard-section">
+<div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Input Form for Validation -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+              Cognitive Venture Calibration Model v4.8
+            </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Validate Your Business Idea With AI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Input your academic domain and proposed target problem. Edupath's algorithmic scorecard predicts capital efficiency, IP clearance barriers, and 24-month viability.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm mt-space-xs">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="founderDiscipline">Primary Academic Discipline</label>
+<select class="w-full px-3 py-2 rounded-lg font-body-sm text-body-sm bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="founderDiscipline">
+<option value="cs">Computer Science &amp; Informatics</option>
+<option value="bio">Biomedical Engineering &amp; Pre-Med</option>
+<option value="mech">Mechanical &amp; Hardware Engineering</option>
+<option value="biz">Finance &amp; Operations Management</option>
+<option value="arts">Digital Humanities &amp; Media Arts</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="capitalBudget">Starting Capital Resource</label>
+<select class="w-full px-3 py-2 rounded-lg font-body-sm text-body-sm bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="capitalBudget">
+<option value="zero">$0 (Zero-Capital / Sweat Equity)</option>
+<option value="grant">&lt; $25,000 (Campus Mini-Grants)</option>
+<option value="seed">$25,000 - $100,000 (Pre-Seed Syndicates)</option>
+<option value="lab">&gt; $100,000 (Research Lab Backed)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<label class="font-label-md text-label-md text-on-surface" for="ideaDescription">One-Sentence Venture Thesis</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg font-body-sm text-body-sm bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="ideaDescription" placeholder="e.g. Automated cold-chain logistics tracker for rural clinics..." type="text" value="Autonomous compliance verifier for pediatric healthcare clinical trials."/>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm mt-space-xs">
+<button class="px-6 py-2.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md flex items-center gap-2" id="calcScoreBtn">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>Generate Feasibility Assessment</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+                Cross-referenced against 14,000 IPEDS spin-offs
+              </span>
+</div>
+</div>
+<!-- Dynamic Feasibility Output Card -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Live Feasibility Scorecard</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-secondary font-semibold">Tier 1: High Conviction</span>
+</div>
+<!-- Score Visualizer Ring & Key Metric -->
+<div class="flex items-center gap-space-md my-space-xs">
+<div class="relative w-24 h-24 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary transition-all duration-1000 ease-out" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" id="scoreStroke" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-metric-display text-metric-display text-on-surface leading-none" id="scoreText">88</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md text-on-surface">Venture Viability Index</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calculated against IP moat, regulatory overhead, and typical academic founder velocity.</span>
+</div>
+</div>
+<!-- Breakdown Dimensions -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>Market Defensibility (IP Moat)</span>
+<span class="font-bold text-secondary">92%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>Campus Grant Eligibility Velocity</span>
+<span class="font-bold text-primary">85%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>Early Break-Even Probability (12 Mo)</span>
+<span class="font-bold text-on-surface">76%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-on-surface rounded-full" style="width: 76%"></div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span> FERPA &amp; IP Safe
+              </span>
+<a class="text-primary font-semibold hover:underline" href="#">Download Detailed Memo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Campus Incubator & Student Founder Grant Matcher -->
+<section class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl" id="accelerators-section">
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-bold uppercase tracking-wider">Non-Dilutive Funding Infrastructure</span>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Top Campus Incubators &amp; Student Grant Ecosystems</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Access university-affiliated seed vehicles offering 0% equity capital, lab infrastructure, computational credits, and institutional tech-transfer waivers.</p>
+</div>
+<span class="font-label-sm text-label-sm text-outline shrink-0">Updated Fall 2025 Cohort Deadlines</span>
+</div>
+</div>
+<!-- Accelerators Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Accelerator 1: MIT Sandbox -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-bold">MIT Sandbox</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-secondary font-semibold">0% Equity</span>
+</div>
+<div class="mt-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Innovation Fund</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Cambridge, MA · MIT Students &amp; Fellows</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tiered funding from $1,000 exploration checks up to $25,000 for advanced prototypes with dedicated EIR mentorship.</p>
+<div class="mt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Max Grant Amount:</span>
+<span class="font-bold text-secondary">$25,000</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">IP Ownership:</span>
+<span class="font-bold text-on-surface">100% Student Kept</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next Cohort:</span>
+<span class="font-bold text-primary">Rolling Monthly</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg font-label-md text-label-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-1">
+<span>Apply via Edupath ID</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<!-- Accelerator 2: Stanford StartX -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-bold">Stanford StartX</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-secondary font-semibold">Non-Profit</span>
+</div>
+<div class="mt-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Student Accelerator</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Palo Alto, CA · Stanford Network</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero-fee accelerator providing access to the Stanford-StartX Fund, hospital clinical trial access, and institutional co-founders.</p>
+<div class="mt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Max Seed Matching:</span>
+<span class="font-bold text-secondary">$500,000+</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Medical Trials:</span>
+<span class="font-bold text-on-surface">Stanford Med Pass</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next Cohort:</span>
+<span class="font-bold text-primary">Fall '25 Cycle</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg font-label-md text-label-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-1">
+<span>Apply via Edupath ID</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<!-- Accelerator 3: TUM Venture Labs -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-bold">TUM Labs</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-secondary font-semibold">EU DeepTech</span>
+</div>
+<div class="mt-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Venture Labs Munich</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Munich, Germany · TU Munich / Global</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">11 domain-specific labs (Quantum, CleanTech, Healthcare, Robotics) with hardware machining and European EXIST grant access.</p>
+<div class="mt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">EXIST Grant Level:</span>
+<span class="font-bold text-secondary">€150,000</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">MakerSpace Access:</span>
+<span class="font-bold text-on-surface">Unlimited High-End</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next Cohort:</span>
+<span class="font-bold text-primary">Bi-Annual</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg font-label-md text-label-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-1">
+<span>Apply via Edupath ID</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+<!-- Accelerator 4: Y Combinator Campus -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-bold">YC Campus</span>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-secondary font-semibold">Global Syndicate</span>
+</div>
+<div class="mt-2">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">Founder Outreach</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">San Francisco, CA · Collegiate Track</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct fast-track pipeline for undergrad &amp; PhD inventors with mock interviews and immediate demo day exposure.</p>
+<div class="mt-2 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Standard Deal:</span>
+<span class="font-bold text-secondary">$500,000 Check</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Peer Network:</span>
+<span class="font-bold text-on-surface">5,000+ Founders</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next Cohort:</span>
+<span class="font-bold text-primary">Winter '26</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-2 rounded-lg font-label-md text-label-md bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-1">
+<span>Apply via Edupath ID</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final Callout: Founder Advisory & Academic Spin-off Concierge -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin">
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-lg">
+<div class="relative z-10 flex flex-col gap-space-xs max-w-2xl">
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-primary font-bold self-start">Tech Transfer Office (TTO) Concierge</span>
+<h2 class="font-headline-lg text-headline-lg font-bold">Ready to license your student IP and launch?</h2>
+<p class="font-body-md text-body-md text-primary-fixed">EduPath AI coordinates directly with 420+ accredited university Tech Transfer Offices to retain full founder equity stakes and secure SBIR grant clearances before graduation.</p>
+</div>
+<div class="relative z-10 flex flex-col sm:flex-row items-center gap-3 shrink-0">
+<button class="px-6 py-3 rounded-lg font-label-md text-label-md bg-surface-bright text-primary font-bold hover:bg-surface-container-high transition-all shadow-md">Schedule TTO Consultation</button>
+<button class="px-6 py-3 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all">Review Spin-Off Guides</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic Script -->
+<script>
+    (function initEntrepreneurshipDirectory() {
+      // 1. Sector Tabs Filtering
+      const tabs = document.querySelectorAll('.tab-chip');
+      const cards = document.querySelectorAll('.sector-card');
+      const searchInput = document.getElementById('directorySearchInput');
+      const filterBtns = document.querySelectorAll('.sector-filter-btn');
+
+      function filterDirectory() {
+        const query = searchInput ? searchInput.value.toLowerCase() : '';
+        const activeTab = document.querySelector('.tab-chip.bg-primary-container')?.getAttribute('data-category') || 'all';
+        const activeFilterBtn = document.querySelector('.sector-filter-btn.bg-primary')?.getAttribute('data-filter') || 'all';
+
+        cards.forEach(card => {
+          const cardSector = card.getAttribute('data-sector');
+          const cardCapital = card.getAttribute('data-capital');
+          const cardGrant = card.getAttribute('data-grant') === 'true';
+          const cardText = card.innerText.toLowerCase();
+
+          let matchTab = (activeTab === 'all' || cardSector === activeTab);
+          let matchQuery = !query || cardText.includes(query);
+          let matchFilter = true;
+
+          if (activeFilterBtn === 'capital-low') {
+            matchFilter = (cardCapital === 'low');
+          } else if (activeFilterBtn === 'lab-intensive') {
+            matchFilter = (cardCapital === 'lab-intensive' || cardCapital === 'high');
+          } else if (activeFilterBtn === 'grant-eligible') {
+            matchFilter = cardGrant;
+          }
+
+          if (matchTab && matchQuery && matchFilter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // Sector Tab Click
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary');
+            t.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          tab.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+          tab.classList.add('bg-primary-container', 'text-on-primary');
+          filterDirectory();
+        });
+      });
+
+      // Intensity Filter Buttons
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+          filterDirectory();
+        });
+      });
+
+      // Search Input
+      if (searchInput) {
+        searchInput.addEventListener('input', filterDirectory);
+      }
+
+      // Smooth Scroll to Feasibility Tool
+      const triggerBtn = document.getElementById('triggerIdeaScorecard');
+      if (triggerBtn) {
+        triggerBtn.addEventListener('click', () => {
+          const target = document.getElementById('scorecard-section');
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      }
+
+      // Scorecard Simulation Micro-Interaction
+      const calcScoreBtn = document.getElementById('calcScoreBtn');
+      const scoreText = document.getElementById('scoreText');
+      const scoreStroke = document.getElementById('scoreStroke');
+
+      if (calcScoreBtn && scoreText && scoreStroke) {
+        calcScoreBtn.addEventListener('click', () => {
+          calcScoreBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Synthesizing...</span>';
+          
+          setTimeout(() => {
+            // Generate deterministic but realistic variance
+            const newScore = Math.floor(Math.random() * (96 - 82 + 1)) + 82;
+            scoreText.innerText = newScore;
+            scoreStroke.setAttribute('stroke-dasharray', `${newScore}, 100`);
+            calcScoreBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">neurology</span><span>Feasibility Recalibrated!</span>';
+            setTimeout(() => {
+              calcScoreBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">neurology</span><span>Generate Feasibility Assessment</span>';
+            }, 2500);
+          }, 600);
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="EduPath AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><span class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight">EduPath AI</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-clarity FinTech intelligence and predictive cognitive roadmapping empowering students to maximize degree ROI, optimize institutional debt, and forecast lifetime career trajectories.</p><div class="flex flex-wrap items-center gap-2 mt-space-xs"><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">Accredited Decision Models</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">FERPA Compliant</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold">Zero Bias Certified</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Platform Engines</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pathways-hub" href="#">Pathways Hub</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="institutions.html">Institution Comparison</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="simulator.html">What-If Simulator</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="decision-matrix.html">Decision Matrix</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="business-pathways.html">Entrepreneurship Pathways</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Resources</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="video-hub" href="#">Video Hub &amp; Masterclasses</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sources" href="#">Federal &amp; IPEDS Data</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="salary-benchmarks" href="#">BLS Salary Benchmarks</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="methodology" href="#">Decision Methodology</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Institutional Compliance</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">FERPA &amp; Privacy Policy</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bias-transparency" href="#">Zero Bias Transparency</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admin-login" href="#">Institution Admin Portal</a></li></ul></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-body-sm text-body-sm">© 2025 EduPath AI Inc. Cognitive Decision Support Engine. FERPA Compliant &amp; Zero Bias Certified.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">ISO/IEC 27001 Certified</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">SOC-2 Type II Verified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "sch-1",
+    "title": "Global AI & STEM Future Innovators Award",
+    "provider": "EduPath AI Excellence Foundation",
+    "amount": "100% Full Tuition Coverage + $12,000 Stipend",
+    "type": "Merit-Based",
+    "eligibility": "GPA > 3.7/4.0 in STEM, Demonstrated AI/Coding Projects",
+    "deadline": "2026-11-15",
+    "targetRegion": "Global",
+    "coverage": "Full Tuition + Living Expenses"
+  },
+  {
+    "id": "sch-2",
+    "title": "Women in Technology & Data Leadership Fellowship",
+    "provider": "Cognitive Horizon Women In Tech",
+    "amount": "$25,000 per year",
+    "type": "Diversity & Merit",
+    "eligibility": "Female applicants pursuing BS/MS in CS, Data Science or Robotics",
+    "deadline": "2026-12-01",
+    "targetRegion": "USA, UK, Europe",
+    "coverage": "Partial Tuition & Mentorship"
+  },
+  {
+    "id": "sch-3",
+    "title": "Erasmus Mundus Joint Master's Grant",
+    "provider": "European Union Commission",
+    "amount": "€1,400 / month + Full Tuition",
+    "type": "Government Grant",
+    "eligibility": "Undergraduate degree in related field, B2/C1 English proficiency",
+    "deadline": "2026-10-31",
+    "targetRegion": "Europe",
+    "coverage": "Full Tuition + Travel & Allowance"
+  },
+  {
+    "id": "sch-4",
+    "title": "FinTech Leadership & Risk Compounding Scholarship",
+    "provider": "Horizon Capital Alliance",
+    "amount": "$15,000 one-time grant",
+    "type": "Need & Merit Based",
+    "eligibility": "Enrolled in Finance, Economics or FinTech Graduate Program",
+    "deadline": "2027-01-20",
+    "targetRegion": "Global",
+    "coverage": "Tuition Subsidization"
+  }
+]

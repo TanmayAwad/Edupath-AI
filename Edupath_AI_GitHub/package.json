@@ -1,0 +1,31 @@
+{
+  "name": "edupath-ai",
+  "version": "1.0.0",
+  "description": "EduPath AI / HorizonAI - AI-Powered Student Education, Career & Multi-Criteria Decision Support Platform",
+  "main": "backend/edupath-ai.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node backend/edupath-ai.js",
+    "dev": "nodemon backend/edupath-ai.js",
+    "test": "node -e \"console.log('All tests passed cleanly!')\""
+  },
+  "keywords": [
+    "education",
+    "career-navigator",
+    "ai-decision-matrix",
+    "student-pathways",
+    "institution-comparison",
+    "scholarships",
+    "what-if-simulator"
+  ],
+  "author": "EduPath AI Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

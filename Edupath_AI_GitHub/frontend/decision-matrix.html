@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006a61", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#004c69", "surface": "#faf8ff", "tertiary-container": "#005878", "primary-fixed": "#e3dfff", "outline-variant": "#c7c4d7", "surface-variant": "#dae2fd", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#001e2c", "secondary-container": "#86f2e4", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "tertiary": "#003f58", "tertiary-fixed": "#c4e7ff", "surface-container-lowest": "#ffffff", "primary": "#2a14b4", "on-error-container": "#93000a", "on-background": "#131b2e", "background": "#faf8ff", "secondary-fixed-dim": "#6bd8cb", "on-secondary": "#ffffff", "primary-container": "#4338ca", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "outline": "#777586", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#100069", "surface-container": "#eaedff", "surface-tint": "#5148d7", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464554", "inverse-on-surface": "#eef0ff", "on-primary-container": "#c1beff", "error-container": "#ffdad6", "on-error": "#ffffff", "on-surface": "#131b2e", "on-tertiary-container": "#77cfff", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#372abf", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin-tablet": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-sm": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "metric-display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "title-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-sm-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-sm-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-sm": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } }</script><title>EduPath AI — Student Education & Career Decision Platform</title></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="EduPath AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><a class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight" href="index.html">EduPath AI</a><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>Decision Co-Pilot</span></div><nav class="hidden 2xl:flex items-center gap-1 overflow-x-auto py-1 px-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="student-profile" href="#">Student Profile</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="institutions.html">Institutions</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="simulator.html">What-If Simulator</a><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" href="decision-matrix.html">Decision Matrix</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="video-hub" href="#">Video Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="business-pathways.html">Entrepreneurship</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden lg:block w-52 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search pathways, careers, colleges..." type="text"/></div><button class="px-3.5 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.25)] flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="">Start AI Assessment</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Student Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-secondary leading-none">Calibrated</span><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate #812</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow container -->
+<div class="relative w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-lg">
+<div class="absolute top-10 left-1/3 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-40 right-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Header & Profile Calibration Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+            Algorithmic Tradeoff Engine v4.2
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Session ID: ED-94812-CAL</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+          Multi-Criteria Decision Matrix &amp; Tradeoff Calibration
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Synthesize high-dimensional tradeoffs across debt exposure, immigration pathways, and long-term capital compounding using calibrated weights tuned to your student risk profile.
+        </p>
+</div>
+<!-- Sync Status Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-space-md min-w-[280px]">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">sync_saved_locally</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Candidate #812</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Profile synced • STEM/CS Baseline</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">99.2% Data Confidence</span>
+</div>
+</div>
+</div>
+<!-- User Priority Weighting Selector Module -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Interactive Preference Weighting Engine</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Adjust parametric weights to recalibrate aggregate composite viability scores in real-time. Sum auto-normalizes to 100%.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-colors flex items-center gap-1" id="resetWeightsBtn">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+            Reset Defaults
+          </button>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-semibold">
+            Dynamic Recalculation Active
+          </span>
+</div>
+</div>
+<!-- Sliders Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Slider 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">account_balance_wallet</span>
+              Low Financial Debt / Cost
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w1">25%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Minimizes out-of-pocket tuition and private loan obligations.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w1" max="50" min="5" type="range" value="25"/>
+</div>
+<!-- Slider 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+              Long-Term Career Growth &amp; Comp
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w2">30%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prioritizes 10-year equity packages, ceiling wages, and network velocity.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w2" max="50" min="5" type="range" value="30"/>
+</div>
+<!-- Slider 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">travel_explore</span>
+              Geographic QoL &amp; Post-Study PR
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w3">15%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Evaluates legal permanent residency conversion rate and safety indexes.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w3" max="40" min="0" type="range" value="15"/>
+</div>
+<!-- Slider 4 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">pace</span>
+              Program Speed / Short Duration
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w4">10%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Accelerates opportunity cost recovery and early market entry.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w4" max="30" min="0" type="range" value="10"/>
+</div>
+<!-- Slider 5 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+              Prestige &amp; Research Rigor
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w5">10%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Considers faculty h-index, lab funding, brand cachet, and global prestige.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w5" max="30" min="0" type="range" value="10"/>
+</div>
+<!-- Slider 6 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col justify-between gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">award_star</span>
+              Scholarship / TA Probability
+            </span>
+<span class="font-metric-display text-metric-display text-primary text-[18px] leading-tight" id="val-w6">10%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Likelihood of tuition fee waivers, stipends, or research assistantships.</p>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary mt-1" id="slider-w6" max="30" min="0" type="range" value="10"/>
+</div>
+</div>
+</section>
+<!-- AI Decision Recommendation Tiers (Editorial Highlights) -->
+<div class="mb-space-xl">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Top Calibrated Recommendation Tiers</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Tier 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed font-bold tracking-wide uppercase">
+                Best Overall Value &amp; Low Risk
+              </span>
+<span class="font-label-md text-label-md text-secondary font-bold">Top ROI</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Option B: TU Munich</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              M.Sc. Informatics • Germany
+            </p>
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Near-zero tuition structure yields immediate breakeven within 14 months post-grad. Swift EU Blue Card permanent pathway with elite European corporate network.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Net Outflow</span>
+<span class="font-title-md text-title-md text-secondary font-bold">$28,400</span>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-bold tracking-wide uppercase">
+                Max Career Upside &amp; Prestige
+              </span>
+<span class="font-label-md text-label-md text-primary font-bold">Max Comp</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Option A: US Top-Tier (CMU/UW)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              M.S. Machine Learning • United States
+            </p>
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Highest lifetime ceiling ($340k+ yr-5 median packages). High financial leverage required, exposed to H-1B lottery variance and steep tuition overhead.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Net Outflow</span>
+<span class="font-title-md text-title-md text-error font-bold">$124,500</span>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/30 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-on-surface font-bold tracking-wide uppercase">
+                Balanced Immigration &amp; QoL
+              </span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">Stable PR</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Option C: U of Toronto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              M.Eng. Artificial Intelligence • Canada
+            </p>
+<p class="font-body-md text-body-md text-on-surface mt-space-sm">
+              Predictable 3-year PGWP leading straight to Express Entry CRS points. Strong research ecosystem with moderate tuition debt liability.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Net Outflow</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">$68,200</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Pathway Atmosphere Cards with Imagery -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Option A Visual Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Futuristic university campus in the United States with state-of-the-art computer science research center, glass facades, lush autumn trees, students collaborating with laptops, soft cinematic afternoon lighting, in indigo and deep blue architectural tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFxQ9xwHu1ryHhgC3mfzdTfE7DTRemkcIoWGxz_7dvJ5XdOljLogyCib5CdQDy9ASH3O5hkCyua5t6Mf5rJFeGUHmpauxIWOSFBtfPygs5ZHmNVrOL100bYJygPoqvxYDl3cglm8xAaPyW0kjTZsCMRBCXae_jvnuvU04-kWrmcFcfllB1cnyujJz2Ky6HFxXMKPNRx9NX_kyjPN_hTMW6Z-WSPBwWk8lnGVaW4CIyBhc0tXbuutG4HA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-bold">OPTION A</span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface/90 backdrop-blur-md text-on-surface font-medium">Pittsburgh / Seattle</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">US Top-Tier (CMU / UW)</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">M.S. Machine Learning • 24 Mo</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Prestige Index</span>
+<span class="font-label-md text-label-md text-primary font-bold">9.8 / 10</span>
+</div>
+</div>
+</div>
+<!-- Option B Visual Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern European tech university campus in Munich Germany featuring striking contemporary architecture, clear skies, students cycling by high-tech engineering facilities, subtle teal and slate glass surfaces in clean daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYBGY13Lis871UkTFJ06KyxOwgJI4Xgqt7_bXCNMqWvxHEtOUsmi1W3ThpfjWtVUQ3Lbch1fdwGCURI7diYFJV45H_1AoHEkihKEBqF8ZKEyA0RI3HPgsOG8kmHSR294WP6RG6lelWR4Cn2-c52KiFeyEr5kU8QqlN3o7D11764fXLAiJk9jppsxMPquHYCAdFtdSqopvjo6uVDJuZhEFxU0uOWSqqvaNC6O_AW9BTo0kdM4BbYgT2HA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary font-bold">OPTION B</span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface/90 backdrop-blur-md text-on-surface font-medium">Munich, Germany</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">TU Munich</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">M.Sc. Informatics • 24 Mo</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Debt Impact</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Minimal Risk</span>
+</div>
+</div>
+</div>
+<!-- Option C Visual Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Historic and modern blended University of Toronto urban campus in Ontario Canada with neo-gothic towers next to sleek glass innovation centers, autumn foliage, students walking across cobblestones under crisp overcast ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDURitaSZU90GMXp3hkYaU6jOLjDkr2QvGeJ0el3CEdTFpjOEdfOfqHgcz416RHMdNNIpAy5TPZR9vrpeVwUwuhrzyu_cWBoAGXr463Z-g8vlwdWq-ZONLBE8FCOCPEgOMR8UXPHYn9Zvq-jOfJ9i5UT0h8PfBd6LJpTeCkoVp-6mgnI9Dpo8qvG79B9Z5q5Br-YCPiaLQaw6LJxeHQAcBw6r6aBzpmuZH0PLdPNsWMe4ZPsl1hH9T6Mg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-tertiary-container text-on-tertiary font-bold">OPTION C</span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface/90 backdrop-blur-md text-on-surface font-medium">Toronto, Canada</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">University of Toronto</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">M.Eng. Artificial Intel. • 16 Mo</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">PR Direct Score</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">9.2 / 10</span>
+</div>
+</div>
+</div>
+<!-- Option D Visual Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cutting-edge corporate AI industrial research lab with floor-to-ceiling glass, ultra-wide multi-monitor workstations, high-tech engineering collaboration space, ambient luminescent indigo lighting, futuristic and sharp tech workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpYTpbSVq1KhwaWJ4KSdXyVJXDjxx_J844P-VmBNoxM__aVxx1tXNYoZBmpr2-Kf8qga7wWpQr3C5Rl8uBjrtZyDsj7zVD7eJ7V1hV221a058KMO7zZp8gZ6zBjoBN7e4Qc5w2ovi81w9IjOWm4TAtJyQyETFmfzFGHV5pv3EVxOO9yUQAfNefH0-R_ETcaoxAbLDwNBjXr9CcU8YhEue92WKGCEbNls-Q_j1sN52WKYjmqt3Yd0QqpA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-inverse-surface text-inverse-on-surface font-bold">OPTION D</span>
+<span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-surface/90 backdrop-blur-md text-on-surface font-medium">San Francisco / Remote</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-grow">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Direct AI Residency / Fellowship</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tier-1 Lab Track • 12-18 Mo</span>
+</div>
+<div class="mt-space-sm flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Opportunity Cost</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Positive Net Inflow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Comprehensive Decision Matrix Scoring Grid -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Multi-Attribute Comparison</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Algorithmic Viability Evaluation</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 4 Pathways Cross-Analyzed
+          </span>
+</div>
+</div>
+<!-- Matrix Table Container with horizontal scroll for responsiveness -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left min-w-[900px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md uppercase tracking-wider">
+<th class="p-space-md w-1/4">Evaluation Attribute</th>
+<th class="p-space-md w-[18.75%] text-on-surface font-bold">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Option A: US Top-Tier
+                </div>
+</th>
+<th class="p-space-md w-[18.75%] text-on-surface font-bold bg-secondary-fixed/20">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Option B: TU Munich
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-secondary text-on-secondary ml-1">TOP PICK</span>
+</div>
+</th>
+<th class="p-space-md w-[18.75%] text-on-surface font-bold">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Option C: U of Toronto
+                </div>
+</th>
+<th class="p-space-md w-[18.75%] text-on-surface font-bold">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Option D: AI Residency
+                </div>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1: Academic & Prerequisite Fit -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Academic &amp; Prerequisite Fit</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Course credit match &amp; candidate skill synergy</span>
+<span class="font-label-sm text-label-sm text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> [Verified Institutional Data]
+                  </span>
+</div>
+</td>
+<!-- Option A -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">9.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 10</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 94%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Direct match to your Linear Algebra &amp; PyTorch repos.</span>
+</div>
+</td>
+<!-- Option B -->
+<td class="p-space-md align-top bg-secondary-fixed/10">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-secondary">8.7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 10</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 87%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Requires 6 ECTS theoretical computer science bridge.</span>
+</div>
+</td>
+<!-- Option C -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">9.1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 10</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 91%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">High compatibility with Vector Institute research track.</span>
+</div>
+</td>
+<!-- Option D -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">7.8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 10</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Requires proof of production LLM deployment.</span>
+</div>
+</td>
+</tr>
+<!-- Row 2: Budget & Net Debt Exposure -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Budget &amp; Net Debt Exposure</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tuition + living minus probable funding &amp; TA</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span> [AI Economic Model (90% Conf.)]
+                  </span>
+</div>
+</td>
+<!-- Option A -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<span class="font-metric-display text-metric-display text-error text-[20px] leading-tight">-$124,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">$68k/yr Tuition + Bay/Seattle rent</span>
+<span class="inline-block mt-2 px-2 py-0.5 rounded font-label-sm text-label-sm bg-error-container text-on-error-container w-fit">
+                    High Debt Risk
+                  </span>
+</div>
+</td>
+<!-- Option B -->
+<td class="p-space-md align-top bg-secondary-fixed/10">
+<div class="flex flex-col">
+<span class="font-metric-display text-metric-display text-secondary text-[20px] leading-tight">-$28,400</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">€0 Tuition + Munich living blocked acct</span>
+<span class="inline-block mt-2 px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary-container text-on-secondary-container w-fit">
+                    Minimal Exposure
+                  </span>
+</div>
+</td>
+<!-- Option C -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<span class="font-metric-display text-metric-display text-on-surface text-[20px] leading-tight">-$68,200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">CAD $44k Int'l tuition + Toronto rent</span>
+<span class="inline-block mt-2 px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface w-fit">
+                    Moderate Risk
+                  </span>
+</div>
+</td>
+<!-- Option D -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<span class="font-metric-display text-metric-display text-secondary text-[20px] leading-tight">+$95,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">$115k Stipend/Comp minus living</span>
+<span class="inline-block mt-2 px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary-container text-on-secondary-container w-fit">
+                    Net Positive Capital
+                  </span>
+</div>
+</td>
+</tr>
+<!-- Row 3: Location & Visa Work Longevity -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Location &amp; Visa Longevity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Post-study permits &amp; long-term PR security</span>
+<span class="font-label-sm text-label-sm text-primary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">policy</span> [Verified Legal Policy Data]
+                  </span>
+</div>
+</td>
+<!-- Option A -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface">36-Mo STEM OPT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contingent on annual H-1B lottery (27% pick rate). PR backlogged.</span>
+<span class="font-label-sm text-label-sm text-error font-semibold mt-1">High Visa Volatility</span>
+</div>
+</td>
+<!-- Option B -->
+<td class="p-space-md align-top bg-secondary-fixed/10">
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md font-semibold text-secondary">EU Blue Card (21 Mo)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fast PR after 21 months with B1 German; unrestricted EU mobility.</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">High Regulatory Safety</span>
+</div>
+</td>
+<!-- Option C -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface">3-Yr Open PGWP</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct Express Entry CEC transition with +30 master's CRS points.</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Guaranteed Pathway</span>
+</div>
+</td>
+<!-- Option D -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Sponsor-Tied (O-1 / H-1B)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dependent on employer retention &amp; legal sponsorship filings.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold mt-1">Medium Friction</span>
+</div>
+</td>
+</tr>
+<!-- Row 4: 10-Yr Cumulative Wealth & Break-Even Velocity -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container-lowest">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">10-Yr Cumulative Wealth</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Modeled net worth progression &amp; debt repayment</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">query_stats</span> [AI Economic Model (90% Conf.)]
+                  </span>
+</div>
+</td>
+<!-- Option A -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-primary">$1,850,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yr 10 Net</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<svg class="w-full h-8 text-primary mt-1" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,23 Q25,24 40,18 T75,8 T100,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Break-even at month 38 post-commencement.</span>
+</div>
+</td>
+<!-- Option B -->
+<td class="p-space-md align-top bg-secondary-fixed/10">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-secondary">$1,120,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yr 10 Net</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<svg class="w-full h-8 text-secondary mt-1" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,20 Q20,17 40,14 T75,9 T100,4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Break-even at month 14 (Lowest risk slope).</span>
+</div>
+</td>
+<!-- Option C -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$1,310,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yr 10 Net</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<svg class="w-full h-8 text-tertiary mt-1" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,22 Q25,20 45,15 T80,8 T100,3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Break-even at month 26.</span>
+</div>
+</td>
+<!-- Option D -->
+<td class="p-space-md align-top">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$1,450,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yr 10 Net</span>
+</div>
+<!-- Inline SVG Sparkline -->
+<svg class="w-full h-8 text-outline mt-1" preserveaspectratio="none" viewbox="0 0 100 25">
+<path d="M0,15 Q20,12 40,10 T70,7 T100,3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Immediate break-even (zero initial debt).</span>
+</div>
+</td>
+</tr>
+<!-- Row 5: Cognitive Load & Admission Selectivity -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Cognitive Load &amp; Selectivity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Admission odds based on current user GPA/GRE</span>
+<span class="font-label-sm text-label-sm text-outline mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person</span> [User Self-Reported]
+                  </span>
+</div>
+</td>
+<!-- Option A -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-error">9.6 / 10 Rigor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">7% Acceptance</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Intense publication requirement; high stress index.</span>
+</div>
+</td>
+<!-- Option B -->
+<td class="p-space-md align-top bg-secondary-fixed/10">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-secondary">7.4 / 10 Rigor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24% Acceptance</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Criteria-based admission. High workload in exam sessions.</span>
+</div>
+</td>
+<!-- Option C -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">8.2 / 10 Rigor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14% Acceptance</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Balanced applied industry project capstone model.</span>
+</div>
+</td>
+<!-- Option D -->
+<td class="p-space-md align-top">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-error">9.8 / 10 Rigor</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3% Acceptance</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Extreme coding screens &amp; competitive peer interview loops.</span>
+</div>
+</td>
+</tr>
+<!-- Row 6: Weighted Aggregate Composite Score (Hero Row) -->
+<tr class="bg-surface-container-high font-semibold">
+<td class="p-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Weighted Aggregate Composite</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibrated against your 6 dynamic weight sliders</span>
+</div>
+</td>
+<!-- Option A Score -->
+<td class="p-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-metric-display text-metric-display text-primary text-[28px] leading-none" id="score-optA">88.6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rank #2 • High Reward</span>
+</div>
+</td>
+<!-- Option B Score (Winner) -->
+<td class="p-space-md bg-secondary-fixed">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="font-metric-display text-metric-display text-on-secondary-fixed text-[32px] leading-none" id="score-optB">91.4</span>
+<span class="material-symbols-outlined text-secondary text-[22px]">workspace_premium</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-bold">Rank #1 • Optimal Balance</span>
+</div>
+</td>
+<!-- Option C Score -->
+<td class="p-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-metric-display text-metric-display text-on-surface text-[28px] leading-none" id="score-optC">82.1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rank #3 • Strong Alternative</span>
+</div>
+</td>
+<!-- Option D Score -->
+<td class="p-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-metric-display text-metric-display text-outline text-[28px] leading-none" id="score-optD">76.0</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rank #4 • High Variance</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Assumptions & Confidence Transparency Panel (Audit & Trust) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+            Assumptions, Provenance &amp; Calibration Transparency
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Zero Bias Guarantee. EduPath AI models are trained exclusively on audited educational and regulatory data registries.
+          </p>
+</div>
+<span class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          FERPA &amp; IPEDS Validated
+        </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Tag 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Verified Institutional Data</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tuition rates, credit requirements, and fees extracted directly from official 2024-2025 college registries and DAAD databases.
+          </p>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-auto">Source: IPEDS &amp; University Registrars</span>
+</div>
+<!-- Tag 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">AI Economic Model (90% Conf.)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            10-Year cumulative wealth models derived from 120,000+ Bureau of Labor Statistics (BLS) and Levels.fyi verified tech profiles.
+          </p>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-auto">Predictive Confidence: 90.4%</span>
+</div>
+<!-- Tag 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary shrink-0"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Estimated Cost of Living</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Munich blocked account standards (€11,208/yr), Seattle HUD housing benchmarks, and Toronto CMHC rental index averages.
+          </p>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mt-auto">Adjusted Quarterly for Inflation</span>
+</div>
+<!-- Tag 4 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-outline shrink-0"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">User Self-Reported</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Undergraduate GPA (3.82), TOEFL/GRE scores, and target specialization preferences loaded from Student Profile module.
+          </p>
+<span class="font-label-sm text-label-sm text-outline font-semibold mt-auto">Profile Calibrated Oct 2024</span>
+</div>
+</div>
+</section>
+<!-- Bottom Actions Bar: Export & Decision Locking -->
+<div class="bg-surface-container-high rounded-xl p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">lock</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-lg text-title-lg text-on-surface">Lock Pathway Decision Milestone</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Save calibrated weights to your roadmap and trigger automatic application timeline alerts for deadlines in Germany &amp; US.
+          </p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Export PDF -->
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" id="exportPdfBtn">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+          Export Matrix PDF
+        </button>
+<!-- Export CSV -->
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" id="exportCsvBtn">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+          Export CSV
+        </button>
+<!-- Lock Milestone Primary Action -->
+<button class="px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.3)] flex items-center gap-2" id="lockDecisionBtn">
+<span class="material-symbols-outlined text-[18px]">bookmark_added</span>
+<span>Commit &amp; Lock Top Recommendation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Toast Notification -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-xl font-body-sm text-body-sm flex items-center gap-2 translate-y-24 opacity-0 transition-all duration-300 z-50 pointer-events-none" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span id="toastMessage">Decision weights updated and recalibrated.</span>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    (function () {
+      const sliders = [
+        { el: document.getElementById('slider-w1'), valEl: document.getElementById('val-w1'), key: 'debt' },
+        { el: document.getElementById('slider-w2'), valEl: document.getElementById('val-w2'), key: 'growth' },
+        { el: document.getElementById('slider-w3'), valEl: document.getElementById('val-w3'), key: 'qol' },
+        { el: document.getElementById('slider-w4'), valEl: document.getElementById('val-w4'), key: 'speed' },
+        { el: document.getElementById('slider-w5'), valEl: document.getElementById('val-w5'), key: 'prestige' },
+        { el: document.getElementById('slider-w6'), valEl: document.getElementById('val-w6'), key: 'scholarship' }
+      ];
+
+      const scoreA = document.getElementById('score-optA');
+      const scoreB = document.getElementById('score-optB');
+      const scoreC = document.getElementById('score-optC');
+      const scoreD = document.getElementById('score-optD');
+      const resetBtn = document.getElementById('resetWeightsBtn');
+      const lockBtn = document.getElementById('lockDecisionBtn');
+      const exportPdfBtn = document.getElementById('exportPdfBtn');
+      const exportCsvBtn = document.getElementById('exportCsvBtn');
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+
+      function showToast(message) {
+        if (!toast || !toastMsg) return;
+        toastMsg.textContent = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+
+      function recalculateScores() {
+        const w1 = parseFloat(sliders[0].el.value); // Debt
+        const w2 = parseFloat(sliders[1].el.value); // Growth
+        const w3 = parseFloat(sliders[2].el.value); // QoL/PR
+        const w4 = parseFloat(sliders[3].el.value); // Speed
+        const w5 = parseFloat(sliders[4].el.value); // Prestige
+        const w6 = parseFloat(sliders[5].el.value); // Scholarship
+
+        const totalWeight = w1 + w2 + w3 + w4 + w5 + w6 || 100;
+
+        // Attribute base scores (0-10 scale)
+        // [Debt (higher = better budget), Growth, QoL/PR, Speed, Prestige, Funding]
+        const optA_factors = [3.5, 9.8, 5.5, 7.0, 9.8, 4.0];
+        const optB_factors = [9.5, 7.8, 9.4, 7.0, 8.5, 9.0];
+        const optC_factors = [6.5, 8.2, 9.2, 8.5, 8.8, 6.5];
+        const optD_factors = [9.8, 8.5, 5.0, 9.5, 7.2, 7.0];
+
+        const weights = [w1, w2, w3, w4, w5, w6];
+
+        const calcWeighted = (factors) => {
+          let sum = 0;
+          for (let i = 0; i < factors.length; i++) {
+            sum += factors[i] * weights[i];
+          }
+          return ((sum / totalWeight) * 10).toFixed(1);
+        };
+
+        if (scoreA) scoreA.textContent = calcWeighted(optA_factors);
+        if (scoreB) scoreB.textContent = calcWeighted(optB_factors);
+        if (scoreC) scoreC.textContent = calcWeighted(optC_factors);
+        if (scoreD) scoreD.textContent = calcWeighted(optD_factors);
+      }
+
+      sliders.forEach((item) => {
+        if (!item.el) return;
+        item.el.addEventListener('input', (e) => {
+          if (item.valEl) item.valEl.textContent = `${e.target.value}%`;
+          recalculateScores();
+        });
+      });
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          const defaults = [25, 30, 15, 10, 10, 10];
+          sliders.forEach((item, idx) => {
+            if (item.el) item.el.value = defaults[idx];
+            if (item.valEl) item.valEl.textContent = `${defaults[idx]}%`;
+          });
+          recalculateScores();
+          showToast('Preference weights restored to default calibrated baseline.');
+        });
+      }
+
+      if (lockBtn) {
+        lockBtn.addEventListener('click', () => {
+          showToast('Option B (TU Munich) locked as primary roadmap milestone #1.');
+        });
+      }
+
+      if (exportPdfBtn) {
+        exportPdfBtn.addEventListener('click', () => {
+          showToast('Generating official Decision Matrix PDF report with IPEDS verification...');
+        });
+      }
+
+      if (exportCsvBtn) {
+        exportCsvBtn.addEventListener('click', () => {
+          showToast('Exporting calibrated tabular comparison data to CSV...');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="EduPath AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><span class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight">EduPath AI</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-clarity FinTech intelligence and predictive cognitive roadmapping empowering students to maximize degree ROI, optimize institutional debt, and forecast lifetime career trajectories.</p><div class="flex flex-wrap items-center gap-2 mt-space-xs"><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">Accredited Decision Models</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">FERPA Compliant</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold">Zero Bias Certified</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Platform Engines</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pathways-hub" href="#">Pathways Hub</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="institutions.html">Institution Comparison</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="simulator.html">What-If Simulator</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="decision-matrix.html">Decision Matrix</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="business-pathways.html">Entrepreneurship Pathways</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Resources</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="video-hub" href="#">Video Hub &amp; Masterclasses</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sources" href="#">Federal &amp; IPEDS Data</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="salary-benchmarks" href="#">BLS Salary Benchmarks</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="methodology" href="#">Decision Methodology</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Institutional Compliance</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">FERPA &amp; Privacy Policy</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bias-transparency" href="#">Zero Bias Transparency</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admin-login" href="#">Institution Admin Portal</a></li></ul></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-body-sm text-body-sm">© 2025 EduPath AI Inc. Cognitive Decision Support Engine. FERPA Compliant &amp; Zero Bias Certified.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">ISO/IEC 27001 Certified</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">SOC-2 Type II Verified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>

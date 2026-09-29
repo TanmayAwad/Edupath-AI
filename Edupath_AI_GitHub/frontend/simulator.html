@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006a61", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#004c69", "surface": "#faf8ff", "tertiary-container": "#005878", "primary-fixed": "#e3dfff", "outline-variant": "#c7c4d7", "surface-variant": "#dae2fd", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#001e2c", "secondary-container": "#86f2e4", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "tertiary": "#003f58", "tertiary-fixed": "#c4e7ff", "surface-container-lowest": "#ffffff", "primary": "#2a14b4", "on-error-container": "#93000a", "on-background": "#131b2e", "background": "#faf8ff", "secondary-fixed-dim": "#6bd8cb", "on-secondary": "#ffffff", "primary-container": "#4338ca", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "outline": "#777586", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#100069", "surface-container": "#eaedff", "surface-tint": "#5148d7", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464554", "inverse-on-surface": "#eef0ff", "on-primary-container": "#c1beff", "error-container": "#ffdad6", "on-error": "#ffffff", "on-surface": "#131b2e", "on-tertiary-container": "#77cfff", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#372abf", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin-tablet": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-sm": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "metric-display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "title-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-sm-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-sm-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-sm": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } }</script><title>EduPath AI — Student Education & Career Decision Platform</title></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="EduPath AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><a class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight" href="index.html">EduPath AI</a><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>Decision Co-Pilot</span></div><nav class="hidden 2xl:flex items-center gap-1 overflow-x-auto py-1 px-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="student-profile" href="#">Student Profile</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="institutions.html">Institutions</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" href="simulator.html">What-If Simulator</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="decision-matrix.html">Decision Matrix</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="video-hub" href="#">Video Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="business-pathways.html">Entrepreneurship</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden lg:block w-52 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search pathways, careers, colleges..." type="text"/></div><button class="px-3.5 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.25)] flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="">Start AI Assessment</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Student Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-secondary leading-none">Calibrated</span><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate #812</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Ambient Simulator Workspace -->
+<div class="max-w-[1600px] w-full mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Header Section with Atmospheric Accents -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg md:p-space-xl shadow-sm">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-20 w-80 h-80 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="max-w-3xl flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-semibold tracking-wide flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-ping"></span>
+              STOCHASTIC RESILIENCE ENGINE v3.4
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm hidden sm:inline">FERPA Validated • Real-time Yield Models</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:font-display-lg md:text-display-lg text-on-surface tracking-tight font-extrabold">
+            Simulate Alternate Trajectories &amp; Contingency Resilience
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Stress-test your career and academic journey against geopolitical shifts, funding shortfalls, exam volatility, and technological market disruption. Calibrate fallback pathways before deadlines lock.
+          </p>
+</div>
+<!-- Co-pilot status pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest p-space-sm rounded-xl shadow-sm border-0 shrink-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">balance</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Simulation State</div>
+<div class="font-title-md text-title-md text-secondary font-bold flex items-center gap-1.5">
+              Active Fallback Mapped
+              <span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scenario Preset Selector (4 Key Contingencies) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Preset Threat &amp; Pivot Scenarios</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Select Stress Paradigm to Model</h2>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">swap_horiz</span> Click card to switch simulation state
+        </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md" id="scenario-selector">
+<!-- Scenario 1: US Cutoff Pivot to German TU9 -->
+<button class="scenario-btn text-left p-space-md rounded-xl bg-surface-container-lowest shadow-md transition-all duration-200 ring-2 ring-primary flex flex-col justify-between gap-space-md group" id="scenario-card-1" onclick="selectScenario(1)" type="button">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-error-container text-on-error-container font-semibold">High Probability Impact</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-0.5 transition-transform">alt_route</span>
+</div>
+<div class="font-title-md text-title-md font-bold text-on-surface">Miss Top-15 US Cutoffs?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Automated pivot to German TU9 &amp; Dutch Research universities with tuition-free status.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-bold">Pivot: TU Munich / TU Delft</span>
+<span class="text-primary font-bold">-$44,000 Outlay</span>
+</div>
+</button>
+<!-- Scenario 2: Funding Drop 40% -->
+<button class="scenario-btn text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between gap-space-md group" id="scenario-card-2" onclick="selectScenario(2)" type="button">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold">Financial Stress</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">payments</span>
+</div>
+<div class="font-title-md text-title-md font-bold text-on-surface">Family Funding Drops 40%?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Shift to 100% funded Graduate Research Assistantships (GRA) or accelerated 1+1 Hybrid model.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-bold">Strategy: RA/TA Waivers</span>
+<span class="text-primary font-bold">+$18,500 Stipend</span>
+</div>
+</button>
+<!-- Scenario 3: Non-admission to Med School -->
+<button class="scenario-btn text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between gap-space-md group" id="scenario-card-3" onclick="selectScenario(3)" type="button">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold">Career Re-routing</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">biotech</span>
+</div>
+<div class="font-title-md text-title-md font-bold text-on-surface">Miss MBBS / MD Admission?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Transition to Bioinformatics, Health AI Informatics, or Clinical Data Analytics at tier-1 hubs.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-bold">Pivot: Health Informatics</span>
+<span class="text-secondary font-bold">Day-1 Earning: 2 yrs early</span>
+</div>
+</button>
+<!-- Scenario 4: AI Market Realignment -->
+<button class="scenario-btn text-left p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between gap-space-md group" id="scenario-card-4" onclick="selectScenario(4)" type="button">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">Disruption Risk</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">memory</span>
+</div>
+<div class="font-title-md text-title-md font-bold text-on-surface">AI Tech Stack Disruption?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Software dev commoditization hedge: Specializing in Edge AI, Robotics, and Safety Verification.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="text-secondary font-bold">Hedge: Embedded Edge &amp; Safety</span>
+<span class="text-primary font-bold">+34% Demand Index</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Main Comparison Canvas (7:5 Split Desktop Pattern) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Visual Delta, Trajectory Node Tree & Deep Comparison (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Top Delta Metric Ribbons -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>TIMELINE IMPACT</span>
+<span class="material-symbols-outlined text-base text-secondary">schedule</span>
+</div>
+<div class="font-metric-display text-metric-display font-extrabold text-on-surface flex items-baseline gap-1" id="metric-timeline">
+              0 <span class="font-label-md text-label-md font-normal text-on-surface-variant">Lost Semesters</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span id="metric-timeline-desc">Synchronized winter intake graduation</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>FINANCIAL OUTLAY</span>
+<span class="material-symbols-outlined text-base text-secondary">savings</span>
+</div>
+<div class="font-metric-display text-metric-display font-extrabold text-secondary flex items-baseline gap-1" id="metric-finance">
+              -$38,200
+            </div>
+<div class="font-body-sm text-body-sm text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+<span id="metric-finance-desc">Euro-zone subsidized net tuition</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>ADMISSION RESILIENCE</span>
+<span class="material-symbols-outlined text-base text-primary">security</span>
+</div>
+<div class="font-metric-display text-metric-display font-extrabold text-primary flex items-baseline gap-1" id="metric-odds">
+              +28%
+            </div>
+<div class="font-body-sm text-body-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span id="metric-odds-desc">Dual European direct qualification</span>
+</div>
+</div>
+</div>
+<!-- Comparative Plan Visual Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Trajectory Branching Architecture</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="current-scenario-title">
+                Baseline Plan A vs. Contingency Branch (EU TU9 Pivot)
+              </h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-medium">
+                Dual Track Validated
+              </span>
+</div>
+</div>
+<!-- Branching Path Visualization (Interactive Tree Diagram) -->
+<div class="relative bg-surface-container-low p-space-md md:p-space-lg rounded-xl flex flex-col gap-space-md overflow-hidden">
+<!-- Baseline Path Row -->
+<div class="flex flex-col md:flex-row md:items-center gap-space-md relative">
+<div class="w-full md:w-36 shrink-0 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface text-on-surface-variant font-bold uppercase">Plan A (Default)</span>
+</div>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-space-xs relative">
+<!-- Step 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">STAGE 01</span>
+<span class="w-2 h-2 rounded-full bg-error"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="base-s1-title">US Top-15 Applications</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="base-s1-desc">CMU, UIUC, Cornell MS CS</div>
+<div class="font-label-sm text-label-sm text-error font-medium mt-1">Acceptance: 7-11%</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">STAGE 02</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="base-s2-title">Direct Outlay Loan</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="base-s2-desc">$118k Total 2-yr Tuitions</div>
+<div class="font-label-sm text-label-sm text-error font-medium mt-1">High debt obligation</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">STAGE 03</span>
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="base-s3-title">US OPT STEM Lottery</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="base-s3-desc">H-1B Visa Lottery cycle</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1">Visa risk exposure: 62%</div>
+</div>
+</div>
+</div>
+<!-- Path Divergence Line (Decorative) -->
+<div class="flex items-center gap-space-sm px-2 text-primary">
+<span class="material-symbols-outlined text-lg">fork_right</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-primary">Resilience Trigger Point — Automated Fallback Nodes</span>
+<div class="h-0.5 flex-1 bg-primary/20"></div>
+</div>
+<!-- Contingency Branch 1 (Active Modeled) -->
+<div class="flex flex-col md:flex-row md:items-center gap-space-md relative">
+<div class="w-full md:w-36 shrink-0 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-secondary text-on-secondary font-bold uppercase">Fallback B1</span>
+</div>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-space-xs relative">
+<!-- Step 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm ring-1 ring-secondary/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">STAGE 01 PIVOT</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall-s1-title">TUM / RWTH Aachen</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="fall-s1-desc">English-taught Informatics M.Sc.</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold mt-1">Admit Odds: 84%</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm ring-1 ring-secondary/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">STAGE 02 FINANCES</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall-s2-title">Zero Tuition Model</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="fall-s2-desc">Only €11.2k blocked living acct</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold mt-1">Debt Risk: Negligible</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm ring-1 ring-secondary/30 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">STAGE 03 OUTCOME</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall-s3-title">EU Blue Card Fast-Track</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="fall-s3-desc">Direct permanent residence track</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold mt-1">Guaranteed 18-mo search</div>
+</div>
+</div>
+</div>
+<!-- Contingency Branch 2 (Secondary Fallback) -->
+<div class="flex flex-col md:flex-row md:items-center gap-space-md opacity-90">
+<div class="w-full md:w-36 shrink-0 flex items-center gap-2">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-bold uppercase">Fallback B2</span>
+</div>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-space-xs">
+<!-- Step 1 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall2-s1-title">Delft / Eindhoven TU</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Top European DeepTech Hubs</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall2-s2-title">Erasmus+ Grant</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Partial tuition subsidization</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-sm bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1">
+<div class="font-title-sm text-title-md font-bold text-on-surface truncate" id="fall2-s3-title">NL Search Year (Zoekjaar)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">High ASML/Philips hiring pipeline</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Deep Comparison Matrix Table -->
+<div class="flex flex-col gap-space-sm">
+<h4 class="font-title-md text-title-md text-on-surface font-bold">Multidimensional Metric Audit</h4>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-on-surface">
+<th class="py-2.5 px-3 rounded-l-lg font-title-sm">Evaluation Dimension</th>
+<th class="py-2.5 px-3 font-title-sm">Primary Path (Baseline)</th>
+<th class="py-2.5 px-3 rounded-r-lg font-title-sm text-secondary">Contingency Pivot (Simulated)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container" id="matrix-table-body">
+<tr>
+<td class="py-3 px-3 font-semibold text-on-surface">Total Academic Cost (Tuition + Cost of Living)</td>
+<td class="py-3 px-3 text-on-surface-variant">$146,000 USD (Heavy loan reliance)</td>
+<td class="py-3 px-3 text-secondary font-bold">$34,800 USD (Blocked Account Only)</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-semibold text-on-surface">Break-Even Velocity</td>
+<td class="py-3 px-3 text-on-surface-variant">4.2 Years Post-Graduation</td>
+<td class="py-3 px-3 text-secondary font-bold">1.4 Years Post-Graduation</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-semibold text-on-surface">Admission Acceptance Probability</td>
+<td class="py-3 px-3 text-error font-medium">9.4% (Volatile pool)</td>
+<td class="py-3 px-3 text-secondary font-bold">88.2% (Criteria Match)</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-semibold text-on-surface">Post-Study Work Authorization</td>
+<td class="py-3 px-3 text-on-surface-variant">3-Year OPT with H1B Lottery Constraint</td>
+<td class="py-3 px-3 text-secondary font-bold">18-Month Guaranteed + EU Blue Card</td>
+</tr>
+<tr>
+<td class="py-3 px-3 font-semibold text-on-surface">Downside Risk Index (0-100)</td>
+<td class="py-3 px-3 text-error font-bold">78 / 100 (Critical)</td>
+<td class="py-3 px-3 text-secondary font-bold">18 / 100 (Shielded)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Real-time Stress Sliders & Risk Mitigation Playbook (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Live Stress-Testing Interactive Sliders -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">tune</span>
+</span>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Dynamic Stress Engine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Drag to recalculate trajectory probabilities</p>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline" onclick="resetSliders()">Reset</button>
+</div>
+<!-- Slider 1: Total Available Budget -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Annual Family &amp; Self Budget</span>
+<span class="text-primary font-bold" id="display-budget">$45,000 / yr</span>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="slider-budget" max="90000" min="10000" oninput="updateLiveCalculations()" step="5000" type="range" value="45000"/>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>$10k (Lean)</span>
+<span>$50k</span>
+<span>$90k (Full Private)</span>
+</div>
+</div>
+<!-- Slider 2: Standardized Exam / GPA Metric -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Standardized Metric (GRE / GPA Calibrated)</span>
+<span class="text-primary font-bold" id="display-exam">GRE 318 / 3.4 GPA</span>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="slider-exam" max="340" min="290" oninput="updateLiveCalculations()" step="2" type="range" value="318"/>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>290 (Base)</span>
+<span>315 (Target)</span>
+<span>340 (Top 1%)</span>
+</div>
+</div>
+<!-- Slider 3: Timeline / Target Completion Year -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-semibold">Target Transition Deadline</span>
+<span class="text-primary font-bold" id="display-year">Fall 2026 Intake</span>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="slider-year" max="4" min="1" oninput="updateLiveCalculations()" step="1" type="range" value="2"/>
+<div class="flex justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Immediate (2025)</span>
+<span>2026</span>
+<span>2027</span>
+<span>Deferred (2028)</span>
+</div>
+</div>
+<!-- Live Output Score Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Calculated Plan Survivability Index</span>
+<span class="font-title-md text-title-md font-extrabold text-secondary" id="display-survivability">86 / 100</span>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-300" id="progress-bar-survivability" style="width: 86%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Status: <strong class="text-secondary" id="display-status-text">Robust Cushion</strong></span>
+<span id="display-risk-level">Risk Level: Low</span>
+</div>
+</div>
+</div>
+<!-- AI Risk Mitigation Playbook -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Risk Mitigation Playbook</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed font-bold">
+              4 AI Directives
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Specific proactive actions to insulate your profile and trigger alternative pathway qualification:
+          </p>
+<div class="flex flex-col gap-space-sm" id="playbook-action-items">
+<!-- Action Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">publish</span>
+<div class="flex flex-col gap-0.5">
+<div class="font-title-sm text-title-md font-semibold text-on-surface">Publish 1 Research Preprint to arXiv</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  Guarantees ECTS academic rigor requirements for direct entry into German TU9 without subject deficit exams.
+                </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">+22% Direct Admit Odds</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. 4-6 weeks effort</span>
+</div>
+</div>
+</div>
+<!-- Action Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-primary shrink-0 mt-0.5">upgrade</span>
+<div class="flex flex-col gap-0.5">
+<div class="font-title-sm text-title-md font-semibold text-on-surface">Retake GRE Quant Module for 168+ Target</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  Overrides sub-3.5 GPA flags for Dutch technical universities (TU Delft &amp; Eindhoven) prerequisite matrix.
+                </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Eliminates GPA Gatekeeper</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">25 day study plan</span>
+</div>
+</div>
+</div>
+<!-- Action Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-secondary shrink-0 mt-0.5">account_balance_wallet</span>
+<div class="flex flex-col gap-0.5">
+<div class="font-title-sm text-title-md font-semibold text-on-surface">Secure German Blocked Account Pre-verification</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  Initialize Fintiba / Coracle escrow protocol early to clear visa waiting times from 14 weeks to 18 calendar days.
+                </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Visa Acceleration: -60 Days</span>
+</div>
+</div>
+</div>
+<!-- Action Item 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-all hover:bg-surface-container">
+<span class="material-symbols-outlined text-primary shrink-0 mt-0.5">school</span>
+<div class="flex flex-col gap-0.5">
+<div class="font-title-sm text-title-md font-semibold text-on-surface">Lock Parallel DAAD Scholarship Portfolio</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+                  Apply to ERP &amp; Helmut-Schmidt fellowship pools 9 months before semester kickoff to secure full monthly living stipends.
+                </div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">€934/mo Full Subsidy</span>
+<span class="text-outline">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero Repayment</span>
+</div>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-base">download</span>
+            Export Complete Mitigation Plan (PDF)
+          </button>
+</div>
+</div>
+</div>
+<!-- Institutional Safety Net & Decision Co-Pilot Callout -->
+<div class="p-space-lg rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-2xl">insights</span>
+</div>
+<div class="flex flex-col">
+<div class="font-title-md text-title-md text-on-surface font-bold">Need a bespoke multi-degree stress test?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Connect your LinkedIn or academic transcript to auto-generate personalized contingency branches tailored to your exact GPA, coursework, and citizenship.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<button class="flex-1 md:flex-initial px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-variant transition-colors shadow-sm">
+          Upload Transcript (.JSON / .PDF)
+        </button>
+<button class="flex-1 md:flex-initial px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+          Auto-Calibrate Profile
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Scenario Controller -->
+<script>
+    const scenarios = {
+      1: {
+        title: "Baseline Plan A vs. Contingency Branch (EU TU9 Pivot)",
+        timeline: "0",
+        timelineDesc: "Synchronized winter intake graduation",
+        finance: "-$38,200",
+        financeDesc: "Euro-zone subsidized net tuition",
+        odds: "+28%",
+        oddsDesc: "Dual European direct qualification",
+        baseS1Title: "US Top-15 Applications",
+        baseS1Desc: "CMU, UIUC, Cornell MS CS",
+        baseS2Title: "Direct Outlay Loan",
+        baseS2Desc: "$118k Total 2-yr Tuitions",
+        baseS3Title: "US OPT STEM Lottery",
+        baseS3Desc: "H-1B Visa Lottery cycle",
+        fallS1Title: "TUM / RWTH Aachen",
+        fallS1Desc: "English-taught Informatics M.Sc.",
+        fallS2Title: "Zero Tuition Model",
+        fallS2Desc: "Only €11.2k blocked living acct",
+        fallS3Title: "EU Blue Card Fast-Track",
+        fallS3Desc: "Direct permanent residence track",
+        fall2S1Title: "Delft / Eindhoven TU",
+        fall2S2Title: "Erasmus+ Grant",
+        fall2S3Title: "NL Search Year (Zoekjaar)",
+        survivability: 86,
+        statusText: "Robust Cushion",
+        riskLevel: "Risk Level: Low",
+        playbook: [
+          { icon: "publish", title: "Publish 1 Research Preprint to arXiv", desc: "Guarantees ECTS academic rigor requirements for direct entry into German TU9 without subject deficit exams.", tag: "+22% Direct Admit Odds", effort: "Est. 4-6 weeks effort", color: "text-secondary" },
+          { icon: "upgrade", title: "Retake GRE Quant Module for 168+ Target", desc: "Overrides sub-3.5 GPA flags for Dutch technical universities (TU Delft & Eindhoven) prerequisite matrix.", tag: "Eliminates GPA Gatekeeper", effort: "25 day study plan", color: "text-primary" },
+          { icon: "account_balance_wallet", title: "Secure German Blocked Account Pre-verification", desc: "Initialize Fintiba / Coracle escrow protocol early to clear visa waiting times from 14 weeks to 18 calendar days.", tag: "Visa Acceleration: -60 Days", effort: "Administrative action", color: "text-secondary" },
+          { icon: "school", title: "Lock Parallel DAAD Scholarship Portfolio", desc: "Apply to ERP & Helmut-Schmidt fellowship pools 9 months before semester kickoff to secure full monthly living stipends.", tag: "€934/mo Full Subsidy", effort: "Zero Repayment", color: "text-primary" }
+        ],
+        matrix: [
+          { dim: "Total Academic Cost (Tuition + Living)", base: "$146,000 USD (Heavy loan reliance)", pivot: "$34,800 USD (Blocked Account Only)", pivotClass: "text-secondary font-bold" },
+          { dim: "Break-Even Velocity", base: "4.2 Years Post-Graduation", pivot: "1.4 Years Post-Graduation", pivotClass: "text-secondary font-bold" },
+          { dim: "Admission Acceptance Probability", base: "9.4% (Volatile pool)", pivot: "88.2% (Criteria Match)", pivotClass: "text-secondary font-bold" },
+          { dim: "Post-Study Work Authorization", base: "3-Year OPT with H1B Lottery Constraint", pivot: "18-Month Guaranteed + EU Blue Card", pivotClass: "text-secondary font-bold" },
+          { dim: "Downside Risk Index (0-100)", base: "78 / 100 (Critical)", pivot: "18 / 100 (Shielded)", pivotClass: "text-secondary font-bold" }
+        ]
+      },
+      2: {
+        title: "Baseline Plan A vs. Contingency Branch (40% Family Funding Drop)",
+        timeline: "+1",
+        timelineDesc: "1 Semester delay for assistantship onboarding",
+        finance: "-$54,000",
+        financeDesc: "Tuition waiver + Monthly Teaching Stipend",
+        odds: "+19%",
+        oddsDesc: "Secured Graduate Assistantship target",
+        baseS1Title: "Self-Funded Master's Degree",
+        baseS1Desc: "Paying full out-of-state tuition",
+        baseS2Title: "Private High-Interest Loan",
+        baseS2Desc: "11.5% APR student refinancing",
+        baseS3Title: "Emergency Campus Work",
+        baseS3Desc: "Limited 20hr/wk desk positions",
+        fallS1Title: "1+1 Hybrid Collaborative Model",
+        fallS1Desc: "Year 1 online/local, Year 2 on-campus",
+        fallS2Title: "Funded Research/TA Position",
+        fallS2Desc: "100% Tuition remission + $2,100/mo stipend",
+        fallS3Title: "Accelerated Co-Op Placement",
+        fallS3Desc: "Full-time CPT earnings offset living",
+        fall2S1Title: "Public R1 Assistantship",
+        fall2S2Title: "Corporate Fellowship Pool",
+        fall2S3Title: "Dual-Degree Work-Study",
+        survivability: 74,
+        statusText: "Balanced Adaptation",
+        riskLevel: "Risk Level: Moderate",
+        playbook: [
+          { icon: "engineering", title: "Reach out to 8 Principal Investigators (PIs)", desc: "Contact lab directors with open grant-funded projects in Edge AI and high performance computing prior to term start.", tag: "+45% TA/RA Match Rate", effort: "Targeted outreach", color: "text-secondary" },
+          { icon: "badge", title: "Submit Application for On-Campus Research Assistantships", desc: "Pre-screen for Graduate Assistantships in complementary departments (Math, Bio-Statistics, Library Science).", tag: "Full Tuition Remission", effort: "Immediate eligibility", color: "text-primary" },
+          { icon: "schedule", title: "Convert to 1+1 Hybrid Degree Track", desc: "Complete 15 foundational credits online at $450/credit before matriculating on-site for thesis work.", tag: "Saves $28,000 Instantly", effort: "Zero visa lag", color: "text-secondary" },
+          { icon: "account_tree", title: "File Need-based Institutional Appeals", desc: "Submit certified proof of parental financial alteration to university bursar to unlock emergency endowment funds.", tag: "Average grant: $7,500", effort: "Requires affidavit", color: "text-primary" }
+        ],
+        matrix: [
+          { dim: "Total Academic Cost (Tuition + Living)", base: "$124,000 USD", pivot: "$42,000 USD (Net with assistantship)", pivotClass: "text-secondary font-bold" },
+          { dim: "Break-Even Velocity", base: "3.8 Years", pivot: "0.9 Years (Near zero debt load)", pivotClass: "text-secondary font-bold" },
+          { dim: "Admission Acceptance Probability", base: "65% (Fee payer)", pivot: "42% (Competitive for grants)", pivotClass: "text-on-surface font-semibold" },
+          { dim: "Post-Study Work Authorization", base: "Standard STEM OPT", pivot: "Standard STEM OPT + Prior CPT experience", pivotClass: "text-secondary font-bold" },
+          { dim: "Downside Risk Index (0-100)", base: "84 / 100 (High insolvency risk)", pivot: "31 / 100 (Safe cashflow)", pivotClass: "text-secondary font-bold" }
+        ]
+      },
+      3: {
+        title: "Baseline Plan A vs. Contingency Branch (Med School / MBBS Re-routing)",
+        timeline: "-2",
+        timelineDesc: "Earn high-salary 2 full years earlier",
+        finance: "+$140,000",
+        financeDesc: "Avoided medical school debt burden",
+        odds: "+44%",
+        oddsDesc: "High biotech demand admission profile",
+        baseS1Title: "Pre-Med / MCAT Repeat",
+        baseS1Desc: "Year-long gap prep cycle",
+        baseS2Title: "4-Year MD / MBBS Tuition",
+        baseS2Desc: "$280,000+ debt accumulation",
+        baseS3Title: "3-5 Year Residency Pay",
+        baseS3Desc: "Sub-minimum hourly compensation",
+        fallS1Title: "M.Sc. Biomedical Informatics",
+        fallS1Desc: "Targeting Johns Hopkins, Columbia, Karolinska",
+        fallS2Title: "Direct Pharma AI Traineeship",
+        fallS2Desc: "Genentech / Novartis funded projects",
+        fallS3Title: "Health Data Scientist Role",
+        fallS3Desc: "$125,000 starting base compensation",
+        fall2S1Title: "Clinical Genomics Specialization",
+        fall2S2Title: "Regulatory Affairs Certification",
+        fall2S3Title: "MedTech Product Manager Track",
+        survivability: 91,
+        statusText: "Exceptional Trajectory",
+        riskLevel: "Risk Level: Minimal",
+        playbook: [
+          { icon: "terminal", title: "Complete Bio-Python & R Bioinformatics Fast-Track", desc: "Build hands-on pipeline demonstrations on GitHub analyzing NCBI genomic datasets to substantiate computational skills.", tag: "Portfolio Anchor", effort: "30 hours self-paced", color: "text-primary" },
+          { icon: "health_and_safety", title: "Cross-credit Undergraduate Biology/Chemistry Courses", desc: "Translate pre-med life-science credits into high-priority admission points for Health Informatics programs.", tag: "100% Credit Transfer", effort: "Transcript validation", color: "text-secondary" },
+          { icon: "hub", title: "Apply for Stanford & Karolinska Health Data Fellowships", desc: "Target non-clinical health tech fellowships that prize clinical domain intuition combined with modern analytics.", tag: "$65k Fellowship Stipend", effort: "Deadline Oct 15", color: "text-primary" },
+          { icon: "work", title: "Enter Digital Health / Clinical Trial Contract Hubs", desc: "Qualify for Contract Research Organization (CRO) analyst roles yielding immediate $85k+ starting salaries.", tag: "Immediate Liquidity", effort: "High industry demand", color: "text-secondary" }
+        ],
+        matrix: [
+          { dim: "Total Academic Cost", base: "$310,000 USD (MD/MBBS)", pivot: "$58,000 USD (Biotech M.Sc.)", pivotClass: "text-secondary font-bold" },
+          { dim: "Years to Positive Net Worth", base: "11.5 Years (Post-residency)", pivot: "2.8 Years", pivotClass: "text-secondary font-bold" },
+          { dim: "Admission Acceptance Probability", base: "3.6% (US MD Pool)", pivot: "52% (Tier-1 Health Informatics)", pivotClass: "text-secondary font-bold" },
+          { dim: "Work-Life Balance Index", base: "22 / 100 (80hr hospital shifts)", pivot: "84 / 100 (Flexible tech schedules)", pivotClass: "text-secondary font-bold" },
+          { dim: "Downside Risk Index (0-100)", base: "68 / 100 (Burnout & match failure)", pivot: "14 / 100 (Diversified roles)", pivotClass: "text-secondary font-bold" }
+        ]
+      },
+      4: {
+        title: "Baseline Plan A vs. Contingency Branch (AI Market Disruption Hedge)",
+        timeline: "0",
+        timelineDesc: "Embedded alongside current degree completion",
+        finance: "+$32,000",
+        financeDesc: "Niche premium for verification engineers",
+        odds: "+36%",
+        oddsDesc: "Insulated from pure coding automation",
+        baseS1Title: "Generic Web/App CS Curriculum",
+        baseS1Desc: "High exposure to code-gen automation",
+        baseS2Title: "Junior SDE Mass Market",
+        baseS2Desc: "Oversaturated entry-level applicant pool",
+        baseS3Title: "Vulnerable to LLM Tooling",
+        baseS3Desc: "Declining junior engineering headcount",
+        fallS1Title: "Edge AI & Hardware Co-Design",
+        fallS1Desc: "Focus on RISC-V, Embedded C, Neural Accelerators",
+        fallS2Title: "Safety Verification & Formal Methods",
+        fallS2Desc: "Autonomous systems, ISO 26262 certification",
+        fallS3Title: "Robotics & Physical AI Systems",
+        fallS3Desc: "High barrier-to-entry physical testing",
+        fall2S1Title: "Cyber-Physical Systems M.Sc.",
+        fall2S2Title: "ASIC/FPGA Acceleration Lab",
+        fall2S3Title: "Defense & Automotive Core Tier",
+        survivability: 89,
+        statusText: "Future-Proofed Moat",
+        riskLevel: "Risk Level: Low",
+        playbook: [
+          { icon: "memory", title: "Complete NVIDIA Jetson & TensorRT Embedded Specialization", desc: "Gain hands-on proficiency deploying quantized vision and sensor models on constrained edge hardware.", tag: "Critical Niche Skill", effort: "3-4 weeks projects", color: "text-primary" },
+          { icon: "verified", title: "Target ISO 26262 & DO-178C Safety Architecture Modules", desc: "Formal validation cannot be automated by generative models due to statutory liability and audit criteria.", tag: "Defensible Career Moat", effort: "High corporate demand", color: "text-secondary" },
+          { icon: "developer_board", title: "Publish 2 Open-Source C++ Robotics Middleware Drivers", desc: "Demonstrate concrete low-level real-time operating system (RTOS) competencies beyond Python scripting.", tag: "GitHub Recruiter Magnet", effort: "20 hours dev", color: "text-primary" },
+          { icon: "handshake", title: "Pivot Co-op Applications to Automotive & Aerospace", desc: "Secure safety-critical co-ops (Bosch, Lockheed, BMW, Waymo) insulated from consumer tech layoffs.", tag: "$48/hr Co-op Pay", effort: "Continuous intake", color: "text-secondary" }
+        ],
+        matrix: [
+          { dim: "Entry-Level Market Saturation", base: "Extreme (1,000+ applicants/job)", pivot: "Low-Moderate (Specialized prerequisites)", pivotClass: "text-secondary font-bold" },
+          { dim: "LLM Displaceability Risk", base: "74% (Routine code synthesis)", pivot: "12% (Hardware-tethered validation)", pivotClass: "text-secondary font-bold" },
+          { dim: "Starting Base Salary Benchmark", base: "$105,000 USD (Compressed junior tier)", pivot: "$138,000 USD (Specialized Systems AI)", pivotClass: "text-secondary font-bold" },
+          { dim: "5-Year Promotion Velocity", base: "Linear / Saturated", pivot: "Fast-Track (Critical safety sign-off roles)", pivotClass: "text-secondary font-bold" },
+          { dim: "Downside Risk Index (0-100)", base: "71 / 100 (High AI obsolescence)", pivot: "16 / 100 (Robust engineering moat)", pivotClass: "text-secondary font-bold" }
+        ]
+      }
+    };
+
+    let activeScenarioId = 1;
+
+    function selectScenario(id) {
+      activeScenarioId = id;
+      
+      // Update scenario card active states
+      for (let i = 1; i <= 4; i++) {
+        const card = document.getElementById(`scenario-card-${i}`);
+        if (i === id) {
+          card.classList.add('ring-2', 'ring-primary', 'shadow-md');
+          card.classList.remove('shadow-sm');
+        } else {
+          card.classList.remove('ring-2', 'ring-primary', 'shadow-md');
+          card.classList.add('shadow-sm');
+        }
+      }
+
+      const data = scenarios[id];
+
+      // Update text fields
+      document.getElementById('current-scenario-title').innerText = data.title;
+      document.getElementById('metric-timeline').innerHTML = `${data.timeline} <span class="font-label-md text-label-md font-normal text-on-surface-variant">Semesters</span>`;
+      document.getElementById('metric-timeline-desc').innerText = data.timelineDesc;
+      document.getElementById('metric-finance').innerText = data.finance;
+      document.getElementById('metric-finance-desc').innerText = data.financeDesc;
+      document.getElementById('metric-odds').innerText = data.odds;
+      document.getElementById('metric-odds-desc').innerText = data.oddsDesc;
+
+      // Update steps
+      document.getElementById('base-s1-title').innerText = data.baseS1Title;
+      document.getElementById('base-s1-desc').innerText = data.baseS1Desc;
+      document.getElementById('base-s2-title').innerText = data.baseS2Title;
+      document.getElementById('base-s2-desc').innerText = data.baseS2Desc;
+      document.getElementById('base-s3-title').innerText = data.baseS3Title;
+      document.getElementById('base-s3-desc').innerText = data.baseS3Desc;
+
+      document.getElementById('fall-s1-title').innerText = data.fallS1Title;
+      document.getElementById('fall-s1-desc').innerText = data.fallS1Desc;
+      document.getElementById('fall-s2-title').innerText = data.fallS2Title;
+      document.getElementById('fall-s2-desc').innerText = data.fallS2Desc;
+      document.getElementById('fall-s3-title').innerText = data.fallS3Title;
+      document.getElementById('fall-s3-desc').innerText = data.fallS3Desc;
+
+      document.getElementById('fall2-s1-title').innerText = data.fall2S1Title;
+      document.getElementById('fall2-s2-title').innerText = data.fall2S2Title;
+      document.getElementById('fall2-s3-title').innerText = data.fall2S3Title;
+
+      // Update Matrix Table
+      const tbody = document.getElementById('matrix-table-body');
+      tbody.innerHTML = data.matrix.map(row => `
+        <tr>
+          <td class="py-3 px-3 font-semibold text-on-surface">${row.dim}</td>
+          <td class="py-3 px-3 text-on-surface-variant">${row.base}</td>
+          <td class="py-3 px-3 ${row.pivotClass}">${row.pivot}</td>
+        </tr>
+      `).join('');
+
+      // Update Playbook Items
+      const playbookContainer = document.getElementById('playbook-action-items');
+      playbookContainer.innerHTML = data.playbook.map(item => `
+        <div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-sm transition-all hover:bg-surface-container">
+          <span class="material-symbols-outlined ${item.color} shrink-0 mt-0.5">${item.icon}</span>
+          <div class="flex flex-col gap-0.5">
+            <div class="font-title-sm text-title-md font-semibold text-on-surface">${item.title}</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant">${item.desc}</div>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="font-label-sm text-label-sm ${item.color} font-bold">${item.tag}</span>
+              <span class="text-outline">&bull;</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant">${item.effort}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Recalculate slider based metrics
+      updateLiveCalculations();
+    }
+
+    function updateLiveCalculations() {
+      const budget = parseInt(document.getElementById('slider-budget').value, 10);
+      const exam = parseInt(document.getElementById('slider-exam').value, 10);
+      const year = parseInt(document.getElementById('slider-year').value, 10);
+
+      // Update Labels
+      document.getElementById('display-budget').innerText = `$${budget.toLocaleString()} / yr`;
+      document.getElementById('display-exam').innerText = `Score: ${exam} Calibrated`;
+
+      const yearLabels = { 1: "Immediate 2025", 2: "Fall 2026 Intake", 3: "Fall 2027 Intake", 4: "Deferred 2028" };
+      document.getElementById('display-year').innerText = yearLabels[year] || "Fall 2026 Intake";
+
+      // Mathematical survivability calculation
+      // Normalized: budget weight 0.35, exam weight 0.45, prep horizon weight 0.20
+      const budgetScore = Math.min(100, Math.max(10, ((budget - 10000) / 80000) * 100));
+      const examScore = Math.min(100, Math.max(10, ((exam - 290) / 50) * 100));
+      const timeScore = (year / 4) * 100;
+
+      let baseScore = Math.round((budgetScore * 0.35) + (examScore * 0.45) + (timeScore * 0.20));
+      
+      // Scenario specific resilience boost for fallbacks
+      if (activeScenarioId === 1) baseScore = Math.min(98, baseScore + 12); // TU9 removes budget penalty
+      if (activeScenarioId === 3) baseScore = Math.min(99, baseScore + 15); // Health Tech high demand
+
+      document.getElementById('display-survivability').innerText = `${baseScore} / 100`;
+      document.getElementById('progress-bar-survivability').style.width = `${baseScore}%`;
+
+      const statusText = document.getElementById('display-status-text');
+      const riskLevel = document.getElementById('display-risk-level');
+
+      if (baseScore >= 80) {
+        statusText.innerText = "Robust Cushion";
+        statusText.className = "text-secondary font-bold";
+        riskLevel.innerText = "Risk Level: Low";
+        riskLevel.className = "font-label-sm text-label-sm text-secondary";
+      } else if (baseScore >= 60) {
+        statusText.innerText = "Moderate Viability";
+        statusText.className = "text-primary font-bold";
+        riskLevel.innerText = "Risk Level: Medium";
+        riskLevel.className = "font-label-sm text-label-sm text-primary";
+      } else {
+        statusText.innerText = "Vulnerable Exposure";
+        statusText.className = "text-error font-bold";
+        riskLevel.innerText = "Risk Level: High";
+        riskLevel.className = "font-label-sm text-label-sm text-error";
+      }
+    }
+
+    function resetSliders() {
+      document.getElementById('slider-budget').value = 45000;
+      document.getElementById('slider-exam').value = 318;
+      document.getElementById('slider-year').value = 2;
+      updateLiveCalculations();
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="EduPath AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><span class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight">EduPath AI</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-clarity FinTech intelligence and predictive cognitive roadmapping empowering students to maximize degree ROI, optimize institutional debt, and forecast lifetime career trajectories.</p><div class="flex flex-wrap items-center gap-2 mt-space-xs"><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">Accredited Decision Models</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">FERPA Compliant</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold">Zero Bias Certified</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Platform Engines</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pathways-hub" href="#">Pathways Hub</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="institutions.html">Institution Comparison</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="simulator.html">What-If Simulator</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="decision-matrix.html">Decision Matrix</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="business-pathways.html">Entrepreneurship Pathways</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Resources</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="video-hub" href="#">Video Hub &amp; Masterclasses</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sources" href="#">Federal &amp; IPEDS Data</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="salary-benchmarks" href="#">BLS Salary Benchmarks</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="methodology" href="#">Decision Methodology</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Institutional Compliance</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">FERPA &amp; Privacy Policy</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bias-transparency" href="#">Zero Bias Transparency</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admin-login" href="#">Institution Admin Portal</a></li></ul></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-body-sm text-body-sm">© 2025 EduPath AI Inc. Cognitive Decision Support Engine. FERPA Compliant &amp; Zero Bias Certified.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">ISO/IEC 27001 Certified</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">SOC-2 Type II Verified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>

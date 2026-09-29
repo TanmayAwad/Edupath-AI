@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+
+<html class="" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006a61", "surface-bright": "#faf8ff", "on-secondary-container": "#006f66", "on-tertiary-fixed-variant": "#004c69", "surface": "#faf8ff", "tertiary-container": "#005878", "primary-fixed": "#e3dfff", "outline-variant": "#c7c4d7", "surface-variant": "#dae2fd", "on-secondary-fixed": "#00201d", "on-tertiary-fixed": "#001e2c", "secondary-container": "#86f2e4", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "tertiary": "#003f58", "tertiary-fixed": "#c4e7ff", "surface-container-lowest": "#ffffff", "primary": "#2a14b4", "on-error-container": "#93000a", "on-background": "#131b2e", "background": "#faf8ff", "secondary-fixed-dim": "#6bd8cb", "on-secondary": "#ffffff", "primary-container": "#4338ca", "secondary-fixed": "#89f5e7", "surface-dim": "#d2d9f4", "outline": "#777586", "tertiary-fixed-dim": "#7bd0ff", "on-primary-fixed": "#100069", "surface-container": "#eaedff", "surface-tint": "#5148d7", "surface-container-high": "#e2e7ff", "primary-fixed-dim": "#c3c0ff", "on-surface-variant": "#464554", "inverse-on-surface": "#eef0ff", "on-primary-container": "#c1beff", "error-container": "#ffdad6", "on-error": "#ffffff", "on-surface": "#131b2e", "on-tertiary-container": "#77cfff", "on-secondary-fixed-variant": "#005049", "inverse-surface": "#283044", "surface-container-low": "#f2f3ff", "on-tertiary": "#ffffff", "inverse-primary": "#c3c0ff", "on-primary-fixed-variant": "#372abf", "on-primary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin-tablet": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-sm": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "metric-display": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Inter" ], "title-lg": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "display-sm-mobile": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-sm": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ] }, "fontSize": { "metric-display": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "title-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "display-sm-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "display-sm": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ] } } } }</script><title>EduPath AI — Student Education & Career Decision Platform</title></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm shrink-0"><img alt="EduPath AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><a class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight" href="index.html">EduPath AI</a><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-primary"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim animate-pulse"></span>Decision Co-Pilot</span></div><nav class="hidden 2xl:flex items-center gap-1 overflow-x-auto py-1 px-1 rounded-full bg-surface-container-low" data-active-classes="bg-primary text-on-primary font-semibold shadow-sm"><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="student-profile" href="#">Student Profile</a><a aria-current="page" class="px-3 py-1.5 rounded-full transition-all whitespace-nowrap bg-primary text-on-primary font-semibold shadow-sm" data-path="pathways-hub" href="#">Pathways Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="institutions.html">Institutions</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="simulator.html">What-If Simulator</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="decision-matrix.html">Decision Matrix</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" data-path="video-hub" href="#">Video Hub</a><a class="px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all whitespace-nowrap" href="business-pathways.html">Entrepreneurship</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="relative hidden lg:block w-52 xl:w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg font-body-sm text-body-sm bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search pathways, careers, colleges..." type="text"/></div><button class="px-3.5 py-2 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_4px_14px_0_rgba(67,56,202,0.25)] flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">auto_awesome</span><span class="">Start AI Assessment</span></button><div class="flex items-center gap-2 pl-space-xs"><div class="relative"><img alt="Student Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd228giyJ_fv_MkgC2WqtzyhxD7_szVBA04ZHJoYMwOrCmG50hnefCJwEX3KlTyPG_Su5x45vfh0aCcWjwiGL-vWmSbMIwWoqpkuYlsgMipnnZkp2u-Z5qZSAVS8FiuKmZwNyyKsvdaEchry-BQ3zaNLV29g2FhcrHBl3I-kkJoXAhrdPr2kSvrFdWYfDlnVfJDgeI8aBhvsHl17c3XKabat6AXM9mBopksJebf-9_2WW7PR1J7kQGAA"/><span class="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden md:flex flex-col"><span class="font-label-sm text-label-sm font-semibold text-secondary leading-none">Calibrated</span><span class="font-body-sm text-body-sm text-on-surface-variant">Candidate #812</span></div></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin pb-24 flex flex-col gap-y-10">
+<!-- TOP CONTROL & SUBHEADER NAVIGATION -->
+<section class="flex flex-col gap-6 pt-4">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+            Dashboard
+          </a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-title-sm font-semibold">Decision Engine</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Pathways Discovery Hub</span>
+</div>
+<!-- Segmented Mode Switcher -->
+<div class="inline-flex p-1 rounded-full bg-surface-container self-start lg:self-auto shadow-sm">
+<button class="px-5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-sm transition-all flex items-center gap-2" id="view-edu-btn">
+<span class="material-symbols-outlined text-[16px]">school</span>
+            Education Pathways
+          </button>
+<button class="px-5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2" id="view-career-btn">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+            Career Trajectories
+          </button>
+</div>
+</div>
+<!-- Advanced Filter Panel -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-5 md:p-6 flex flex-col gap-5">
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center gap-4">
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-inner" placeholder="Search degrees, majors, certifications, or career vectors..." type="text"/>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant font-medium">Level:</span>
+<select class="bg-transparent font-semibold text-primary focus:outline-none cursor-pointer">
+<option>All Degrees</option>
+<option>Bachelors (B.S./B.A.)</option>
+<option selected="">Masters / Postgrad</option>
+<option>Doctorate (Ph.D.)</option>
+<option>Specialized Diploma</option>
+</select>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant font-medium">Duration:</span>
+<select class="bg-transparent font-semibold text-primary focus:outline-none cursor-pointer">
+<option>Any Duration</option>
+<option>1 - 2 Years</option>
+<option selected="">2 - 4 Years</option>
+<option>5+ Years Accelerated</option>
+</select>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant font-medium">Budget:</span>
+<select class="bg-transparent font-semibold text-primary focus:outline-none cursor-pointer">
+<option>Under $30k/yr</option>
+<option selected="">$30k - $60k/yr</option>
+<option>$60k - $90k/yr</option>
+<option>Full Ride Eligible</option>
+</select>
+</div>
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">public</span>
+<span class="text-on-surface-variant font-medium">Mobility:</span>
+<span class="font-semibold text-secondary">Global (STEM OPT / H1-B)</span>
+</div>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors flex items-center gap-1.5 ml-auto">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+              Reset Filters
+            </button>
+</div>
+</div>
+<!-- Academic & Functional Stream Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline shrink-0 mr-1">Disciplines:</span>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm shrink-0">All Streams</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">IT, AI &amp; Data</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Engineering &amp; Robotics</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Medical &amp; BioTech</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Commerce &amp; FinTech</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Pure Sciences</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Design &amp; HCI</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Management &amp; Strategy</button>
+<button class="px-3 py-1 rounded-full font-label-md text-label-md bg-surface-container hover:bg-surface-container-high text-on-surface shrink-0 transition-colors">Vocational / Licensure</button>
+</div>
+</div>
+</section>
+<!-- AI RECOMMENDATION HERO BANNER -->
+<section class="relative overflow-hidden rounded-2xl bg-surface-container-lowest shadow-md">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-16 w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="relative p-6 md:p-8 lg:p-10 flex flex-col xl:flex-row xl:items-center justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-3xl">
+<div class="flex flex-wrap items-center gap-3">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full font-label-md text-label-md font-semibold bg-primary-fixed text-on-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              AI Cognitive Calibration
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-md text-label-md font-semibold bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Candidate Profile #812 Matched
+            </span>
+<span class="font-body-sm text-body-sm text-outline">Updated 14 mins ago</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-baseline gap-3 flex-wrap">
+<span class="font-headline-lg text-headline-lg md:font-display-sm md:text-display-sm text-on-surface tracking-tight">
+                M.S. in Machine Learning &amp; Autonomous Systems
+              </span>
+<span class="font-title-md text-title-md font-semibold text-secondary">→ Applied AI Research Scientist</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+              Based on your quantified strengths in Advanced Multivariate Calculus (A), Data Structures (96th percentile), and high risk-adjusted salary tolerance, our synthetic predictive engine predicts peak 10-year equity leverage in Autonomous Perception and Deep Learning architectures.
+            </p>
+</div>
+<!-- Micro Metas -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tuition Payback</span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface">1.8 Years</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Median Yr-1 Comp</span>
+<span class="font-title-lg text-title-lg font-bold text-secondary">$142,000</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">H-1B / Visa Index</span>
+<span class="font-title-lg text-title-lg font-bold text-on-surface">98/100</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Industry Velocity</span>
+<span class="font-title-lg text-title-lg font-bold text-primary">+28.4% YoY</span>
+</div>
+</div>
+</div>
+<!-- Radial Score and Quick CTA Callout -->
+<div class="flex xl:flex-col items-center justify-between sm:justify-start xl:justify-center gap-6 p-6 rounded-xl bg-surface-container-low/80 backdrop-blur shrink-0 min-w-[280px]">
+<div class="relative flex items-center justify-center">
+<!-- Inline SVG Gauge -->
+<svg class="w-32 h-32 -rotate-90" viewbox="0 0 120 120">
+<circle class="text-surface-container-high" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-width="10"></circle>
+<circle class="text-primary" cx="60" cy="60" fill="none" r="50" stroke="currentColor" stroke-dasharray="314.159" stroke-dashoffset="18.85" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-metric-display text-metric-display text-primary leading-none">94%</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase text-outline mt-0.5">Match Index</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 w-full max-w-[200px]">
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-md flex items-center justify-center gap-2">
+<span>Inspect Roadmap</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="w-full py-2 px-4 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors text-center">
+              Modify Parameters
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- PATHWAY CATEGORIES GRID (EXPLORATION MATRIX) -->
+<section class="flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Academic Vectors</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Explore Core Disciplines</h2>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">Showing 8 verified academic matrices</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<!-- Card 1: IT, AI & Data Science -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">neurology</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-container text-on-secondary-container">
+                +31% Demand
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">IT, AI &amp; Autonomous Tech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Foundations in distributed computing, transformers, statistical ML, and robotic autonomy pipelines.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$124,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 2: Engineering & DeepTech -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">precision_manufacturing</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                Steady High ROI
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Engineering &amp; DeepTech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Aerospace, advanced semiconductor fabrication, quantum mechanics, and electrical hardware engineering.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$116,500 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 3: Medical & BioTech -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">chips</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-container text-on-secondary-container">
+                Top Longevity
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Medical, BioTech &amp; Pharma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Genomics, CRISPR therapeutic development, bioinformatics, clinical trials, and healthcare technology.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$135,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 4: Commerce & FinTech -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">query_stats</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-highest text-primary">
+                High Velocity
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Commerce, Quant &amp; FinTech</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Quantitative trading, algorithmic economics, venture financing, and digital asset protocol structuring.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$138,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 5: Design & HCI -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">palette</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                Creative Tech
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Design &amp; HCI Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Spatial computing design, cognitive accessibility systems, industrial hardware form, and digital product labs.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$105,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 6: Management & Strategy -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-highest text-primary">
+                Executive Track
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Management &amp; Tech Strategy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Product operations, global supply chains, tech governance, IP commercialization, and organizational design.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$128,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 7: Pure Sciences & Physics -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">science</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-container text-on-secondary-container">
+                R&amp;D Subsidies
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Pure Sciences &amp; Quantum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                Applied astrophysics, condensed matter physics, synthetic chemistry, and climate algorithmic simulation.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$112,000 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+<!-- Card 8: Vocational / Applied Diplomas -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between cursor-pointer">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">construction</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">
+                Low Debt / Fast Entry
+              </span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold group-hover:text-primary transition-colors">Applied Tech &amp; Licensures</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+                High-voltage grid tech, network security auditing, nuclear imaging certification, and avionics control.
+              </p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-xl flex items-center justify-between text-on-surface">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Avg Post-Grad Pay</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">$88,500 / yr</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">east</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SIDE-BY-SIDE PATHWAY COMPARISON DRAWER / COMPONENT -->
+<section class="flex flex-col gap-6 bg-surface-container-lowest rounded-2xl p-6 md:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">compare_arrows</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Comparative Simulation</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Multi-Pathway Decision Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Calibrated against your personal academic transcripts and financial constraints.</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            Add Pathway to Compare
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Export Matrix Report
+          </button>
+</div>
+</div>
+<!-- Comparative Table Matrix Container -->
+<div class="overflow-x-auto -mx-6 md:mx-0">
+<table class="w-full text-left min-w-[850px] border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface">
+<th class="p-4 rounded-l-xl font-label-md text-label-md uppercase tracking-wider text-outline w-1/4">Evaluation Metric</th>
+<th class="p-4 font-title-md text-title-md font-bold text-primary w-1/4">
+<div class="flex items-center justify-between">
+<span>Pathway A (Top AI Match)</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-normal">M.S. in Machine Learning</div>
+</th>
+<th class="p-4 font-title-md text-title-md font-bold text-on-surface w-1/4">
+<span>Pathway B</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-normal">M.S. in Software Engineering</div>
+</th>
+<th class="p-4 rounded-r-xl font-title-md text-title-md font-bold text-on-surface w-1/4">
+<span>Pathway C</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-normal">Master of Financial Engineering (MFE)</div>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row: Duration & Format -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+                Program Duration
+              </td>
+<td class="p-4 font-medium text-on-surface">
+                2.0 Years <span class="text-on-surface-variant font-normal">(Thesis / Research)</span>
+</td>
+<td class="p-4 font-medium text-on-surface">
+                1.5 Years <span class="text-on-surface-variant font-normal">(Coursework Accelerated)</span>
+</td>
+<td class="p-4 font-medium text-on-surface">
+                2.0 Years <span class="text-on-surface-variant font-normal">(Practicum &amp; Capstone)</span>
+</td>
+</tr>
+<!-- Row: Admission / Cognitive Difficulty -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">psychology</span>
+                Admission Competitiveness
+              </td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-highest text-primary">Very High (9.2/10)</span>
+</div>
+<div class="w-36 h-1.5 bg-surface-container rounded-full mt-2 overflow-hidden">
+<div class="w-[92%] h-full bg-primary rounded-full"></div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container text-on-surface">Moderate (7.4/10)</span>
+</div>
+<div class="w-36 h-1.5 bg-surface-container rounded-full mt-2 overflow-hidden">
+<div class="w-[74%] h-full bg-outline rounded-full"></div>
+</div>
+</td>
+<td class="p-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-highest text-primary">High (8.6/10)</span>
+</div>
+<div class="w-36 h-1.5 bg-surface-container rounded-full mt-2 overflow-hidden">
+<div class="w-[86%] h-full bg-primary-container rounded-full"></div>
+</div>
+</td>
+</tr>
+<!-- Row: Eligibility Thresholds -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">fact_check</span>
+                Eligibility Prerequisites
+              </td>
+<td class="p-4 text-body-sm font-body-sm">
+                Min. 3.5 GPA; Vector Calculus; Linear Algebra; Python/C++ portfolio.
+              </td>
+<td class="p-4 text-body-sm font-body-sm">
+                Min. 3.0 GPA; CS Foundations or Accredited Tech Conversion Minor.
+              </td>
+<td class="p-4 text-body-sm font-body-sm">
+                Min. 3.4 GPA; GRE Quant 166+; Probability &amp; Stochastic Calculus.
+              </td>
+</tr>
+<!-- Row: Cost per Year -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">attach_money</span>
+                Est. Net Annual Cost
+              </td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$42,500</span>
+<span class="text-secondary font-label-sm text-label-sm block">45% RA/TA Fellowship eligible</span>
+</td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$38,000</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Industry sponsorship viable</span>
+</td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$58,200</span>
+<span class="text-error font-label-sm text-label-sm block">Limited grant funding</span>
+</td>
+</tr>
+<!-- Row: 5-Year Earnings Trajectory -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">monetization_on</span>
+                5-Yr Median Comp Velocity
+              </td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-secondary">$218,000 / yr</span>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+54% growth post-grad</span>
+</div>
+</td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-on-surface">$168,000 / yr</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+34% growth post-grad</span>
+</div>
+</td>
+<td class="p-4">
+<span class="font-title-lg text-title-lg font-bold text-secondary">$245,000 / yr</span>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+62% (Bonus heavy)</span>
+</div>
+</td>
+</tr>
+<!-- Row: Target Career Roles -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors">
+<td class="p-4 font-label-md text-label-md font-semibold text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">work</span>
+                Direct Role Placement
+              </td>
+<td class="p-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">AI Scientist</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Autonomy Eng</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">LLM Architect</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Staff Eng</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Cloud Architect</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Tech Lead</span>
+</div>
+</td>
+<td class="p-4">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Quant Researcher</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Algorithmic Trader</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-surface-container text-on-surface">Risk Modeler</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- INTERACTIVE PATHWAY DEEP DIVE & DETAIL DRAWER PREVIEW -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Detailed Step Progression & Prerequisite Canvas (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6 bg-surface-container-lowest rounded-2xl p-6 md:p-8 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">account_tree</span>
+</span>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Curriculum Viability &amp; Milestone Tree</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pathway: M.S. Autonomous Systems &amp; Perception</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full font-label-md text-label-md font-semibold bg-secondary-container text-on-secondary-container">
+            98% Credit Transfer Match
+          </span>
+</div>
+<!-- Vertical Interconnected Progression Node System -->
+<div class="relative flex flex-col gap-6 pl-4 mt-2">
+<!-- Continuous Connection Line -->
+<div class="absolute left-[31px] top-6 bottom-6 w-0.5 bg-surface-container-high"></div>
+<!-- Step 1: Pre-Requisites -->
+<div class="relative flex items-start gap-5">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1 p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Phase 1: Undergraduate Readiness (Completed)</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prerequisites met: Multivariable Calculus, Discrete Structures, Python Algorithms.</p>
+<div class="flex flex-wrap gap-2 pt-1">
+<span class="px-2.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface">MATH 241: A</span>
+<span class="px-2.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface">CS 301: A-</span>
+<span class="px-2.5 py-0.5 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface">Stats &amp; Probability: A</span>
+</div>
+</div>
+</div>
+<!-- Step 2: Advanced Core Semesters -->
+<div class="relative flex items-start gap-5">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 z-10 shadow-sm ring-4 ring-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">edit_document</span>
+</div>
+<div class="flex-1 p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-semibold text-primary">Phase 2: Core Graduate Curricula (Yr 1)</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Target Fall 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-intensity specialized coursework covering deep learning architectures, Bayesian inference, and robotic SLAM.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Computer Vision &amp; Diffusion</span>
+<span class="font-label-sm text-label-sm text-outline">4 Credits</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Deep Reinforcement Learning</span>
+<span class="font-label-sm text-label-sm text-outline">4 Credits</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Convex Optimization Systems</span>
+<span class="font-label-sm text-label-sm text-outline">3 Credits</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Distributed GPU Compute</span>
+<span class="font-label-sm text-label-sm text-outline">3 Credits</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3: Practicum / Capstone & Publication -->
+<div class="relative flex items-start gap-5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant shrink-0 z-10">
+<span class="material-symbols-outlined text-[16px]">lab_profile</span>
+</div>
+<div class="flex-1 p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Phase 3: Autonomous R&amp;D Defense (Yr 2)</span>
+<span class="font-label-sm text-label-sm font-semibold text-outline">Projected 2026</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conference paper submissions (NeurIPS/CVPR) or enterprise industrial capstone with autonomous mobility labs.</p>
+</div>
+</div>
+<!-- Step 4: Industry Insertion -->
+<div class="relative flex items-start gap-5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+</div>
+<div class="flex-1 p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Phase 4: Research Scientist Placement</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">$140k - $175k Starting</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Immediate eligibility for L4/IC3 Autonomous Systems Engineer roles in San Francisco, Seattle, or Zurich.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Institutional Cohort & Visual Context (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Visual Media Context Card -->
+<div class="relative rounded-2xl overflow-hidden shadow-sm group">
+<div class="h-56 w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A modern university research robotics lab with students and engineers calibrating an autonomous vehicle sensor array under clean architectural blue and white ambient lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8R9op6CvXooMPbe9Dgj4XvgzCa0bR23mF__aYdTeBdIO236RJOqJB-ySCggtYBMigskhqhbN_mWAeVLhSnY21A1hYNRSRGgkJZDRDqK3-M3LOkJgrJUljTWuQnue_hfgd6fV48ozqjuFtMb2LQR_iw8nLnIzK45Eb5o_tarO8_sRWeMQ2u_FM-fs4k1SU07nQypdHk8ym96RFMc5MXEWGql5tbJBpXdc2oEn8fBFGgDik3CvuubU8Dw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/30 to-transparent flex flex-col justify-end p-6 text-surface-bright">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Tier-1 Research Partner</span>
+<h4 class="font-title-lg text-title-lg font-bold text-surface-bright mt-0.5">Carnegie Mellon &amp; Stanford Robotics Alliances</h4>
+<p class="font-body-sm text-body-sm text-surface-variant/90 mt-1">Direct lab pipeline funding $18.4M in hardware fellowships this cycle.</p>
+</div>
+</div>
+<!-- Subjects Needed & Higher Study Vector Box -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Skill Stack Matrix</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">Recommended Electives for 100% Fit</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              CUDA &amp; Parallel Programming
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Stochastic Processes
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[16px]">error</span>
+              Graph Neural Networks (Gap Detected)
+            </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+              Robot Kinematics
+            </span>
+</div>
+<!-- Higher Study Extension Options -->
+<div class="pt-4 border-t-0 bg-surface-container-low -mx-6 -mb-6 p-6 rounded-b-2xl flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Post-Master Next Steps</span>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface block">Ph.D. in Autonomous Perception</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fully funded with $44k annual stipend</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-semibold transition-colors">
+                View Faculty
+              </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAREER CONNECTION & REAL-WORLD VELOCITY -->
+<section class="flex flex-col gap-6 bg-surface-container-lowest rounded-2xl p-6 md:p-8 shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">rocket_launch</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-outline">Labor Dynamics</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Direct Labor Velocity &amp; Salary Elasticity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time employment metrics calibrated with BLS &amp; Tech Compensation Datasets.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live BLS API Feed (Q1 2025 Benchmarked)</span>
+</div>
+</div>
+<!-- Real-world Employment Cards Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Role 1 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between gap-6 hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-container text-on-secondary-container">
+                Immediate Velocity
+              </span>
+<span class="font-label-sm text-label-sm text-outline">18-Day Avg Hire Time</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Applied AI Research Scientist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Autonomous robotics, model quantization, and distributed inference systems.</p>
+</div>
+</div>
+<!-- Micro Sparkline / Bar Component -->
+<div class="flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Range (25th - 90th percentile)</span>
+<span class="font-title-md text-title-md font-bold text-secondary">$142k - $210k</span>
+</div>
+<!-- Mini SVG Bar Visualizer -->
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim w-1/4"></div>
+<div class="h-full bg-secondary w-1/2"></div>
+<div class="h-full bg-primary-container w-1/4"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>$115k Baseline</span>
+<span>$165k Median</span>
+<span>$240k Top Tier</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t-0 bg-surface-container-lowest -mx-6 -mb-6 p-4 rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Top Employers: OpenAI, Waymo, Tesla</span>
+<span class="material-symbols-outlined text-primary text-[18px]">open_in_new</span>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between gap-6 hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-high text-on-surface">
+                Enterprise Scaled
+              </span>
+<span class="font-label-sm text-label-sm text-outline">24-Day Avg Hire Time</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Autonomous Systems Architect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-sensor sensor fusion, safety-critical RTOS kernel validation.</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Range (25th - 90th percentile)</span>
+<span class="font-title-md text-title-md font-bold text-secondary">$155k - $225k</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim w-1/5"></div>
+<div class="h-full bg-secondary w-3/5"></div>
+<div class="h-full bg-primary-container w-1/5"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>$125k Baseline</span>
+<span>$175k Median</span>
+<span>$260k Top Tier</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t-0 bg-surface-container-lowest -mx-6 -mb-6 p-4 rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Top Employers: NVIDIA, Apple, Zoox</span>
+<span class="material-symbols-outlined text-primary text-[18px]">open_in_new</span>
+</div>
+</div>
+<!-- Role 3 -->
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col justify-between gap-6 hover:bg-surface-container transition-colors">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold bg-surface-container-highest text-primary">
+                High Venture Equity
+              </span>
+<span class="font-label-sm text-label-sm text-outline">12-Day Avg Hire Time</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Deep Learning Foundation Engineer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-modal pretraining, alignment infrastructure, high-throughput clusters.</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Range (25th - 90th percentile)</span>
+<span class="font-title-md text-title-md font-bold text-secondary">$165k - $250k</span>
+</div>
+<div class="w-full h-3 bg-surface-container-high rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim w-1/6"></div>
+<div class="h-full bg-secondary w-1/2"></div>
+<div class="h-full bg-primary-container w-1/3"></div>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm text-outline">
+<span>$135k Baseline</span>
+<span>$185k Median</span>
+<span>$310k+ Equity Peak</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 border-t-0 bg-surface-container-lowest -mx-6 -mb-6 p-4 rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Top Employers: Anthropic, DeepMind, Mistral</span>
+<span class="material-symbols-outlined text-primary text-[18px]">open_in_new</span>
+</div>
+</div>
+</div>
+</section>
+<!-- FLOATING SYNTHETIC ACTION DOCK -->
+<div class="sticky bottom-6 z-40 bg-surface-container-lowest/90 backdrop-blur-xl rounded-2xl p-4 shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+</div>
+<div>
+<span class="font-title-md text-title-md font-semibold text-on-surface block">Need tailored admissions profiling?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Run the What-If Simulator with your verified test scores and financial cap.</span>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors">
+          Save Pathway To Portfolio
+        </button>
+<button class="flex-1 sm:flex-none px-5 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-md flex items-center justify-center gap-2">
+<span>Simulate Admissions Probability</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Education vs Career view switcher
+  document.getElementById('view-edu-btn')?.addEventListener('click', function() {
+    this.className = "px-5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-sm transition-all flex items-center gap-2";
+    const careerBtn = document.getElementById('view-career-btn');
+    if (careerBtn) {
+      careerBtn.className = "px-5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2";
+    }
+  });
+
+  document.getElementById('view-career-btn')?.addEventListener('click', function() {
+    this.className = "px-5 py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary font-semibold shadow-sm transition-all flex items-center gap-2";
+    const eduBtn = document.getElementById('view-edu-btn');
+    if (eduBtn) {
+      eduBtn.className = "px-5 py-1.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2";
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet xl:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-md"><div class="flex items-center gap-space-sm"><img alt="EduPath AI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VysujplWE_x5OBUfipQWrt6KmWYaeKe3_sjhd4d2uvncd6u38qInFiftflcDhZ4atsP3BQkzUagHjVj6RsWCbifmM3Ot7MP9hHw8BiVhlKgm_d5TvAkhpkYL-CRTY1E3y3m1SDhPyo57_l8E-NxiLCZZgyxir3iXtD0KjIu0Rj4PlKlJKuQqYqgMXbtIpxaebnr4C9nVUXXa7wiV4TSUIustUCcN9GU_LQk28FJ4EGiseWKQO2x80kUC34"/><span class="font-title-lg text-title-lg font-bold text-on-surface tracking-tight">EduPath AI</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">High-clarity FinTech intelligence and predictive cognitive roadmapping empowering students to maximize degree ROI, optimize institutional debt, and forecast lifetime career trajectories.</p><div class="flex flex-wrap items-center gap-2 mt-space-xs"><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-secondary font-semibold">Accredited Decision Models</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-high text-primary font-semibold">FERPA Compliant</span><span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant font-semibold">Zero Bias Certified</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Platform Engines</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pathways-hub" href="#">Pathways Hub</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="institutions.html">Institution Comparison</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholarships-funding" href="#">Scholarships &amp; Funding</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="simulator.html">What-If Simulator</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="decision-matrix.html">Decision Matrix</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="business-pathways.html">Entrepreneurship Pathways</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Resources</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="video-hub" href="#">Video Hub &amp; Masterclasses</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="sources" href="#">Federal &amp; IPEDS Data</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="salary-benchmarks" href="#">BLS Salary Benchmarks</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="methodology" href="#">Decision Methodology</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-title-md text-title-md text-on-surface">Institutional Compliance</span><ul class="flex flex-col gap-space-xs"><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">FERPA &amp; Privacy Policy</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="bias-transparency" href="#">Zero Bias Transparency</a></li><li class="nav-item"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="admin-login" href="#">Institution Admin Portal</a></li></ul></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-outline"><span class="font-body-sm text-body-sm">© 2025 EduPath AI Inc. Cognitive Decision Support Engine. FERPA Compliant &amp; Zero Bias Certified.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant">ISO/IEC 27001 Certified</span><span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">SOC-2 Type II Verified</span></div></div></div></footer>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/matrix.js"></script>
+  <script src="assets/js/simulator.js"></script>
+</body></html>
